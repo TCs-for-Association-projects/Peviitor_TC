@@ -1,2 +1,3 @@
-number,title,url,state,epic,userStory,testingType,section,environment,os,browser,status,bugFound,relatedBug,crossOs,crossBrowser,createdAt,updatedAt
-1,[TC]:Footer Navigation - User enters website - Cookies are great,https://github.com/TheodorIvascu/Peviitor_TC/issues/1,closed,F1,US1,Navigation,Header,Production,"Windows 11, Mac OS","Chrome, Firefox",Passed,true,,true,true,2026-04-15T19:45:08Z,2026-04-15T20:03:43Z
+number,title,url,state,author,epic,userStory,testingType,section,environment,os,browser,status,bugFound,crossOs,crossBrowser,createdAt,updatedAt
+2,[TC]: Cookies - I like them - They look yummy,https://github.com/TheodorIvascu/Peviitor_TC/issues/2,open,TheodorIvascu,F1,US1,Navigation,Header,Production,Windows 11,Chrome 120,Not run,false,false,false,2026-04-15T20:53:52Z,2026-04-15T20:53:52Z
+1,[TC]:Footer Navigation - User enters website - Cookies are great,https://github.com/TheodorIvascu/Peviitor_TC/issues/1,closed,TheodorIvascu,F1,US1,Navigation,Header,Production,,,Passed,true,true,true,2026-04-15T19:45:08Z,2026-04-15T20:03:43Z
