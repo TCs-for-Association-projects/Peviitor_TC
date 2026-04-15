@@ -3,6 +3,14 @@
  * auto-label.js
  * Parses a Test Case issue body and syncs labels via the GitHub API.
  *
+ * Scope:
+ *   - Reconciles labels derived from form fields: epic:, story:, type:,
+ *     section:, env:. Adds needs-review on Epic/US prefix mismatch.
+ *   - Additive-only for cross-os and cross-browser (form ticks add them,
+ *     but we don't remove them here — test-execution.js toggles these).
+ *   - Does NOT manage status: or bug-found. Those are set via slash
+ *     commands in issue comments by the Test Execution workflow.
+ *
  * Env vars (set by GitHub Actions):
  *   GITHUB_TOKEN       — token with issues: write
  *   GITHUB_REPOSITORY  — "owner/repo"
@@ -45,42 +53,37 @@ const config = JSON.parse(
 );
 
 // ── Parse issue body ─────────────────────────────────────────────────────────
-// GitHub Issue Forms render each field as:
-//   ### <Label>
-//
-//   <value>
-//
-// For unanswered optional fields, the value is "_No response_".
-// For checkboxes, the value is "- [X] Label text" or "- [ ] Label text".
 function parseBody(body) {
   const fields = {};
   if (!body) return fields;
-  const parts = body.split(/^###\s+/m);
-  for (const part of parts.slice(1)) {
-    const nlIdx = part.indexOf("\n");
-    if (nlIdx === -1) continue;
-    const label = part.slice(0, nlIdx).trim();
-    const value = part.slice(nlIdx + 1).trim();
-    fields[label] = value;
+  for (const part of body.split(/^###\s+/m).slice(1)) {
+    const nl = part.indexOf("\n");
+    if (nl === -1) continue;
+    fields[part.slice(0, nl).trim()] = part.slice(nl + 1).trim();
   }
   return fields;
 }
 
+const isNoResponse = (v) => !v || /^_no response_$/i.test(v.trim());
+
+// Returns true if a checkboxes-block value contains a ticked option matching `pattern`.
+function isOptionChecked(value, pattern) {
+  if (!value) return false;
+  const lines = value.split(/\r?\n/);
+  return lines.some(
+    (l) => /^- \[x\]/i.test(l.trim()) && pattern.test(l)
+  );
+}
+
 const fields = parseBody(issue.body);
 
-function isChecked(value) {
-  return /- \[x\]/i.test(value || "");
-}
-
-function isNoResponse(value) {
-  return !value || /^_no response_$/i.test(value.trim());
-}
-
-// ── Compute desired labels ───────────────────────────────────────────────────
-const desired = new Set(["Test_Case"]); // keep the gating label
+// ── Compute desired labels (reconciled set) ──────────────────────────────────
+const desired = new Set(["Test_Case"]);
+// Additive-only labels (applied if form ticks; never removed by this script)
+const additive = new Set();
 const warnings = [];
 
-// Epic — value looks like "Epic F1: Footer Navigation & Structure (#16)"
+// Epic
 const epicValue = fields["Epic"];
 let selectedEpicId = null;
 if (!isNoResponse(epicValue)) {
@@ -93,14 +96,12 @@ if (!isNoResponse(epicValue)) {
   }
 }
 
-// User Story — value looks like "F1 · US1: Navigation links in footer (#17)"
+// User Story
 const usValue = fields["User Story"];
 let selectedUsEpicPrefix = null;
-let selectedUsId = null;
 if (!isNoResponse(usValue)) {
   const us = config.userStories.find((u) => usValue.includes(`(#${u.issue})`));
   if (us) {
-    selectedUsId = us.id;
     selectedUsEpicPrefix = us.epicId;
     desired.add(`story: ${us.id}`);
   } else {
@@ -108,7 +109,7 @@ if (!isNoResponse(usValue)) {
   }
 }
 
-// Cross-validate Epic vs US prefix
+// Epic/US mismatch
 if (selectedEpicId && selectedUsEpicPrefix && selectedEpicId !== selectedUsEpicPrefix) {
   desired.add("needs-review");
   warnings.push(
@@ -122,48 +123,46 @@ if (!isNoResponse(testingType) && config.testingTypes.includes(testingType.trim(
   desired.add(`type: ${testingType.trim()}`);
 }
 
-// Website Section
+// Section
 const section = fields["Website Section"];
 if (!isNoResponse(section) && config.websiteSections.includes(section.trim())) {
   desired.add(`section: ${section.trim()}`);
 }
 
-// Environment (form label is "Test Environment")
+// Environment
 const env = fields["Test Environment"];
 if (!isNoResponse(env) && config.environments.includes(env.trim())) {
   desired.add(`env: ${env.trim()}`);
 }
 
-// Execution Status
-const status = fields["Test Execution Status"];
-if (!isNoResponse(status) && config.executionStatuses.includes(status.trim())) {
-  desired.add(`status: ${status.trim()}`);
-}
+// Cross-platform coverage (additive-only)
+const coverage = fields["Cross-platform Coverage"];
+if (isOptionChecked(coverage, /operating systems/i)) additive.add("cross-os");
+if (isOptionChecked(coverage, /browsers/i)) additive.add("cross-browser");
 
-// Flag checkboxes
-if (isChecked(fields["Cross-OS"])) desired.add("cross-os");
-if (isChecked(fields["Cross-Browser"])) desired.add("cross-browser");
-if (isChecked(fields["Bug Discovery Acknowledgement"])) desired.add("bug-found");
+// Default status on first creation: Not run (additive-only — test-execution owns changes)
+if (event.action === "opened") additive.add("status: Not run");
 
 // ── Reconcile with existing labels ───────────────────────────────────────────
-// We only manage labels with known prefixes + known flag names. Anything else
-// is left alone (e.g. priority labels added by maintainers).
-const MANAGED_PREFIXES = ["epic: ", "story: ", "type: ", "section: ", "env: ", "status: "];
-const MANAGED_FLAGS = ["cross-os", "cross-browser", "bug-found", "needs-review"];
+// We only remove labels with known prefixes. Flags (cross-os, cross-browser,
+// bug-found, status:*) are never removed here.
+const MANAGED_PREFIXES = ["epic: ", "story: ", "type: ", "section: ", "env: "];
+const MANAGED_REMOVABLE_FLAGS = ["needs-review"];
 
-function isManaged(name) {
-  if (MANAGED_FLAGS.includes(name)) return true;
+function isManagedRemovable(name) {
+  if (MANAGED_REMOVABLE_FLAGS.includes(name)) return true;
   return MANAGED_PREFIXES.some((p) => name.startsWith(p));
 }
 
 const current = new Set((issue.labels || []).map((l) => l.name));
-const toAdd = [...desired].filter((l) => !current.has(l));
+const toAdd = [...desired, ...additive].filter((l) => !current.has(l));
 const toRemove = [...current].filter(
-  (l) => isManaged(l) && !desired.has(l)
+  (l) => isManagedRemovable(l) && !desired.has(l)
 );
 
 console.log("Current labels:", [...current].join(", ") || "(none)");
-console.log("Desired labels:", [...desired].join(", "));
+console.log("Desired (reconciled):", [...desired].join(", "));
+console.log("Additive:", [...additive].join(", ") || "(none)");
 console.log("To add:   ", toAdd.join(", ") || "(none)");
 console.log("To remove:", toRemove.join(", ") || "(none)");
 if (warnings.length) console.log("Warnings:", warnings);

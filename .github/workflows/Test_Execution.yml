@@ -1,0 +1,28 @@
+name: Test Execution
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  execute:
+    # Only run on comments on Test_Case issues (skips PR comments — they have no labels array of this shape)
+    if: ${{ !github.event.issue.pull_request && contains(github.event.issue.labels.*.name, 'Test_Case') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Process execution commands
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/test-execution.js

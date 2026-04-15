@@ -2,133 +2,1164 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Peviitor_TC — Test Matrix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peviitor_TC — Test Dashboard</title>
+<meta name="description" content="QA Test Case Dashboard for peviitor.ro — execution status, coverage, traceability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 <style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         margin: 0; padding: 20px; background: #f9fafb; color: #111; }
-  h1 { margin: 0 0 4px; }
-  .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
-  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
-  .stat { background: white; padding: 12px 16px; border-radius: 6px; min-width: 120px;
-          box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-  .stat-count { font-size: 24px; font-weight: 600; }
-  .stat-label { font-size: 12px; color: #6b7280; text-transform: uppercase; }
-  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
-             background: white; padding: 12px; border-radius: 6px;
-             box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-  .filters select, .filters input {
-    padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 4px;
-    font-size: 14px; background: white; }
-  .filters input { flex: 1; min-width: 200px; }
-  table { width: 100%; border-collapse: collapse; background: white;
-          box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-radius: 6px; overflow: hidden; }
-  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e5e7eb;
-           font-size: 14px; }
-  th { background: #f3f4f6; cursor: pointer; user-select: none; font-weight: 600;
-       position: sticky; top: 0; }
-  th:hover { background: #e5e7eb; }
-  th::after { content: " ↕"; opacity: 0.3; font-size: 11px; }
-  th.sorted-asc::after  { content: " ↑"; opacity: 1; }
-  th.sorted-desc::after { content: " ↓"; opacity: 1; }
-  tr.hidden { display: none; }
-  td.title { max-width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  a { color: #2563eb; text-decoration: none; }
+  /* ── Theme tokens ─────────────────────────────────────────────────────────── */
+  :root {
+    --bg-body: #0f172a;
+    --bg-card: #1e293b;
+    --bg-card-hover: #263548;
+    --bg-input: #334155;
+    --border: #334155;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --text-heading: #f1f5f9;
+    --accent: #3b82f6;
+    --accent-dim: rgba(59,130,246,0.15);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.25);
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.15);
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --transition: 0.2s ease;
+  }
+  [data-theme="light"] {
+    --bg-body: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8fafc;
+    --bg-input: #f1f5f9;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --text-heading: #0f172a;
+    --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  /* ── Reset & base ─────────────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font);
+    background: var(--bg-body);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+    transition: background var(--transition), color var(--transition);
+  }
+
+  /* ── Layout ───────────────────────────────────────────────────────────────── */
+  .dashboard {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 28px;
+  }
+
+  /* ── Header ───────────────────────────────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-heading);
+    letter-spacing: -0.5px;
+  }
+  .header h1 span { color: var(--accent); }
+  .header-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ── Theme toggle ─────────────────────────────────────────────────────────── */
+  .theme-toggle {
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: var(--radius-sm);
+    padding: 7px 14px;
+    font-size: 13px;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .theme-toggle:hover { border-color: var(--accent); }
+
+  /* ── KPI Cards ────────────────────────────────────────────────────────────── */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .kpi-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    border-left: 4px solid var(--accent);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  }
+  .kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    background: var(--bg-card-hover);
+  }
+  .kpi-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-heading);
+    line-height: 1.1;
+  }
+  .kpi-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+
+  /* ── Charts section ───────────────────────────────────────────────────────── */
+  .charts-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 900px) {
+    .charts-row { grid-template-columns: 1fr; }
+  }
+  .chart-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: background var(--transition);
+  }
+  .chart-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 16px;
+  }
+  .chart-container {
+    position: relative;
+    width: 100%;
+  }
+  .chart-container.doughnut { max-width: 280px; margin: 0 auto; }
+
+  /* ── Coverage heatmap ─────────────────────────────────────────────────────── */
+  .heatmap-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 28px;
+    overflow-x: auto;
+    transition: background var(--transition);
+  }
+  .heatmap-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 16px;
+  }
+  .heatmap { border-collapse: collapse; width: 100%; min-width: 600px; }
+  .heatmap th {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .heat-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .heat-cell {
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    min-width: 60px;
+    transition: background var(--transition);
+  }
+
+  /* ── Filters ──────────────────────────────────────────────────────────────── */
+  .filters-bar {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: background var(--transition);
+  }
+  .filters-bar select, .filters-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-input);
+    color: var(--text);
+    font-size: 13px;
+    font-family: var(--font);
+    transition: border-color var(--transition), background var(--transition);
+    outline: none;
+  }
+  .filters-bar select:focus, .filters-bar input:focus {
+    border-color: var(--accent);
+  }
+  .filters-bar input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+  }
+  .filter-count {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-left: auto;
+  }
+
+  /* ── Data table ───────────────────────────────────────────────────────────── */
+  .table-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: background var(--transition);
+  }
+  .table-wrap { overflow-x: auto; }
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  table.data th {
+    background: var(--bg-input);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 14px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+    transition: background var(--transition), color var(--transition);
+  }
+  table.data th:hover { color: var(--accent); }
+  table.data th::after { content: " ↕"; opacity: 0.3; font-size: 10px; }
+  table.data th.sorted-asc::after  { content: " ↑"; opacity: 1; color: var(--accent); }
+  table.data th.sorted-desc::after { content: " ↓"; opacity: 1; color: var(--accent); }
+  table.data td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: middle;
+    transition: background var(--transition);
+  }
+  table.data tbody tr:hover td {
+    background: var(--accent-dim);
+  }
+  table.data tr.hidden { display: none; }
+  .cell-title {
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cell-date { white-space: nowrap; color: var(--text-muted); font-size: 12px; }
+  a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .status-pill { color: white; padding: 2px 10px; border-radius: 12px;
-                 font-size: 12px; font-weight: 500; display: inline-block; }
-  .footer { margin-top: 20px; font-size: 12px; color: #6b7280; text-align: center; }
+
+  /* ── Status pill ──────────────────────────────────────────────────────────── */
+  .status-pill {
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* ── Avatars ──────────────────────────────────────────────────────────────── */
+  .avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1.5px solid var(--border);
+    transition: transform var(--transition);
+  }
+  .avatar:hover { transform: scale(1.2); }
+  .author-name {
+    font-size: 12px;
+    color: var(--text-muted);
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+  .muted { color: var(--text-muted); }
+
+  /* ── Footer ───────────────────────────────────────────────────────────────── */
+  .page-footer {
+    text-align: center;
+    padding: 28px 0 16px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .page-footer a { color: var(--accent); }
+  .page-footer .sep { margin: 0 8px; }
+
+  /* ── Responsive ───────────────────────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .dashboard { padding: 16px; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .header h1 { font-size: 20px; }
+    .kpi-value { font-size: 24px; }
+  }
 </style>
 </head>
 <body>
-<h1>Peviitor_TC — Test Matrix</h1>
-<div class="subtitle">Repository: TheodorIvascu/Peviitor_TC · Generated: 2026-04-15T20:03:57.702Z</div>
+<div class="dashboard">
 
-<div class="stats">
-  <div class="stat" style="border-left: 4px solid #2563eb">
-    <div class="stat-count">1</div>
-    <div class="stat-label">Total</div>
+  <!-- ── Header ────────────────────────────────────────────────────────────── -->
+  <header class="header">
+    <div>
+      <h1><span>Peviitor_TC</span> — Test Dashboard</h1>
+      <div class="header-meta">
+        TheodorIvascu/Peviitor_TC · Generated 15 Apr 2026, 20:44 UTC
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Switch theme">🌙 Dark</button>
+    </div>
+  </header>
+
+  <!-- ── KPI Cards ─────────────────────────────────────────────────────────── -->
+  <div class="kpi-grid">
+    <div class="kpi-card" style="border-left-color: #3b82f6">
+      <div class="kpi-value">32</div>
+      <div class="kpi-label">Total Test Cases</div>
+    </div>
+    <div class="kpi-card" style="border-left-color: #10b981">
+      <div class="kpi-value">7</div>
+      <div class="kpi-label">Passed</div>
+    </div>
+    <div class="kpi-card" style="border-left-color: #ef4444">
+      <div class="kpi-value">7</div>
+      <div class="kpi-label">Failed</div>
+    </div>
+    <div class="kpi-card" style="border-left-color: #f59e0b">
+      <div class="kpi-value">6</div>
+      <div class="kpi-label">Blocked</div>
+    </div>
+    <div class="kpi-card" style="border-left-color: #6b7280">
+      <div class="kpi-value">6</div>
+      <div class="kpi-label">Not Run</div>
+    </div>
+    <div class="kpi-card" style="border-left-color: #ef4444">
+      <div class="kpi-value">7</div>
+      <div class="kpi-label">Bugs Found</div>
+    </div>
   </div>
-  
-      <div class="stat" style="border-left: 4px solid #9ca3af">
-        <div class="stat-count">0</div>
-        <div class="stat-label">Not run</div>
-      </div>
-      <div class="stat" style="border-left: 4px solid #16a34a">
-        <div class="stat-count">1</div>
-        <div class="stat-label">Passed</div>
-      </div>
-      <div class="stat" style="border-left: 4px solid #dc2626">
-        <div class="stat-count">0</div>
-        <div class="stat-label">Failed</div>
-      </div>
-      <div class="stat" style="border-left: 4px solid #eab308">
-        <div class="stat-count">0</div>
-        <div class="stat-label">Blocked</div>
-      </div>
-      <div class="stat" style="border-left: 4px solid #f97316">
-        <div class="stat-count">0</div>
-        <div class="stat-label">Partially passed</div>
-      </div>
-</div>
 
-<div class="filters">
-  <input type="text" id="search" placeholder="Search title / number...">
-  <select id="f-epic"><option value="">All Epics</option><option value="F1">F1</option></select>
-  <select id="f-story"><option value="">All User Stories</option><option value="US1">US1</option></select>
-  <select id="f-status"><option value="">All Statuses</option><option value="Passed">Passed</option></select>
-  <select id="f-section"><option value="">All Sections</option><option value="Header">Header</option></select>
-  <select id="f-env"><option value="">All Environments</option><option value="Production">Production</option></select>
-  <select id="f-type"><option value="">All Testing Types</option><option value="Navigation">Navigation</option></select>
-</div>
+  <!-- ── Charts ────────────────────────────────────────────────────────────── -->
+  <div class="charts-row">
+    <div class="chart-card">
+      <h2>📊 Status Distribution</h2>
+      <div class="chart-container doughnut">
+        <canvas id="statusChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h2>📈 Test Cases by Epic</h2>
+      <div class="chart-container">
+        <canvas id="epicChart"></canvas>
+      </div>
+    </div>
+  </div>
 
-<table id="matrix">
-  <thead>
-    <tr>
-      <th data-col="number" data-type="num">#</th>
-      <th data-col="title">Title</th>
-      <th data-col="epic">Epic</th>
-      <th data-col="story">User Story</th>
-      <th data-col="type">Testing Type</th>
-      <th data-col="section">Section</th>
-      <th data-col="env">Env</th>
-      <th data-col="browser">Browser</th>
-      <th data-col="status">Status</th>
-      <th data-col="bug">Bug</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr data-epic="F1" data-story="US1"
-          data-status="Passed" data-section="Header"
-          data-env="Production" data-type="Navigation">
-        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/1" target="_blank">#1</a></td>
-        <td class="title">[TC]:Footer Navigation - User enters website - Cookies are great</td>
-        <td>F1</td>
+  <!-- ── Coverage Heatmap ──────────────────────────────────────────────────── -->
+  <div class="heatmap-card">
+    <h2>🗺️ Coverage Matrix — Section × Testing Type</h2>
+    <table class="heatmap">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Navigation</th><th>Content testing</th><th>GUI and usability</th><th>Performance testing</th><th>Compatibility testing</th><th>Accessibility testing</th><th>Regression</th><th>Edge case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="heat-label">Header</td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Footer</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Search bar</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Filters</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Job listings</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Job details</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Navigation</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td><td class="heat-cell" style="background:transparent"></td></tr><tr><td class="heat-label">Other</td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:transparent"></td><td class="heat-cell" style="background:rgba(59, 130, 246, 0.85)">4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Filters ───────────────────────────────────────────────────────────── -->
+  <div class="filters-bar">
+    <input type="text" id="search" placeholder="🔍 Search title or #number...">
+    <select id="f-epic"><option value="">All Epics</option><option value="E1">E1</option><option value="F1">F1</option><option value="F2">F2</option><option value="F3">F3</option><option value="F4">F4</option><option value="S1">S1</option><option value="S2">S2</option><option value="S3">S3</option><option value="S4">S4</option><option value="S5">S5</option><option value="S6">S6</option></select>
+    <select id="f-story"><option value="">All Stories</option><option value="US1">US1</option><option value="US10">US10</option><option value="US11">US11</option><option value="US12">US12</option><option value="US13">US13</option><option value="US17">US17</option><option value="US20">US20</option><option value="US21">US21</option><option value="US22">US22</option><option value="US23">US23</option><option value="US24">US24</option><option value="US25">US25</option><option value="US4">US4</option><option value="US5">US5</option><option value="US6">US6</option><option value="US7">US7</option><option value="US9">US9</option></select>
+    <select id="f-status"><option value="">All Statuses</option><option value="Blocked">Blocked</option><option value="Failed">Failed</option><option value="Not run">Not run</option><option value="Partially passed">Partially passed</option><option value="Passed">Passed</option></select>
+    <select id="f-section"><option value="">All Sections</option><option value="Filters">Filters</option><option value="Footer">Footer</option><option value="Header">Header</option><option value="Job details">Job details</option><option value="Job listings">Job listings</option><option value="Navigation">Navigation</option><option value="Other">Other</option><option value="Search bar">Search bar</option></select>
+    <select id="f-env"><option value="">All Environments</option><option value="Local">Local</option><option value="Production">Production</option><option value="Staging">Staging</option></select>
+    <select id="f-type"><option value="">All Types</option><option value="Accessibility testing">Accessibility testing</option><option value="Compatibility testing">Compatibility testing</option><option value="Content testing">Content testing</option><option value="Edge case">Edge case</option><option value="GUI and usability">GUI and usability</option><option value="Navigation">Navigation</option><option value="Performance testing">Performance testing</option><option value="Regression">Regression</option></select>
+    <select id="f-author"><option value="">All Authors</option><option value="devtester">devtester</option><option value="qauser1">qauser1</option><option value="qauser2">qauser2</option><option value="theodorivanscu">theodorivanscu</option></select>
+    <span class="filter-count" id="row-count">32 test cases</span>
+  </div>
+
+  <!-- ── Data Table ────────────────────────────────────────────────────────── -->
+  <div class="table-card">
+    <div class="table-wrap">
+      <table class="data" id="matrix">
+        <thead>
+          <tr>
+            <th data-col="number" data-type="num">#</th>
+            <th data-col="title">Title</th>
+            <th data-col="epic">Epic</th>
+            <th data-col="story">Story</th>
+            <th data-col="type">Type</th>
+            <th data-col="section">Section</th>
+            <th data-col="env">Env</th>
+            <th data-col="status">Status</th>
+            <th data-col="bug">Bug</th>
+            <th data-col="author">Author</th>
+            <th>Assignees</th>
+            <th data-col="date">Created</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr data-epic="F2" data-story="US13"
+          data-status="Passed" data-section="Footer"
+          data-env="Staging" data-type="Content testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/51" target="_blank" rel="noopener">#51</a></td>
+        <td class="cell-title">TC - Footer - Test action 1 - Expected result 1</td>
+        <td>F2</td>
+        <td>US13</td>
+        <td>Content testing</td>
+        <td>Footer</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">01/04/2025</td>
+      </tr>
+      <tr data-epic="F3" data-story="US20"
+          data-status="Failed" data-section="Search bar"
+          data-env="Production" data-type="GUI and usability"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/52" target="_blank" rel="noopener">#52</a></td>
+        <td class="cell-title">TC - Search bar - Test action 2 - Expected result 2</td>
+        <td>F3</td>
+        <td>US20</td>
+        <td>GUI and usability</td>
+        <td>Search bar</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">02/04/2025</td>
+      </tr>
+      <tr data-epic="F4" data-story="US23"
+          data-status="Blocked" data-section="Filters"
+          data-env="Local" data-type="Performance testing"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/53" target="_blank" rel="noopener">#53</a></td>
+        <td class="cell-title">TC - Filters - Test action 3 - Expected result 3</td>
+        <td>F4</td>
+        <td>US23</td>
+        <td>Performance testing</td>
+        <td>Filters</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"></td>
+        <td class="cell-date">03/04/2025</td>
+      </tr>
+      <tr data-epic="S1" data-story="US11"
+          data-status="Partially passed" data-section="Job listings"
+          data-env="Staging" data-type="Compatibility testing"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/54" target="_blank" rel="noopener">#54</a></td>
+        <td class="cell-title">TC - Job listings - Test action 4 - Expected result 4</td>
+        <td>S1</td>
+        <td>US11</td>
+        <td>Compatibility testing</td>
+        <td>Job listings</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">04/04/2025</td>
+      </tr>
+      <tr data-epic="S2" data-story="US7"
+          data-status="Not run" data-section="Job details"
+          data-env="Production" data-type="Accessibility testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/55" target="_blank" rel="noopener">#55</a></td>
+        <td class="cell-title">TC - Job details - Test action 5 - Expected result 5</td>
+        <td>S2</td>
+        <td>US7</td>
+        <td>Accessibility testing</td>
+        <td>Job details</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">05/04/2025</td>
+      </tr>
+      <tr data-epic="S3" data-story="US4"
+          data-status="Passed" data-section="Navigation"
+          data-env="Local" data-type="Regression"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/56" target="_blank" rel="noopener">#56</a></td>
+        <td class="cell-title">TC - Navigation - Test action 6 - Expected result 6</td>
+        <td>S3</td>
+        <td>US4</td>
+        <td>Regression</td>
+        <td>Navigation</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"></td>
+        <td class="cell-date">06/04/2025</td>
+      </tr>
+      <tr data-epic="S4" data-story="US1"
+          data-status="Failed" data-section="Other"
+          data-env="Staging" data-type="Edge case"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/57" target="_blank" rel="noopener">#57</a></td>
+        <td class="cell-title">TC - Other - Test action 7 - Expected result 7</td>
+        <td>S4</td>
+        <td>US1</td>
+        <td>Edge case</td>
+        <td>Other</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">07/04/2025</td>
+      </tr>
+      <tr data-epic="S5" data-story="US1"
+          data-status="Blocked" data-section="Header"
+          data-env="Production" data-type="Navigation"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/58" target="_blank" rel="noopener">#58</a></td>
+        <td class="cell-title">TC - Header - Test action 8 - Expected result 8</td>
+        <td>S5</td>
         <td>US1</td>
         <td>Navigation</td>
         <td>Header</td>
         <td>Production</td>
-        <td>Chrome, Firefox</td>
-        <td><span class="status-pill" style="background:#16a34a">Passed</span></td>
-        <td>🐛</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">08/04/2025</td>
       </tr>
-  </tbody>
-</table>
+      <tr data-epic="S6" data-story="US1"
+          data-status="Partially passed" data-section="Footer"
+          data-env="Local" data-type="Content testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/59" target="_blank" rel="noopener">#59</a></td>
+        <td class="cell-title">TC - Footer - Test action 9 - Expected result 9</td>
+        <td>S6</td>
+        <td>US1</td>
+        <td>Content testing</td>
+        <td>Footer</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"></td>
+        <td class="cell-date">09/04/2025</td>
+      </tr>
+      <tr data-epic="E1" data-story="US1"
+          data-status="Not run" data-section="Search bar"
+          data-env="Staging" data-type="GUI and usability"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/60" target="_blank" rel="noopener">#60</a></td>
+        <td class="cell-title">TC - Search bar - Test action 10 - Expected result 10</td>
+        <td>E1</td>
+        <td>US1</td>
+        <td>GUI and usability</td>
+        <td>Search bar</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">10/04/2025</td>
+      </tr>
+      <tr data-epic="F1" data-story="US10"
+          data-status="Passed" data-section="Filters"
+          data-env="Production" data-type="Performance testing"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/61" target="_blank" rel="noopener">#61</a></td>
+        <td class="cell-title">TC - Filters - Test action 11 - Expected result 11</td>
+        <td>F1</td>
+        <td>US10</td>
+        <td>Performance testing</td>
+        <td>Filters</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">11/04/2025</td>
+      </tr>
+      <tr data-epic="F2" data-story="US12"
+          data-status="Failed" data-section="Job listings"
+          data-env="Local" data-type="Compatibility testing"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/62" target="_blank" rel="noopener">#62</a></td>
+        <td class="cell-title">TC - Job listings - Test action 12 - Expected result 12</td>
+        <td>F2</td>
+        <td>US12</td>
+        <td>Compatibility testing</td>
+        <td>Job listings</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"></td>
+        <td class="cell-date">12/04/2025</td>
+      </tr>
+      <tr data-epic="F3" data-story="US21"
+          data-status="Blocked" data-section="Job details"
+          data-env="Staging" data-type="Accessibility testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/63" target="_blank" rel="noopener">#63</a></td>
+        <td class="cell-title">TC - Job details - Test action 13 - Expected result 13</td>
+        <td>F3</td>
+        <td>US21</td>
+        <td>Accessibility testing</td>
+        <td>Job details</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">13/04/2025</td>
+      </tr>
+      <tr data-epic="F4" data-story="US25"
+          data-status="Partially passed" data-section="Navigation"
+          data-env="Production" data-type="Regression"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/64" target="_blank" rel="noopener">#64</a></td>
+        <td class="cell-title">TC - Navigation - Test action 14 - Expected result 14</td>
+        <td>F4</td>
+        <td>US25</td>
+        <td>Regression</td>
+        <td>Navigation</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">14/04/2025</td>
+      </tr>
+      <tr data-epic="S1" data-story="US11"
+          data-status="Not run" data-section="Other"
+          data-env="Local" data-type="Edge case"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/65" target="_blank" rel="noopener">#65</a></td>
+        <td class="cell-title">TC - Other - Test action 15 - Expected result 15</td>
+        <td>S1</td>
+        <td>US11</td>
+        <td>Edge case</td>
+        <td>Other</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"></td>
+        <td class="cell-date">15/04/2025</td>
+      </tr>
+      <tr data-epic="S2" data-story="US6"
+          data-status="Passed" data-section="Header"
+          data-env="Staging" data-type="Navigation"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/66" target="_blank" rel="noopener">#66</a></td>
+        <td class="cell-title">TC - Header - Test action 16 - Expected result 16</td>
+        <td>S2</td>
+        <td>US6</td>
+        <td>Navigation</td>
+        <td>Header</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">16/04/2025</td>
+      </tr>
+      <tr data-epic="S3" data-story="US4"
+          data-status="Failed" data-section="Footer"
+          data-env="Production" data-type="Content testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/67" target="_blank" rel="noopener">#67</a></td>
+        <td class="cell-title">TC - Footer - Test action 17 - Expected result 17</td>
+        <td>S3</td>
+        <td>US4</td>
+        <td>Content testing</td>
+        <td>Footer</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">17/04/2025</td>
+      </tr>
+      <tr data-epic="S4" data-story="US1"
+          data-status="Blocked" data-section="Search bar"
+          data-env="Local" data-type="GUI and usability"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/68" target="_blank" rel="noopener">#68</a></td>
+        <td class="cell-title">TC - Search bar - Test action 18 - Expected result 18</td>
+        <td>S4</td>
+        <td>US1</td>
+        <td>GUI and usability</td>
+        <td>Search bar</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"></td>
+        <td class="cell-date">18/04/2025</td>
+      </tr>
+      <tr data-epic="S5" data-story="US1"
+          data-status="Partially passed" data-section="Filters"
+          data-env="Staging" data-type="Performance testing"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/69" target="_blank" rel="noopener">#69</a></td>
+        <td class="cell-title">TC - Filters - Test action 19 - Expected result 19</td>
+        <td>S5</td>
+        <td>US1</td>
+        <td>Performance testing</td>
+        <td>Filters</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">19/04/2025</td>
+      </tr>
+      <tr data-epic="S6" data-story="US1"
+          data-status="Not run" data-section="Job listings"
+          data-env="Production" data-type="Compatibility testing"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/70" target="_blank" rel="noopener">#70</a></td>
+        <td class="cell-title">TC - Job listings - Test action 20 - Expected result 20</td>
+        <td>S6</td>
+        <td>US1</td>
+        <td>Compatibility testing</td>
+        <td>Job listings</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">20/04/2025</td>
+      </tr>
+      <tr data-epic="E1" data-story="US1"
+          data-status="Passed" data-section="Job details"
+          data-env="Local" data-type="Accessibility testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/71" target="_blank" rel="noopener">#71</a></td>
+        <td class="cell-title">TC - Job details - Test action 21 - Expected result 21</td>
+        <td>E1</td>
+        <td>US1</td>
+        <td>Accessibility testing</td>
+        <td>Job details</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"></td>
+        <td class="cell-date">21/04/2025</td>
+      </tr>
+      <tr data-epic="F1" data-story="US9"
+          data-status="Failed" data-section="Navigation"
+          data-env="Staging" data-type="Regression"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/72" target="_blank" rel="noopener">#72</a></td>
+        <td class="cell-title">TC - Navigation - Test action 22 - Expected result 22</td>
+        <td>F1</td>
+        <td>US9</td>
+        <td>Regression</td>
+        <td>Navigation</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">22/04/2025</td>
+      </tr>
+      <tr data-epic="F2" data-story="US17"
+          data-status="Blocked" data-section="Other"
+          data-env="Production" data-type="Edge case"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/73" target="_blank" rel="noopener">#73</a></td>
+        <td class="cell-title">TC - Other - Test action 23 - Expected result 23</td>
+        <td>F2</td>
+        <td>US17</td>
+        <td>Edge case</td>
+        <td>Other</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">23/04/2025</td>
+      </tr>
+      <tr data-epic="F3" data-story="US22"
+          data-status="Partially passed" data-section="Header"
+          data-env="Local" data-type="Navigation"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/74" target="_blank" rel="noopener">#74</a></td>
+        <td class="cell-title">TC - Header - Test action 24 - Expected result 24</td>
+        <td>F3</td>
+        <td>US22</td>
+        <td>Navigation</td>
+        <td>Header</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"></td>
+        <td class="cell-date">24/04/2025</td>
+      </tr>
+      <tr data-epic="F4" data-story="US24"
+          data-status="Not run" data-section="Footer"
+          data-env="Staging" data-type="Content testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/75" target="_blank" rel="noopener">#75</a></td>
+        <td class="cell-title">TC - Footer - Test action 25 - Expected result 25</td>
+        <td>F4</td>
+        <td>US24</td>
+        <td>Content testing</td>
+        <td>Footer</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">25/04/2025</td>
+      </tr>
+      <tr data-epic="S1" data-story="US11"
+          data-status="Passed" data-section="Search bar"
+          data-env="Production" data-type="GUI and usability"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/76" target="_blank" rel="noopener">#76</a></td>
+        <td class="cell-title">TC - Search bar - Test action 26 - Expected result 26</td>
+        <td>S1</td>
+        <td>US11</td>
+        <td>GUI and usability</td>
+        <td>Search bar</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">26/04/2025</td>
+      </tr>
+      <tr data-epic="S2" data-story="US5"
+          data-status="Failed" data-section="Filters"
+          data-env="Local" data-type="Performance testing"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/77" target="_blank" rel="noopener">#77</a></td>
+        <td class="cell-title">TC - Filters - Test action 27 - Expected result 27</td>
+        <td>S2</td>
+        <td>US5</td>
+        <td>Performance testing</td>
+        <td>Filters</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"></td>
+        <td class="cell-date">27/04/2025</td>
+      </tr>
+      <tr data-epic="S3" data-story="US4"
+          data-status="Blocked" data-section="Job listings"
+          data-env="Staging" data-type="Compatibility testing"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/78" target="_blank" rel="noopener">#78</a></td>
+        <td class="cell-title">TC - Job listings - Test action 28 - Expected result 28</td>
+        <td>S3</td>
+        <td>US4</td>
+        <td>Compatibility testing</td>
+        <td>Job listings</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
+        <td></td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">28/04/2025</td>
+      </tr>
+      <tr data-epic="S4" data-story="US1"
+          data-status="Partially passed" data-section="Job details"
+          data-env="Production" data-type="Accessibility testing"
+          data-author="qauser1">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/79" target="_blank" rel="noopener">#79</a></td>
+        <td class="cell-title">TC - Job details - Test action 29 - Expected result 29</td>
+        <td>S4</td>
+        <td>US1</td>
+        <td>Accessibility testing</td>
+        <td>Job details</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#f97316">Partially passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser1.png&s=20" alt="qauser1" title="qauser1" class="avatar"> <span class="author-name">qauser1</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">29/04/2025</td>
+      </tr>
+      <tr data-epic="S5" data-story="US1"
+          data-status="Not run" data-section="Navigation"
+          data-env="Local" data-type="Regression"
+          data-author="qauser2">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/80" target="_blank" rel="noopener">#80</a></td>
+        <td class="cell-title">TC - Navigation - Test action 30 - Expected result 30</td>
+        <td>S5</td>
+        <td>US1</td>
+        <td>Regression</td>
+        <td>Navigation</td>
+        <td>Local</td>
+        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td></td>
+        <td><img src="https://github.com/qauser2.png&s=20" alt="qauser2" title="qauser2" class="avatar"> <span class="author-name">qauser2</span></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"></td>
+        <td class="cell-date">30/04/2025</td>
+      </tr>
+      <tr data-epic="S6" data-story="US1"
+          data-status="Passed" data-section="Other"
+          data-env="Staging" data-type="Edge case"
+          data-author="devtester">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/81" target="_blank" rel="noopener">#81</a></td>
+        <td class="cell-title">TC - Other - Test action 31 - Expected result 31</td>
+        <td>S6</td>
+        <td>US1</td>
+        <td>Edge case</td>
+        <td>Other</td>
+        <td>Staging</td>
+        <td><span class="status-pill" style="background:#10b981">Passed</span></td>
+        <td></td>
+        <td><img src="https://github.com/devtester.png&s=20" alt="devtester" title="devtester" class="avatar"> <span class="author-name">devtester</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">01/05/2025</td>
+      </tr>
+      <tr data-epic="E1" data-story="US1"
+          data-status="Failed" data-section="Header"
+          data-env="Production" data-type="Navigation"
+          data-author="theodorivanscu">
+        <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/82" target="_blank" rel="noopener">#82</a></td>
+        <td class="cell-title">TC - Header - Test action 32 - Expected result 32</td>
+        <td>E1</td>
+        <td>US1</td>
+        <td>Navigation</td>
+        <td>Header</td>
+        <td>Production</td>
+        <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
+        <td>🐛</td>
+        <td><img src="https://github.com/theodorivanscu.png&s=20" alt="theodorivanscu" title="theodorivanscu" class="avatar"> <span class="author-name">theodorivanscu</span></td>
+        <td><span class="muted">—</span></td>
+        <td class="cell-date">02/05/2025</td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-<div class="footer">
-  <a href="test-matrix.csv" download>⬇ Download CSV</a>
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="page-footer">
+    <a href="test-matrix.csv" download>⬇ Download CSV</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/TheodorIvascu/Peviitor_TC" target="_blank">GitHub Repository</a>
+    <span class="sep">·</span>
+    Generated by <strong>generate-matrix.js</strong>
+  </footer>
+
 </div>
 
 <script>
+// ── Theme toggle ─────────────────────────────────────────────────────────────
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') !== 'light';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('peviitor-theme', isDark ? 'light' : 'dark');
+  const btn = document.querySelector('.theme-toggle');
+  btn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+  updateChartColors();
+}
+(function initTheme() {
+  const saved = localStorage.getItem('peviitor-theme');
+  if (saved === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.querySelector('.theme-toggle').textContent = '☀️ Light';
+  }
+})();
+
+// ── Charts ───────────────────────────────────────────────────────────────────
+const chartData = {"statusLabels":["Not run","Passed","Failed","Blocked","Partially passed"],"statusCounts":[6,7,7,6,6],"statusColors":["#6b7280","#10b981","#ef4444","#f59e0b","#f97316"],"epicLabels":["F2","F3","F4","S1","S2","S3","S4","S5","S6","E1","F1"],"epicDatasets":[{"label":"Not run","data":[0,0,1,1,1,0,0,1,1,1,0],"backgroundColor":"#6b7280"},{"label":"Passed","data":[1,0,0,1,1,1,0,0,1,1,1],"backgroundColor":"#10b981"},{"label":"Failed","data":[1,1,0,0,1,1,1,0,0,1,1],"backgroundColor":"#ef4444"},{"label":"Blocked","data":[1,1,1,0,0,1,1,1,0,0,0],"backgroundColor":"#f59e0b"},{"label":"Partially passed","data":[0,1,1,1,0,0,1,1,1,0,0],"backgroundColor":"#f97316"}]};
+const getTextColor = () => getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
+const getMutedColor = () => getComputedStyle(document.documentElement).getPropertyValue('--text-muted').trim();
+const getGridColor = () => getComputedStyle(document.documentElement).getPropertyValue('--border').trim();
+
+// Doughnut
+const statusCtx = document.getElementById('statusChart').getContext('2d');
+const statusChart = new Chart(statusCtx, {
+  type: 'doughnut',
+  data: {
+    labels: chartData.statusLabels,
+    datasets: [{
+      data: chartData.statusCounts,
+      backgroundColor: chartData.statusColors,
+      borderWidth: 0,
+      hoverOffset: 6,
+    }],
+  },
+  options: {
+    responsive: true,
+    cutout: '65%',
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          color: getTextColor(),
+          padding: 16,
+          font: { family: "'Inter', sans-serif", size: 12 },
+          usePointStyle: true,
+          pointStyleWidth: 10,
+        },
+      },
+      tooltip: {
+        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+        titleFont: { family: "'Inter', sans-serif" },
+        bodyFont: { family: "'Inter', sans-serif" },
+        cornerRadius: 8,
+        padding: 12,
+      },
+    },
+  },
+});
+
+// Stacked bar
+const epicCtx = document.getElementById('epicChart').getContext('2d');
+const epicChart = new Chart(epicCtx, {
+  type: 'bar',
+  data: {
+    labels: chartData.epicLabels,
+    datasets: chartData.epicDatasets,
+  },
+  options: {
+    responsive: true,
+    scales: {
+      x: {
+        stacked: true,
+        grid: { color: getGridColor() },
+        ticks: { color: getMutedColor(), font: { family: "'Inter', sans-serif", size: 11 } },
+      },
+      y: {
+        stacked: true,
+        beginAtZero: true,
+        grid: { color: getGridColor() },
+        ticks: {
+          color: getMutedColor(),
+          font: { family: "'Inter', sans-serif", size: 11 },
+          stepSize: 1,
+          precision: 0,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          color: getTextColor(),
+          padding: 16,
+          font: { family: "'Inter', sans-serif", size: 12 },
+          usePointStyle: true,
+          pointStyleWidth: 10,
+        },
+      },
+      tooltip: {
+        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+        titleFont: { family: "'Inter', sans-serif" },
+        bodyFont: { family: "'Inter', sans-serif" },
+        cornerRadius: 8,
+        padding: 12,
+      },
+    },
+  },
+});
+
+function updateChartColors() {
+  const txt = getTextColor();
+  const muted = getMutedColor();
+  const grid = getGridColor();
+  statusChart.options.plugins.legend.labels.color = txt;
+  statusChart.update();
+  epicChart.options.scales.x.grid.color = grid;
+  epicChart.options.scales.x.ticks.color = muted;
+  epicChart.options.scales.y.grid.color = grid;
+  epicChart.options.scales.y.ticks.color = muted;
+  epicChart.options.plugins.legend.labels.color = txt;
+  epicChart.update();
+}
+
+// ── Filters & search ─────────────────────────────────────────────────────────
 (function () {
   const search = document.getElementById('search');
-  const selects = ['epic', 'story', 'status', 'section', 'env', 'type']
+  const countEl = document.getElementById('row-count');
+  const selects = ['epic', 'story', 'status', 'section', 'env', 'type', 'author']
     .map(id => ({ id, el: document.getElementById('f-' + id) }));
   const rows = Array.from(document.querySelectorAll('#matrix tbody tr'));
 
   function applyFilters() {
     const q = search.value.toLowerCase();
+    let visible = 0;
     for (const row of rows) {
       let show = true;
       for (const { id, el } of selects) {
@@ -140,7 +1171,9 @@
         if (!txt.includes(q)) show = false;
       }
       row.classList.toggle('hidden', !show);
+      if (show) visible++;
     }
+    countEl.textContent = visible + ' of ' + rows.length + ' test cases';
   }
   search.addEventListener('input', applyFilters);
   for (const { el } of selects) el.addEventListener('change', applyFilters);
@@ -148,6 +1181,7 @@
   // Column sort
   const ths = document.querySelectorAll('#matrix thead th');
   ths.forEach((th, idx) => {
+    if (!th.dataset.col) return;
     th.addEventListener('click', () => {
       const asc = !th.classList.contains('sorted-asc');
       ths.forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));

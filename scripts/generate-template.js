@@ -13,19 +13,15 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
 
-// ── Load config ─────────────────────────────────────────────────────────────
 const config = JSON.parse(
   readFileSync(resolve(root, "config/epics-and-stories.json"), "utf8")
 );
 
 // ── Build dropdown option strings ────────────────────────────────────────────
-
-/** Epic dropdown: "Epic F1: Footer Navigation & Structure (#16)" */
 const epicOptions = config.epics
   .map((e) => `      - "${e.label} (#${e.issue})"`)
   .join("\n");
 
-/** User Story dropdown: "F1 · US1: Navigation links in footer (#17)" */
 const userStoryOptions = config.userStories
   .map((us) => `      - "${us.epicId} · ${us.id}: ${us.label} (#${us.issue})"`)
   .join("\n");
@@ -42,10 +38,6 @@ const environmentOptions = config.environments
   .map((e) => `      - "${e}"`)
   .join("\n");
 
-const executionStatusOptions = config.executionStatuses
-  .map((s) => `      - "${s}"`)
-  .join("\n");
-
 // ── Build YAML ───────────────────────────────────────────────────────────────
 const yaml = `# AUTO-GENERATED — edit config/epics-and-stories.json and re-run:
 #   node scripts/generate-template.js
@@ -58,38 +50,59 @@ labels: ["Test_Case"]
 
 body:
 
-  # ── Section 1: Guidelines ──────────────────────────────────────────────────
+  # ── Guidelines & Quick Reference ───────────────────────────────────────────
   - type: markdown
     attributes:
       value: |
+        > **📖 Before you start** — search existing test cases to avoid duplicates.
+        > Need help? See the [QA Notion Guide](https://brave-mandevilla-652.notion.site/QA-Guide-Asociatia-Oportunitati-si-Cariere-1ae185f480ff801db946d012460e564b).
+
         <details>
-        <summary><strong>Guidelines — read before filling in the form</strong></summary>
+        <summary><strong>📋 Authoring &amp; Execution Guide — click to expand</strong></summary>
 
-        ### Who should complete what?
-        - **Author** (person creating the test case): fill in everything except *Execution Status* and *Bug Discovery*.
-        - **Executor** (person running the test): mark the Expected Results checkboxes inside the steps, set the *Execution Status* dropdown, and fill in the *Bug Discovery* section if applicable.
-
-        ### Test case title format
+        #### ✏️ Title format
         \`TC - [Feature] - [Action] - [Expected Result]\`
         > Example: \`TC - Footer links - Hover and click - Correct pages open\`
 
-        ### Test steps format
-        - One expected result per step.
-        - Use checkboxes for expected results so the executor can mark them.
-        - Steps must be **repeatable** — anyone should be able to run them and get the same result.
+        ---
 
-        ### Epic & User Story
-        - Pick the **Epic** first, then pick the **User Story** that belongs to it.
-        - The User Story options are prefixed with the Epic code (e.g. \`F1 · US1\`) to make matching easy.
-        - If you are unsure which US applies, leave a comment on the issue.
+        #### 🏷️ Epic / User Story matching
+        Pick the **Epic** first, then the matching **User Story**. US options are prefixed with the Epic code (\`F1 · US1\`) so you can match them easily. If they don't match, the bot flags the issue with \`needs-review\`.
 
-        ### Before creating
-        - Search existing test cases to avoid duplicates.
-        - Check the [QA Notion Guide](https://brave-mandevilla-652.notion.site/QA-Guide-Asociatia-Oportunitati-si-Cariere-1ae185f480ff801db946d012460e564b) for conventions.
+        ---
+
+        #### ⚡ Executing a test (for testers)
+        **Do not edit the issue body after creation.** Use **comment slash-commands** instead:
+
+        | Command | What it does |
+        |---|---|
+        | \`/status passed\` | ✅ Mark as passed |
+        | \`/status failed #123\` | ❌ Mark as failed + link bug |
+        | \`/status blocked\` | 🟡 Mark as blocked |
+        | \`/status partially-passed\` | 🟠 Partial pass |
+        | \`/bug #123\` | 🐛 Link or update the related bug |
+        | \`/cross-os\` | Toggle cross-OS flag |
+        | \`/cross-browser\` | Toggle cross-browser flag |
+
+        The bot will reply with a formatted summary and sync all labels automatically.
+
+        ---
+
+        #### ✅ Step writing tips
+        - One expected result per step — use checkboxes
+        - Steps must be **repeatable** by someone who didn't write them
+        - Keep steps atomic: one action = one step
 
         </details>
 
-  # ── Section 2: Traceability ────────────────────────────────────────────────
+  # ── 🏷️ Traceability ───────────────────────────────────────────────────────
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 🏷️ Traceability
+        > Link this test case to its Epic and User Story for tracking.
+
   - type: dropdown
     id: epic
     attributes:
@@ -104,18 +117,25 @@ ${epicOptions}
     id: user_story
     attributes:
       label: User Story
-      description: "Select the User Story this test case covers. Options are prefixed with the Epic code."
+      description: "Options are prefixed with the Epic code — pick the one matching your Epic."
       options:
 ${userStoryOptions}
     validations:
       required: true
 
-  # ── Section 3: Test definition ─────────────────────────────────────────────
+  # ── 📝 Test Definition ────────────────────────────────────────────────────
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 📝 Test Definition
+        > Describe what this test case verifies and any setup needed.
+
   - type: input
     id: tc_summary
     attributes:
-      label: Test case summary
-      description: "Short title following the TC naming format."
+      label: Summary
+      description: "One-line title in TC format."
       placeholder: "TC – Footer links – Hover and click – Correct pages open"
     validations:
       required: true
@@ -123,9 +143,9 @@ ${userStoryOptions}
   - type: textarea
     id: description
     attributes:
-      label: Test Case Description
-      description: "Brief purpose and scope of this test. What is being verified and why?"
-      placeholder: "This test verifies that all footer navigation links redirect to the correct pages on peviitor.ro."
+      label: Description
+      description: "What is being verified and why?"
+      placeholder: "Verifies that all footer navigation links redirect to the correct pages on peviitor.ro."
     validations:
       required: true
 
@@ -133,21 +153,25 @@ ${userStoryOptions}
     id: preconditions
     attributes:
       label: Preconditions
-      description: "Any setup required before running this test (e.g. user logged in, specific data present)."
-      placeholder: "- Browser is open and navigated to peviitor.ro\\n- User is not logged in"
+      description: "Optional. Any setup required before running this test."
+      placeholder: |
+        - Browser open, navigated to peviitor.ro
+        - User is not logged in
 
   - type: textarea
     id: test_data
     attributes:
       label: Test Data
-      description: "Specific input values, credentials, or datasets needed for the test."
-      placeholder: "- Search term: 'developer'\\n- City: 'Cluj-Napoca'"
+      description: "Optional. Input values, credentials, or datasets needed."
+      placeholder: |
+        - Search term: 'developer'
+        - City: 'Cluj-Napoca'
 
   - type: dropdown
     id: testing_type
     attributes:
       label: Testing Type
-      description: "What type of testing does this test case perform?"
+      description: "What kind of testing does this case cover?"
       options:
 ${testingTypeOptions}
     validations:
@@ -157,13 +181,20 @@ ${testingTypeOptions}
     id: website_section
     attributes:
       label: Website Section
-      description: "Which section of peviitor.ro does this test target?"
+      description: "Which part of peviitor.ro does this target?"
       options:
 ${websiteSectionOptions}
     validations:
       required: true
 
-  # ── Section 4: Environment ─────────────────────────────────────────────────
+  # ── 💻 Environment ────────────────────────────────────────────────────────
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 💻 Environment
+        > Where and how will this test be executed?
+
   - type: dropdown
     id: test_context
     attributes:
@@ -174,120 +205,80 @@ ${environmentOptions}
     validations:
       required: true
 
-  - type: input
-    id: resolution
+  - type: textarea
+    id: env_details
     attributes:
-      label: Screen Resolution
-      description: "Optional. Resolution used during testing."
-      placeholder: "1920x1080"
-
-  - type: input
-    id: os
-    attributes:
-      label: Operating System
-      description: "OS and version used for this test."
-      placeholder: "Windows 11, macOS 14, Ubuntu 22.04"
+      label: Environment Details
+      description: "OS, browser, resolution, device — one per line."
+      value: |
+        OS: Windows 11
+        Browser: Chrome 120
+        Resolution: 1920x1080
+        Device:
     validations:
       required: true
 
   - type: checkboxes
-    id: cross_os
+    id: cross_flags
     attributes:
-      label: Cross-OS
+      label: Cross-platform Coverage
+      description: "Tick any that apply. The executor can toggle these later with /cross-os or /cross-browser."
       options:
-        - label: "This test case should be run across multiple operating systems."
+        - label: "Should be run across multiple operating systems"
+        - label: "Should be run across multiple browsers"
 
-  - type: input
-    id: browser
+  # ── 🪜 Steps & Expected Results ───────────────────────────────────────────
+  - type: markdown
     attributes:
-      label: Browser
-      description: "Browser and version used for this test."
-      placeholder: "Chrome 120, Firefox 122, Safari 17"
-    validations:
-      required: true
+      value: |
+        ---
+        ## 🪜 Steps & Expected Results
+        > Write clear, repeatable steps. One expected result per step. Use checkboxes so the executor can mark them.
 
-  - type: checkboxes
-    id: cross_browser
-    attributes:
-      label: Cross-Browser
-      options:
-        - label: "This test case should be run across multiple browsers."
-
-  - type: input
-    id: device
-    attributes:
-      label: Device / Devices
-      description: "Optional. Device type or model if relevant."
-      placeholder: "iPhone 14, Samsung Galaxy S23, iPad Pro"
-
-  # ── Section 5: Steps & expectations ───────────────────────────────────────
   - type: textarea
     id: test_steps
     attributes:
       label: Test Steps
-      description: |
-        Write each step clearly. Add a checkbox line for the expected result after each step.
-        The executor will check these boxes when running the test.
+      description: "One expected result per step. The executor will check off each result while running."
       value: |
-        **Step 1:** [Describe the action]
-        - [ ] **Expected Result:** [What should happen]
+        **Step 1.** [Describe the action]
+        - [ ] Expected: [What should happen]
 
-        **Step 2:** [Describe the action]
-        - [ ] **Expected Result:** [What should happen]
+        **Step 2.** [Describe the action]
+        - [ ] Expected: [What should happen]
 
-        **Step 3:** [Describe the action]
-        - [ ] **Expected Result:** [What should happen]
+        **Step 3.** [Describe the action]
+        - [ ] Expected: [What should happen]
+
+        **Step 4.** [Describe the action]
+        - [ ] Expected: [What should happen]
     validations:
       required: true
 
+  # ── ✅ Final Check ─────────────────────────────────────────────────────────
   - type: markdown
     attributes:
-      value: "---"
+      value: |
+        ---
+        ## ✅ Final Check
+        > ⚡ **Reminder:** After this test case is created, use **comment slash-commands** (\`/status passed\`, \`/bug #123\`, etc.) to record execution results — do not edit the issue body.
 
-  # ── Section 6: Execution & bug acknowledgment ──────────────────────────────
-  - type: dropdown
-    id: execution_status
-    attributes:
-      label: Test Execution Status
-      description: "To be set by the tester who executes this test. Authors should leave this as 'Not run'."
-      options:
-${executionStatusOptions}
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: bug_found
-    attributes:
-      label: Bug Discovery Acknowledgement
-      options:
-        - label: "A bug was found during this test. I have logged it as a separate GitHub issue and will link it below."
-
-  - type: input
-    id: related_bug
-    attributes:
-      label: Related Bug Issue
-      description: "If a bug was found, link the bug issue here."
-      placeholder: "#123 or full GitHub issue URL"
-
-  # ── Section 7: Quality check ───────────────────────────────────────────────
   - type: checkboxes
     id: quality_check
     attributes:
-      label: Final Quality Check
-      description: "Both items must be confirmed before submitting."
+      label: Confirm before submitting
       options:
-        - label: "I verified the test case steps are clear and repeatable."
+        - label: "Steps are clear and repeatable."
           required: true
-        - label: "I selected the correct Epic and User Story."
+        - label: "Epic and User Story match."
           required: true
 `;
 
 // ── Write output ─────────────────────────────────────────────────────────────
 const outDir = resolve(root, ".github/ISSUE_TEMPLATE");
 mkdirSync(outDir, { recursive: true });
-const outPath = resolve(outDir, "test_case.yml");
-writeFileSync(outPath, yaml, "utf8");
+writeFileSync(resolve(outDir, "test_case.yml"), yaml, "utf8");
 
 console.log(`✓ Generated: .github/ISSUE_TEMPLATE/test_case.yml`);
-console.log(`  Epics:       ${config.epics.length}`);
-console.log(`  User Stories:${config.userStories.length}`);
+console.log(`  Epics:        ${config.epics.length}`);
+console.log(`  User Stories: ${config.userStories.length}`);
