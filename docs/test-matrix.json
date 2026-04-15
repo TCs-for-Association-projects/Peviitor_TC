@@ -6,7 +6,12 @@
     "state": "open",
     "author": "TheodorIvascu",
     "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "TheodorIvascu",
+        "avatar": "https://avatars.githubusercontent.com/u/168380942?v=4"
+      }
+    ],
     "epic": "F1",
     "epicLabel": "Epic F1: Footer Navigation & Structure",
     "userStory": "US1",
@@ -21,7 +26,7 @@
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-04-15T20:53:52Z",
-    "updatedAt": "2026-04-15T20:56:32Z"
+    "updatedAt": "2026-04-15T21:11:53Z"
   },
   {
     "number": 1,
