@@ -1,0 +1,74 @@
+{
+  "epics": [
+    { "id": "F1", "label": "Epic F1: Footer Navigation & Structure", "issue": 16 },
+    { "id": "F2", "label": "Epic F2: Footer - Legal & Compliance", "issue": 32 },
+    { "id": "F3", "label": "Epic F3: Compatibility", "issue": 39 },
+    { "id": "F4", "label": "Epic F4: Footer User Interface", "issue": 45 },
+    { "id": "S1", "label": "Epic S1: Job Search", "issue": 29 },
+    { "id": "S2", "label": "Filters", "issue": 22 },
+    { "id": "S3", "label": "Displaying job results", "issue": 20 },
+    { "id": "S4", "label": "Location Input", "issue": 13 },
+    { "id": "S5", "label": "Location Flexibility: Cities and Counties", "issue": 14 },
+    { "id": "S6", "label": "Location selection", "issue": 15 },
+    { "id": "E1", "label": "EPIC 1", "issue": 11 }
+  ],
+  "userStories": [
+    { "id": "US1",  "label": "Navigation links in footer",          "issue": 17, "epicId": "F1" },
+    { "id": "US2",  "label": "Structured footer",                   "issue": 18, "epicId": "F1" },
+    { "id": "US3",  "label": "Accessibility footer navigation",     "issue": 19, "epicId": "F1" },
+    { "id": "US4",  "label": "Search results display",              "issue": 21, "epicId": "S3" },
+    { "id": "US5",  "label": "Filter by city",                      "issue": 23, "epicId": "S2" },
+    { "id": "US6",  "label": "Filter by company",                   "issue": 24, "epicId": "S2" },
+    { "id": "US7",  "label": "Filter by work mode",                 "issue": 25, "epicId": "S2" },
+    { "id": "US8",  "label": "Footer consistency across pages",     "issue": 26, "epicId": "F1" },
+    { "id": "US9",  "label": "Footer at bottom of page",           "issue": 27, "epicId": "F1" },
+    { "id": "US10", "label": "Back to top button",                  "issue": 28, "epicId": "F1" },
+    { "id": "US11", "label": "Search using criteria",               "issue": 30, "epicId": "S1" },
+    { "id": "US12", "label": "Privacy & terms links",               "issue": 33, "epicId": "F2" },
+    { "id": "US13", "label": "Copyright info",                      "issue": 34, "epicId": "F2" },
+    { "id": "US14", "label": "Organization info",                   "issue": 35, "epicId": "F2" },
+    { "id": "US15", "label": "Social media icons visible",          "issue": 36, "epicId": "F2" },
+    { "id": "US16", "label": "Social media links open correctly",   "issue": 37, "epicId": "F2" },
+    { "id": "US17", "label": "Social icon tooltips",                "issue": 38, "epicId": "F2" },
+    { "id": "US18", "label": "Footer renders in supported browsers","issue": 40, "epicId": "F3" },
+    { "id": "US19", "label": "Footer links work across browsers",   "issue": 41, "epicId": "F3" },
+    { "id": "US20", "label": "Footer interactions across browsers", "issue": 42, "epicId": "F3" },
+    { "id": "US21", "label": "Footer on multiple devices",          "issue": 43, "epicId": "F3" },
+    { "id": "US22", "label": "Footer across operating systems",     "issue": 44, "epicId": "F3" },
+    { "id": "US23", "label": "Footer visual consistency",           "issue": 46, "epicId": "F4" },
+    { "id": "US24", "label": "Footer visual hierarchy",             "issue": 47, "epicId": "F4" },
+    { "id": "US25", "label": "Footer icon/link styling consistency","issue": 48, "epicId": "F4" }
+  ],
+  "testingTypes": [
+    "Navigation",
+    "Content testing",
+    "GUI and usability",
+    "Performance testing",
+    "Compatibility testing",
+    "Accessibility testing",
+    "Regression",
+    "Edge case"
+  ],
+  "websiteSections": [
+    "Header",
+    "Footer",
+    "Search bar",
+    "Filters",
+    "Job listings",
+    "Job details",
+    "Navigation",
+    "Other"
+  ],
+  "environments": [
+    "Local",
+    "Staging",
+    "Production"
+  ],
+  "executionStatuses": [
+    "Not run",
+    "Passed",
+    "Failed",
+    "Blocked",
+    "Partially passed"
+  ]
+}
