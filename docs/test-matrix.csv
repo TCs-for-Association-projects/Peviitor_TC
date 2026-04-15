@@ -1,2 +1,2 @@
 number,title,url,state,epic,userStory,testingType,section,environment,os,browser,status,bugFound,relatedBug,crossOs,crossBrowser,createdAt,updatedAt
-1,[TC]:Footer Navigation - User enters website - Cookies are great,https://github.com/TheodorIvascu/Peviitor_TC/issues/1,open,F1,US1,Navigation,Header,Production,"Windows 11, Mac OS","Chrome, Firefox",Not run,false,,true,true,2026-04-15T19:45:08Z,2026-04-15T19:46:52Z
+1,[TC]:Footer Navigation - User enters website - Cookies are great,https://github.com/TheodorIvascu/Peviitor_TC/issues/1,open,F1,US1,Navigation,Header,Production,"Windows 11, Mac OS","Chrome, Firefox",Passed,false,,true,true,2026-04-15T19:45:08Z,2026-04-15T19:48:25Z
