@@ -1,43 +1,230 @@
 {
   "epics": [
-    { "id": "F1", "label": "Epic F1: Footer Navigation & Structure", "issue": 16 },
-    { "id": "F2", "label": "Epic F2: Footer - Legal & Compliance", "issue": 32 },
-    { "id": "F3", "label": "Epic F3: Compatibility", "issue": 39 },
-    { "id": "F4", "label": "Epic F4: Footer User Interface", "issue": 45 },
-    { "id": "S1", "label": "Epic S1: Job Search", "issue": 29 },
-    { "id": "S2", "label": "Filters", "issue": 22 },
-    { "id": "S3", "label": "Displaying job results", "issue": 20 },
-    { "id": "S4", "label": "Location Input", "issue": 13 },
-    { "id": "S5", "label": "Location Flexibility: Cities and Counties", "issue": 14 },
-    { "id": "S6", "label": "Location selection", "issue": 15 },
-    { "id": "E1", "label": "EPIC 1", "issue": 11 }
+    {
+      "id": "E1",
+      "label": "Epic E1: EPIC 1",
+      "issue": 11
+    },
+    {
+      "id": "E2",
+      "label": "Epic E2: Location Input",
+      "issue": 13
+    },
+    {
+      "id": "E3",
+      "label": "Epic E3: Location Flexibility: Cities and Counties",
+      "issue": 14
+    },
+    {
+      "id": "E4",
+      "label": "Epic E4: Location selection",
+      "issue": 15
+    },
+    {
+      "id": "E5",
+      "label": "Epic E5: Footer Navigation & Structure",
+      "issue": 16
+    },
+    {
+      "id": "E6",
+      "label": "Epic E6: Displaying job results",
+      "issue": 20
+    },
+    {
+      "id": "E7",
+      "label": "Epic E7: Filters",
+      "issue": 22
+    },
+    {
+      "id": "E8",
+      "label": "Epic E8: Job Search",
+      "issue": 29
+    },
+    {
+      "id": "E9",
+      "label": "Epic E9: Footer - Legal & Compliance",
+      "issue": 32
+    },
+    {
+      "id": "E10",
+      "label": "Epic E10: compatibility",
+      "issue": 39
+    },
+    {
+      "id": "E11",
+      "label": "Epic E11: Footer User Interface",
+      "issue": 45
+    }
   ],
   "userStories": [
-    { "id": "US1",  "label": "Navigation links in footer",          "issue": 17, "epicId": "F1" },
-    { "id": "US2",  "label": "Structured footer",                   "issue": 18, "epicId": "F1" },
-    { "id": "US3",  "label": "Accessibility footer navigation",     "issue": 19, "epicId": "F1" },
-    { "id": "US4",  "label": "Search results display",              "issue": 21, "epicId": "S3" },
-    { "id": "US5",  "label": "Filter by city",                      "issue": 23, "epicId": "S2" },
-    { "id": "US6",  "label": "Filter by company",                   "issue": 24, "epicId": "S2" },
-    { "id": "US7",  "label": "Filter by work mode",                 "issue": 25, "epicId": "S2" },
-    { "id": "US8",  "label": "Footer consistency across pages",     "issue": 26, "epicId": "F1" },
-    { "id": "US9",  "label": "Footer at bottom of page",           "issue": 27, "epicId": "F1" },
-    { "id": "US10", "label": "Back to top button",                  "issue": 28, "epicId": "F1" },
-    { "id": "US11", "label": "Search using criteria",               "issue": 30, "epicId": "S1" },
-    { "id": "US12", "label": "Privacy & terms links",               "issue": 33, "epicId": "F2" },
-    { "id": "US13", "label": "Copyright info",                      "issue": 34, "epicId": "F2" },
-    { "id": "US14", "label": "Organization info",                   "issue": 35, "epicId": "F2" },
-    { "id": "US15", "label": "Social media icons visible",          "issue": 36, "epicId": "F2" },
-    { "id": "US16", "label": "Social media links open correctly",   "issue": 37, "epicId": "F2" },
-    { "id": "US17", "label": "Social icon tooltips",                "issue": 38, "epicId": "F2" },
-    { "id": "US18", "label": "Footer renders in supported browsers","issue": 40, "epicId": "F3" },
-    { "id": "US19", "label": "Footer links work across browsers",   "issue": 41, "epicId": "F3" },
-    { "id": "US20", "label": "Footer interactions across browsers", "issue": 42, "epicId": "F3" },
-    { "id": "US21", "label": "Footer on multiple devices",          "issue": 43, "epicId": "F3" },
-    { "id": "US22", "label": "Footer across operating systems",     "issue": 44, "epicId": "F3" },
-    { "id": "US23", "label": "Footer visual consistency",           "issue": 46, "epicId": "F4" },
-    { "id": "US24", "label": "Footer visual hierarchy",             "issue": 47, "epicId": "F4" },
-    { "id": "US25", "label": "Footer icon/link styling consistency","issue": 48, "epicId": "F4" }
+    {
+      "id": "US1",
+      "label": "As a _ I want so I can _",
+      "issue": 5,
+      "epicId": "E1"
+    },
+    {
+      "id": "US2",
+      "label": "US 01 As a _ ,I waant to",
+      "issue": 6,
+      "epicId": "E1"
+    },
+    {
+      "id": "US3",
+      "label": "As a __, I want to __",
+      "issue": 7,
+      "epicId": "E1"
+    },
+    {
+      "id": "US4",
+      "label": "US1: As a user, I want to see important navigation links in the footer, so that I can easily access key pages.",
+      "issue": 17,
+      "epicId": "E5"
+    },
+    {
+      "id": "US5",
+      "label": "US2: As a user, I want the footer to be clearly structured so that I can easily find the information I need.",
+      "issue": 18,
+      "epicId": "E5"
+    },
+    {
+      "id": "US6",
+      "label": "US3: As a user with accessibility needs, I want to navigate the footer using assistive technologies so that I can access all links without barriers.",
+      "issue": 19,
+      "epicId": "E5"
+    },
+    {
+      "id": "US7",
+      "label": "US4: As a user, I want to see a list of relevant jobs after performing a search, so that I can quickly identify suitable opportunities.",
+      "issue": 21,
+      "epicId": "E6"
+    },
+    {
+      "id": "US8",
+      "label": "US5: As a user, I want to be able to filter listings by city, so that I can see only the jobs available in the location that interests me.",
+      "issue": 23,
+      "epicId": "E7"
+    },
+    {
+      "id": "US9",
+      "label": "US6: As a user, I want to be able to filter listings by company, so that I can see only the jobs posted by a specific employer.",
+      "issue": 24,
+      "epicId": "E7"
+    },
+    {
+      "id": "US10",
+      "label": "US7: As a user, I want to be able to filter listings by work mode (e.g. Fizic, Hybrid, La distanta), so that I can see only the jobs that match my work preferences.",
+      "issue": 25,
+      "epicId": "E7"
+    },
+    {
+      "id": "US11",
+      "label": "US8: As a user, I want the footer to be consistent across all pages, so that I have a uniform experience.",
+      "issue": 26,
+      "epicId": "E5"
+    },
+    {
+      "id": "US12",
+      "label": "US9: As a user, I want the footer to always be visible at the bottom of the page, so that I can access it easily.",
+      "issue": 27,
+      "epicId": "E5"
+    },
+    {
+      "id": "US13",
+      "label": "US10: As a user, I want a quick way to go back to the top of the page from the footer, so that I save time.",
+      "issue": 28,
+      "epicId": "E5"
+    },
+    {
+      "id": "US14",
+      "label": "US11: As a user, I want to search for jobs using different criteria so that I can see job listings matching my criteria.",
+      "issue": 30,
+      "epicId": "E8"
+    },
+    {
+      "id": "US15",
+      "label": "US12: As a user, I want to access Politica de confidentialitate and Conditii de utilizare from the footer, so that I understand how my data is used.",
+      "issue": 33,
+      "epicId": "E9"
+    },
+    {
+      "id": "US16",
+      "label": "US13: As a user, I want to see copyright information in the footer, so that I know who owns the platform.",
+      "issue": 34,
+      "epicId": "E9"
+    },
+    {
+      "id": "US17",
+      "label": "US14: As a user, I want to see information about the organization behind the platform, so that I can trust the service.",
+      "issue": 35,
+      "epicId": "E9"
+    },
+    {
+      "id": "US18",
+      "label": "US15: As a website user, I want to see social media icons in the footer so that I can easily find the company's social profiles.",
+      "issue": 36,
+      "epicId": "E5"
+    },
+    {
+      "id": "US19",
+      "label": "US16: As a website user, I want to click on social media icons so that I can access the company's social media pages.",
+      "issue": 37,
+      "epicId": "E5"
+    },
+    {
+      "id": "US20",
+      "label": "US17: As a website user, I want to see tooltips on social media icons so that I understand where each link leads.",
+      "issue": 38,
+      "epicId": "E5"
+    },
+    {
+      "id": "US21",
+      "label": "US18: As a user, I want the footer to render correctly in all supported browsers so that I have a consistent visual experience.",
+      "issue": 40,
+      "epicId": "E10"
+    },
+    {
+      "id": "US22",
+      "label": "US19: As a user, I want all footer links to function correctly across different browsers so that I can navigate without issues.",
+      "issue": 41,
+      "epicId": "E10"
+    },
+    {
+      "id": "US23",
+      "label": "US20: As a user, I want the footer to behave consistently across browsers so that interactions feel the same everywhere.",
+      "issue": 42,
+      "epicId": "E10"
+    },
+    {
+      "id": "US24",
+      "label": "US21: As a user, I want the footer to display correctly on different devices so that I can have a consistent experience regardless of screen size.",
+      "issue": 43,
+      "epicId": "E10"
+    },
+    {
+      "id": "US25",
+      "label": "US22: As a user, I want the website footer to function correctly across different operating systems so that I can have a consistent experience regardless of the platform I use.",
+      "issue": 44,
+      "epicId": "E10"
+    },
+    {
+      "id": "US26",
+      "label": "US23: As a user, I want the footer to follow the same visual style as the rest of the website so that the interface feels consistent.",
+      "issue": 46,
+      "epicId": "E11"
+    },
+    {
+      "id": "US27",
+      "label": "US24: As a user, I want the footer content to have a clear visual hierarchy so that I can quickly understand the most important information.",
+      "issue": 47,
+      "epicId": "E11"
+    },
+    {
+      "id": "US28",
+      "label": "US25: As a user, I want all footer icons and links to have consistent styling so that the interface looks clean and professional.",
+      "issue": 48,
+      "epicId": "E11"
+    }
   ],
   "testingTypes": [
     "Navigation",
