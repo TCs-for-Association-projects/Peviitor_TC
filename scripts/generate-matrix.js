@@ -241,10 +241,10 @@ function toSpa(rows) {
   const dataJson = JSON.stringify(payload).replace(/</g, "\\u003c");
 
   return templateHtml
-    .replace("{{CSS}}", css)
-    .replace("{{JS}}", js)
-    .replace("{{DATA}}", dataJson)
-    .replace(/\{\{REPO\}\}/g, htmlEscape(repo));
+    .replace("{{CSS}}", () => css)
+    .replace("{{JS}}", () => js)
+    .replace("{{DATA}}", () => dataJson)
+    .replace(/\{\{REPO\}\}/g, () => htmlEscape(repo));
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
