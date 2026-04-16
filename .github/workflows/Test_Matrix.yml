@@ -1,0 +1,48 @@
+name: Test Matrix
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+  workflow_dispatch:
+  schedule:
+    # Nightly refresh at 03:00 UTC — catches any drift
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+  issues: read
+
+# Prevent overlapping runs racing on the same commit
+concurrency:
+  group: test-matrix
+  cancel-in-progress: false
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate matrix
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-matrix.js
+
+      - name: Commit updated matrix if changed
+        run: |
+          if git diff --quiet docs/test-matrix.json docs/test-matrix.csv docs/test-matrix.html docs/index.html 2>/dev/null; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/test-matrix.json docs/test-matrix.csv docs/test-matrix.html docs/index.html
+          git commit -m "chore: update test matrix"
+          git pull --rebase origin main
+          git push

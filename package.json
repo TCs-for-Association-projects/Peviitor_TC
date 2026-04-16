@@ -1,0 +1,16 @@
+{
+  "name": "peviitor-tc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "QA test management repository for peviitor.ro. Issues are test cases; workflows handle labeling and matrix generation.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate-template": "node scripts/generate-template.js",
+    "generate-matrix": "node scripts/generate-matrix.js",
+    "auto-label": "node scripts/auto-label.js",
+    "bootstrap-labels": "node scripts/bootstrap-labels.js"
+  }
+}

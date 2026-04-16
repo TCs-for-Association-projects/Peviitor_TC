@@ -1,0 +1,12 @@
+# Local working notes — not for the public repo
+prompt.md
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

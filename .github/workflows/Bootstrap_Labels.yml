@@ -1,0 +1,32 @@
+name: Bootstrap Labels
+
+# Creates/updates all managed labels from config.
+# Safe to re-run — it will update colors/descriptions on existing labels.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/epics-and-stories.json"
+      - "scripts/bootstrap-labels.js"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Create labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/bootstrap-labels.js

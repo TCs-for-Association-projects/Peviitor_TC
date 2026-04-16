@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TestHub — Test Dashboard</title>
+<meta name="description" content="QA test management dashboard for peviitor.ro">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>{{CSS}}</style>
+</head>
+<body>
+<div id="app">
+  <!-- Top bar -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        <span class="logo-text">TestHub</span>
+      </div>
+    </div>
+
+    <nav class="tabs" id="tabs" role="tablist">
+      <a class="tab" data-route="overview" href="#/overview" role="tab">Overview</a>
+      <a class="tab" data-route="tests" href="#/tests" role="tab">Test Cases</a>
+      <a class="tab" data-route="coverage" href="#/coverage" role="tab">Coverage</a>
+      <a class="tab" data-route="guide" href="#/guide" role="tab">Guide</a>
+      <div class="tab-indicator" id="tab-indicator"></div>
+    </nav>
+
+    <div class="topbar-right">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="search" placeholder="Search tests…" autocomplete="off">
+        <kbd class="kbd-hint">/</kbd>
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg id="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg id="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a class="icon-btn" href="https://github.com/{{REPO}}" target="_blank" rel="noopener" aria-label="GitHub repo" title="View repo">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.17-.01-2.12-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.53-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18.92-.26 1.9-.38 2.88-.39.98.01 1.97.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.07.78 2.15 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.79.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Search results dropdown -->
+  <div class="search-results" id="search-results" hidden></div>
+
+  <!-- Main content -->
+  <main class="content" id="view"></main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <span><strong>TestHub</strong> by Theo (with the help of Claude) &middot; {{REPO}} &middot; Generated <span id="footer-ts"></span></span>
+    <span class="footer-links">
+      <a href="test-matrix.csv" download>⬇ CSV</a>
+      <a href="test-matrix.json" download>⬇ JSON</a>
+    </span>
+  </footer>
+</div>
+
+<script id="dashboard-data" type="application/json">{{DATA}}</script>
+<script>{{JS}}</script>
+</body>
+</html>
