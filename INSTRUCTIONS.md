@@ -87,7 +87,7 @@ The Test Case issue form is auto-generated from `config/epics-and-stories.json`.
 3. Under **Branch**, pick `main` and the `/docs` folder. Click **Save**.
 4. Wait ~1 minute. The page will show:
    > Your site is live at `https://YOUR_USERNAME.github.io/Peviitor_TC/`
-5. Open that URL in a new tab. You should see the **Criterium dashboard** (possibly empty if there are no test cases yet).
+5. Open that URL in a new tab. You should see the **QA dashboard** (possibly empty if there are no test cases yet).
 
 ---
 
@@ -145,6 +145,7 @@ The Test Case issue form is auto-generated from `config/epics-and-stories.json`.
 | `/status partially-passed` | 🟠 Partial pass |
 | `/status not-run` | ⚪ Reset to not run |
 | `/bug #123` | 🐛 Link a bug without changing status |
+| `/note my observation` | 📝 Add an observation without changing status |
 | `/cross-os` | Toggle the cross-OS flag |
 | `/cross-browser` | Toggle the cross-browser flag |
 
@@ -161,9 +162,9 @@ Refresh `https://YOUR_USERNAME.github.io/Peviitor_TC/`. The Test Matrix workflow
 **The four dashboard pages:**
 
 - **Overview** — KPIs, status breakdown bar, epic chart, distribution donuts.
-- **Test Cases** — filterable/sortable table. Try filters: epic, assignee, status, "✨ New (7d)".
-- **Traceability** — collapsible Epic → Story → TC tree with coverage gaps highlighted.
-- **Assignees** — workload leaderboard. Click any assignee to jump to their filtered test-cases view.
+- **Test Cases** — filterable/sortable table. Try filters: epic, assignee, status.
+- **Coverage** — interactive requirements tracebility matrix and gap analysis.
+- **Guide** — built-in setup and beginner-friendly documentation with JSON copy-paste blocks.
 
 **Shortcuts:**
 - Press **`/`** anywhere to focus the global search.
@@ -179,12 +180,11 @@ Refresh `https://YOUR_USERNAME.github.io/Peviitor_TC/`. The Test Matrix workflow
 1. Edit `config/epics-and-stories.json` directly on GitHub (pencil icon on the file).
 2. Add your new entry to the `epics` or `userStories` array, with a unique ID, label, and issue number.
 3. Commit to `main`.
-4. The **Generate Test Case Template** workflow runs automatically and updates the form.
-5. Re-run **Bootstrap Labels** manually to create any new labels.
+4. The **Generate Test Case Template** and **Bootstrap Labels** workflows run automatically to update the form and create any new labels.
 
 ### Add a new testing type, section, or environment
 
-Same process — edit `config/epics-and-stories.json`, commit, re-run **Bootstrap Labels**.
+Same process — edit `config/epics-and-stories.json` and commit. The workflows will handle the rest.
 
 ### Something looks wrong on the dashboard
 
@@ -216,10 +216,10 @@ Same process — edit `config/epics-and-stories.json`, commit, re-run **Bootstra
 | Create a test case | Issues → New issue → Test Case template |
 | Mark a test as passed | Comment `/status passed` on the issue |
 | Mark as failed with bug | Comment `/status failed #123` on the issue |
-| Add more epics | Edit `config/epics-and-stories.json`, push, re-run Bootstrap Labels |
+| Add more epics | Edit `config/epics-and-stories.json` and push |
 | Force dashboard refresh | Actions → Test Matrix → Run workflow |
 | Export all data | Dashboard footer → ⬇ CSV or ⬇ JSON |
 
 ---
 
-<sub>Dashboard powered by **Criterium**. For full technical detail, see [`README.md`](./README.md).</sub>
+<sub>For full technical detail, see [`README.md`](./README.md).</sub>

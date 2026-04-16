@@ -87,7 +87,7 @@ Formularul de creare a test case-urilor este generat automat din `config/epics-a
 3. La **Branch**, alege `main` și folderul `/docs`. Apasă **Save**.
 4. Așteaptă ~1 minut. Pagina va afișa:
    > Your site is live at `https://NUMELE_TAU.github.io/Peviitor_TC/`
-5. Deschide acel URL într-un tab nou. Ar trebui să vezi **dashboard-ul Criterium** (posibil gol dacă nu există încă niciun test case).
+5. Deschide acel URL într-un tab nou. Ar trebui să vezi **dashboard-ul QA** (posibil gol dacă nu există încă niciun test case).
 
 ---
 
@@ -145,6 +145,7 @@ Formularul de creare a test case-urilor este generat automat din `config/epics-a
 | `/status partially-passed` | 🟠 Trecere parțială |
 | `/status not-run` | ⚪ Resetează la „nerulat" |
 | `/bug #123` | 🐛 Leagă un bug fără a schimba statusul |
+| `/note observatia mea` | 📝 Adaugă o observație fără a schimba statusul |
 | `/cross-os` | Activează/dezactivează flag-ul cross-OS |
 | `/cross-browser` | Activează/dezactivează flag-ul cross-browser |
 
@@ -161,9 +162,9 @@ Reîncarcă `https://NUMELE_TAU.github.io/Peviitor_TC/`. Workflow-ul Test Matrix
 **Cele patru pagini ale dashboard-ului:**
 
 - **Overview** — KPI-uri, bară de status, grafic pe epic-uri, donut-uri de distribuție.
-- **Test Cases** — tabel filtrabil și sortabil. Încearcă filtrele: epic, assignee, status, „✨ New (7d)".
-- **Traceability** — arbore pliabil Epic → Story → Test Case cu lacunele de acoperire evidențiate.
-- **Assignees** — clasament de încărcare. Apasă pe oricine pentru a vedea doar test case-urile sale.
+- **Test Cases** — tabel filtrabil și sortabil. Încearcă filtrele: epic, assignee, status.
+- **Coverage** — matrice interactivă de trasabilitate a cerințelor și analiză a lacunelor.
+- **Guide** — documentație încorporată pentru configurare și ghid pentru începători, cu structuri JSON copy-paste.
 
 **Scurtături:**
 - Apasă **`/`** oriunde pentru a muta focus-ul pe căutarea globală.
@@ -179,12 +180,11 @@ Reîncarcă `https://NUMELE_TAU.github.io/Peviitor_TC/`. Workflow-ul Test Matrix
 1. Editează `config/epics-and-stories.json` direct pe GitHub (iconița creion pe fișier).
 2. Adaugă intrarea nouă în array-ul `epics` sau `userStories`, cu un ID unic, o etichetă și un număr de issue.
 3. Fă commit pe `main`.
-4. Workflow-ul **Generate Test Case Template** rulează automat și actualizează formularul.
-5. Rulează manual din nou **Bootstrap Labels** pentru a crea orice etichete noi.
+4. Workflow-urile **Generate Test Case Template** și **Bootstrap Labels** rulează automat și actualizează formularul, respectiv creează etichetele noi.
 
 ### Adaugă un tip de testare, secțiune sau mediu nou
 
-Același proces — editează `config/epics-and-stories.json`, fă commit, rulează din nou **Bootstrap Labels**.
+Același proces — editează `config/epics-and-stories.json` și fă commit. Workflow-urile se ocupă de restul.
 
 ### Ceva arată greșit pe dashboard
 
@@ -216,10 +216,10 @@ Același proces — editează `config/epics-and-stories.json`, fă commit, rulea
 | Creez un test case | Issues → New issue → șablon Test Case |
 | Marchez un test ca trecut | Comentez `/status passed` pe issue |
 | Marchez ca picat cu bug | Comentez `/status failed #123` pe issue |
-| Adaug epic-uri noi | Editez `config/epics-and-stories.json`, push, rerulez Bootstrap Labels |
+| Adaug epic-uri noi | Editez `config/epics-and-stories.json` și fac push |
 | Forțez refresh-ul dashboard-ului | Actions → Test Matrix → Run workflow |
 | Export toate datele | Footer-ul dashboard-ului → ⬇ CSV sau ⬇ JSON |
 
 ---
 
-<sub>Dashboard powered by **Criterium**. Pentru detalii tehnice complete, vezi [`README.md`](./README.md).</sub>
+<sub>Pentru detalii tehnice complete, vezi [`README.md`](./README.md).</sub>
