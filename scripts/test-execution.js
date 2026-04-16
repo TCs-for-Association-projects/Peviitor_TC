@@ -4,10 +4,11 @@
  * Parses slash commands in issue comments and updates labels / posts summary.
  *
  * Commands:
- *   /status <not-run|passed|failed|blocked|partially-passed> [optional note]
- *   /bug #123  or  /bug <url>
- *   /cross-os           toggle cross-os flag
- *   /cross-browser      toggle cross-browser flag
+ *   /status <not-run|passed|failed|blocked|partially-passed> [optional bug ref]
+ *   /bug <url>           link a bug (cross-repo URL or same-repo #123)
+ *   /note <text>         log an observation without changing status
+ *   /cross-os            toggle cross-os flag
+ *   /cross-browser       toggle cross-browser flag
  *
  * Multiple commands can appear in one comment; each is processed in order.
  *
@@ -62,6 +63,48 @@ const STATUS_MAP = {
   "partial":          "Partially passed",
 };
 
+// ── Bug reference helpers ────────────────────────────────────────────────────
+
+/**
+ * Parse a bug reference string into a display-friendly format.
+ * Supports:
+ *   - Full GitHub URL: https://github.com/org/repo/issues/42 → "org/repo#42"
+ *   - Same-repo shorthand: #123 → "#123"
+ *   - Any other URL: returned as-is
+ */
+function parseBugRef(raw) {
+  if (!raw) return null;
+  const val = raw.trim();
+
+  // Full GitHub issue URL
+  const ghMatch = val.match(
+    /^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/issues\/(\d+)/i
+  );
+  if (ghMatch) {
+    const [, bugOrg, bugRepo, bugNum] = ghMatch;
+    // Same repo? Show shorthand
+    if (bugOrg === owner && bugRepo === repoName) {
+      return { display: `#${bugNum}`, url: val };
+    }
+    return { display: `${bugOrg}/${bugRepo}#${bugNum}`, url: val };
+  }
+
+  // Same-repo #123 shorthand
+  const hashMatch = val.match(/^#(\d+)$/);
+  if (hashMatch) {
+    const url = `https://github.com/${owner}/${repoName}/issues/${hashMatch[1]}`;
+    return { display: val, url };
+  }
+
+  // Generic URL
+  if (/^https?:\/\//i.test(val)) {
+    return { display: val, url: val };
+  }
+
+  // Unrecognized
+  return { display: val, url: null };
+}
+
 function parseCommands(text) {
   const commands = [];
   const lines = text.split(/\r?\n/);
@@ -76,7 +119,7 @@ function parseCommands(text) {
       const status = STATUS_MAP[key];
       if (status) {
         commands.push({ type: "status", value: status, note: statusMatch[2].trim() });
-        // If the note contains a bug reference like "#123", also register a bug command
+        // If the note contains a bug reference, also register a bug command
         const bugRef = statusMatch[2].match(/#(\d+)|\bhttps?:\/\/\S+/);
         if (bugRef) commands.push({ type: "bug", value: bugRef[0] });
         continue;
@@ -87,6 +130,13 @@ function parseCommands(text) {
     const bugMatch = trimmed.match(/^\/bug\s+(.+)$/i);
     if (bugMatch) {
       commands.push({ type: "bug", value: bugMatch[1].trim() });
+      continue;
+    }
+
+    // /note <text>
+    const noteMatch = trimmed.match(/^\/note\s+(.+)$/i);
+    if (noteMatch) {
+      commands.push({ type: "note", value: noteMatch[1].trim() });
       continue;
     }
 
@@ -187,9 +237,11 @@ for (const cmd of commands) {
   } else if (cmd.type === "bug") {
     toAdd.add("bug-found");
     toRemove.delete("bug-found");
-    bugRef = cmd.value;
+    bugRef = parseBugRef(cmd.value);
     failedWithoutBug = false; // A bug was linked elsewhere in the comment
-    actions.push({ type: "bug", value: cmd.value });
+    actions.push({ type: "bug", value: cmd.value, parsed: bugRef });
+  } else if (cmd.type === "note") {
+    actions.push({ type: "note", value: cmd.value });
   } else if (cmd.type === "toggle") {
     const lbl = cmd.flag;
     if (current.has(lbl) || toAdd.has(lbl)) {
@@ -218,51 +270,100 @@ const STATUS_EMOJI = {
   "Partially passed": "🟠",
 };
 
-const timestamp = new Date().toISOString().replace("T", " ").replace(/\.\d+Z/, " UTC");
-const matrixUrl = `https://${owner}.github.io/${repoName}/test-matrix.html`;
+const dashboardUrl = `https://${owner}.github.io/${repoName}/`;
+
+// Count how many "substantive" actions we have (excluding notes)
+const substantiveActions = actions.filter(
+  (a) => a.type === "status" || a.type === "bug" || a.type === "toggle-on" || a.type === "toggle-off"
+);
+const noteActions = actions.filter((a) => a.type === "note");
+const isSimple = substantiveActions.length <= 2 && noteActions.length === 0;
 
 const lines = [];
-lines.push(`### Execution update`);
-lines.push(`**By:** @${commenter} · **At:** \`${timestamp}\``);
-lines.push("");
 
-if (previousStatus && newStatus && previousStatus !== newStatus) {
-  lines.push(`| | |`);
-  lines.push(`|---|---|`);
-  lines.push(`| **Previous status** | ${STATUS_EMOJI[previousStatus] || "•"} ${previousStatus} |`);
-  lines.push(`| **New status** | ${STATUS_EMOJI[newStatus] || "•"} **${newStatus}** |`);
-  lines.push("");
-} else {
+if (isSimple) {
+  // ── Compact single-line format ──
+  const parts = [];
+
+  if (newStatus) {
+    const emoji = STATUS_EMOJI[newStatus] || "•";
+    // Suppress "Not run → X" — it's obvious you ran it
+    if (previousStatus && previousStatus !== "Not run" && previousStatus !== newStatus) {
+      parts.push(`${STATUS_EMOJI[previousStatus] || "•"} ~~${previousStatus}~~ → ${emoji} **${newStatus}**`);
+    } else {
+      parts.push(`${emoji} **${newStatus}**`);
+    }
+  }
+
+  if (bugRef) {
+    if (bugRef.url) {
+      parts.push(`🐛 [${bugRef.display}](${bugRef.url})`);
+    } else {
+      parts.push(`🐛 ${bugRef.display}`);
+    }
+  }
+
   for (const a of actions) {
-    if (a.type === "status") {
-      const emoji = STATUS_EMOJI[a.value] || "•";
-      let line = `${emoji} Status → **${a.value}**`;
-      if (a.note) line += ` — ${a.note}`;
-      lines.push(line);
+    if (a.type === "toggle-on") parts.push(`➕ \`${a.flag}\``);
+    if (a.type === "toggle-off") parts.push(`➖ \`${a.flag}\``);
+  }
+
+  parts.push(`by @${commenter}`);
+  lines.push(parts.join(" · "));
+
+} else {
+  // ── Multi-line format (many actions or notes present) ──
+  lines.push(`### Execution update`);
+  lines.push(`**By:** @${commenter}`);
+  lines.push("");
+
+  if (newStatus) {
+    const emoji = STATUS_EMOJI[newStatus] || "•";
+    // Show transition only between meaningful statuses (not from "Not run")
+    if (previousStatus && previousStatus !== "Not run" && previousStatus !== newStatus) {
+      lines.push(`${STATUS_EMOJI[previousStatus] || "•"} ~~${previousStatus}~~ → ${emoji} **${newStatus}**`);
+    } else {
+      lines.push(`${emoji} Status: **${newStatus}**`);
+    }
+    // Include note from status command if present
+    const statusAction = actions.find((a) => a.type === "status" && a.note);
+    if (statusAction?.note) lines.push(`> ${statusAction.note}`);
+    lines.push("");
+  }
+
+  for (const a of actions) {
+    if (a.type === "bug") {
+      const parsed = a.parsed || parseBugRef(a.value);
+      if (parsed?.url) {
+        lines.push(`🐛 Bug linked: [${parsed.display}](${parsed.url})`);
+      } else {
+        lines.push(`🐛 Bug linked: ${a.value}`);
+      }
+    } else if (a.type === "toggle-on") {
+      lines.push(`➕ Added flag \`${a.flag}\``);
+    } else if (a.type === "toggle-off") {
+      lines.push(`➖ Removed flag \`${a.flag}\``);
+    } else if (a.type === "note") {
+      lines.push(`📝 **Note:** ${a.value}`);
     }
   }
 }
 
-for (const a of actions) {
-  if (a.type === "bug") {
-    lines.push(`🐛 Bug linked: ${a.value}`);
-  } else if (a.type === "toggle-on") {
-    lines.push(`➕ Added flag \`${a.flag}\``);
-  } else if (a.type === "toggle-off") {
-    lines.push(`➖ Removed flag \`${a.flag}\``);
+// Notes in compact mode get their own lines below
+if (isSimple && noteActions.length > 0) {
+  for (const a of noteActions) {
+    lines.push(`📝 **Note:** ${a.value}`);
   }
 }
 
 // Warning if failed without bug reference
 if (failedWithoutBug) {
   lines.push("");
-  lines.push(`> ⚠️ **No bug reference found.** When marking a test as failed, please link the bug issue:`);
-  lines.push(`> \`/bug #123\` or include it in the status command: \`/status failed #123\``);
+  lines.push(`> ⚠️ **No bug linked.** Please provide one: \`/bug https://github.com/org/repo/issues/42\``);
 }
 
 lines.push("");
-lines.push(`---`);
-lines.push(`<sub>🔗 [View Test Matrix](${matrixUrl}) · Labels synced automatically</sub>`);
+lines.push(`<sub>🔗 [Dashboard](${dashboardUrl}) · Labels synced</sub>`);
 
 await postComment(lines.join("\n"));
 console.log("Done.");

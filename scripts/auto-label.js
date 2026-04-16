@@ -99,10 +99,12 @@ if (!isNoResponse(epicValue)) {
 // User Story
 const usValue = fields["User Story"];
 let selectedUsEpicPrefix = null;
+let selectedUs = null;
 if (!isNoResponse(usValue)) {
   const us = config.userStories.find((u) => usValue.includes(`(#${u.issue})`));
   if (us) {
     selectedUsEpicPrefix = us.epicId;
+    selectedUs = us;
     desired.add(`story: ${us.id}`);
   } else {
     warnings.push(`Could not match User Story: "${usValue}"`);
@@ -197,25 +199,75 @@ async function removeLabel(name) {
   }
 }
 
-async function postWarningComment(messages) {
-  const body = [
-    "⚠️ **Auto-label warnings:**",
-    ...messages.map((m) => `- ${m}`),
-    "",
-    "_Review the Epic/User Story selection or field values, then edit the issue to re-trigger auto-labelling._",
-  ].join("\n");
+async function postComment(commentBody) {
   const res = await fetch(`${apiBase}/comments`, {
     method: "POST",
     headers,
-    body: JSON.stringify({ body }),
+    body: JSON.stringify({ body: commentBody }),
   });
   if (!res.ok) throw new Error(`Post comment failed: ${res.status} ${await res.text()}`);
 }
 
+// ── Build traceability + warning comment ─────────────────────────────────────
+
+function buildTraceabilityComment() {
+  const repoUrl = `https://github.com/${owner}/${repoName}`;
+  const dashboardUrl = `https://${owner}.github.io/${repoName}/`;
+
+  const matchedEpic = selectedEpicId
+    ? config.epics.find((e) => e.id === selectedEpicId)
+    : null;
+  const matchedUs = selectedUs;
+
+  // Nothing to link? Don't post.
+  if (!matchedEpic && !matchedUs && warnings.length === 0) return null;
+
+  const lines = [];
+
+  // Traceability section
+  if (matchedEpic || matchedUs) {
+    lines.push("### 🏷️ Traceability");
+    lines.push("");
+    lines.push("| | |");
+    lines.push("|---|---|");
+    if (matchedEpic) {
+      lines.push(
+        `| **Epic** | [${matchedEpic.id}: ${matchedEpic.label}](${repoUrl}/issues/${matchedEpic.issue}) |`
+      );
+    }
+    if (matchedUs) {
+      lines.push(
+        `| **User Story** | [${matchedUs.id}: ${matchedUs.label}](${repoUrl}/issues/${matchedUs.issue}) |`
+      );
+    }
+    lines.push("");
+  }
+
+  // Warning section (merged into same comment)
+  if (warnings.length > 0) {
+    lines.push("⚠️ **Auto-label warnings:**");
+    for (const w of warnings) lines.push(`- ${w}`);
+    lines.push("");
+    lines.push(
+      "_Review the Epic/User Story selection or field values, then edit the issue to re-trigger auto-labelling._"
+    );
+    lines.push("");
+  }
+
+  lines.push(`<sub>Auto-linked from issue form · [Dashboard](${dashboardUrl})</sub>`);
+
+  return lines.join("\n");
+}
+
+// ── Apply labels and post comment ────────────────────────────────────────────
+
 await addLabels(toAdd);
 for (const l of toRemove) await removeLabel(l);
-if (warnings.length && event.action === "opened") {
-  await postWarningComment(warnings);
+
+// Post traceability + warnings comment on new issues only
+if (event.action === "opened") {
+  const comment = buildTraceabilityComment();
+  if (comment) await postComment(comment);
 }
 
 console.log("Done.");
