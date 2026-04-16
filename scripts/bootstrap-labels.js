@@ -136,11 +136,16 @@ const headers = {
 };
 
 async function upsertLabel({ name, color, description }) {
+  // GitHub limits description to 100 chars
+  const safeDesc = description && description.length > 100 
+    ? description.substring(0, 97) + "..." 
+    : (description || "");
+
   // Try to create
   const createRes = await fetch(apiBase, {
     method: "POST",
     headers,
-    body: JSON.stringify({ name, color, description }),
+    body: JSON.stringify({ name, color, description: safeDesc }),
   });
   if (createRes.ok) return "created";
   if (createRes.status === 422) {
@@ -150,7 +155,7 @@ async function upsertLabel({ name, color, description }) {
       {
         method: "PATCH",
         headers,
-        body: JSON.stringify({ new_name: name, color, description }),
+        body: JSON.stringify({ new_name: name, color, description: safeDesc }),
       }
     );
     if (patchRes.ok) return "updated";
