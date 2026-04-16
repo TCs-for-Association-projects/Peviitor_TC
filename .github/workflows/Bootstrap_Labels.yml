@@ -1,8 +1,13 @@
 name: Bootstrap Labels
 
-# Manual one-shot workflow to create all managed labels from config.
+# Creates/updates all managed labels from config.
 # Safe to re-run — it will update colors/descriptions on existing labels.
 on:
+  push:
+    branches: [main]
+    paths:
+      - "config/epics-and-stories.json"
+      - "scripts/bootstrap-labels.js"
   workflow_dispatch:
 
 permissions:
