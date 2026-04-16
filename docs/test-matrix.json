@@ -1,8 +1,8 @@
 [
   {
-    "number": 3,
-    "title": "[TC]: KHJJKHKJHJKHKJ",
-    "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/3",
+    "number": 4,
+    "title": "[TC]: ghjkgjkhg",
+    "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/4",
     "state": "open",
     "author": "TheodorIvascu",
     "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
@@ -20,8 +20,32 @@
     "bugFound": false,
     "crossOs": false,
     "crossBrowser": false,
+    "createdAt": "2026-04-16T15:45:21Z",
+    "updatedAt": "2026-04-16T15:45:37Z"
+  },
+  {
+    "number": 3,
+    "title": "[TC]: KHJJKHKJHJKHKJ",
+    "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/3",
+    "state": "open",
+    "author": "TheodorIvascu",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
+    "assignees": [],
+    "epic": "F1",
+    "epicLabel": "Epic F1: Footer Navigation & Structure",
+    "userStory": "US1",
+    "userStoryLabel": "Navigation links in footer",
+    "testingType": "Navigation",
+    "section": "Header",
+    "environment": "Local",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "status": "Failed",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-04-16T15:41:02Z",
-    "updatedAt": "2026-04-16T15:41:14Z"
+    "updatedAt": "2026-04-16T15:42:32Z"
   },
   {
     "number": 2,
