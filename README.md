@@ -178,4 +178,4 @@ MOCK_ISSUES=path/to/mock.json  GITHUB_TOKEN=x  GITHUB_REPOSITORY=x/y  npm run ge
 
 ---
 
-<sub>QA flow designed for clarity, traceability, and zero-friction execution.</sub>
+<sub>QA flow designed with a **systems thinking** approach for clarity, traceability, and zero-friction execution. Codebase architecture and automations generated with the help of **Claude**.</sub>
