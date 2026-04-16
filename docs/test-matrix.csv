@@ -1,5 +1,5 @@
 number,title,url,state,author,epic,userStory,testingType,section,environment,os,browser,status,bugFound,crossOs,crossBrowser,createdAt,updatedAt
-4,[TC]: ghjkgjkhg,https://github.com/TheodorIvascu/Peviitor_TC/issues/4,open,TheodorIvascu,F1,US1,Navigation,Header,Local,Windows 11,Chrome 120,Not run,false,false,false,2026-04-16T15:45:21Z,2026-04-16T15:45:37Z
-3,[TC]: KHJJKHKJHJKHKJ,https://github.com/TheodorIvascu/Peviitor_TC/issues/3,open,TheodorIvascu,F1,US1,Navigation,Header,Local,Windows 11,Chrome 120,Failed,false,true,true,2026-04-16T15:41:02Z,2026-04-16T15:42:32Z
-2,[TC]: Cookies - I like them - They look yummy,https://github.com/TheodorIvascu/Peviitor_TC/issues/2,open,TheodorIvascu,F1,US1,Navigation,Header,Production,Windows 11,Chrome 120,Passed,false,true,true,2026-04-15T20:53:52Z,2026-04-15T21:11:53Z
+4,[TC]: ghjkgjkhg,https://github.com/TheodorIvascu/Peviitor_TC/issues/4,closed,TheodorIvascu,F1,US1,Navigation,Header,Local,Windows 11,Chrome 120,Blocked,false,false,true,2026-04-16T15:45:21Z,2026-04-16T19:46:51Z
+3,[TC]: KHJJKHKJHJKHKJ,https://github.com/TheodorIvascu/Peviitor_TC/issues/3,closed,TheodorIvascu,F1,US1,Navigation,Header,Local,Windows 11,Chrome 120,Failed,true,true,true,2026-04-16T15:41:02Z,2026-04-16T19:46:50Z
+2,[TC]: Cookies - I like them - They look yummy,https://github.com/TheodorIvascu/Peviitor_TC/issues/2,closed,TheodorIvascu,F1,US1,Navigation,Header,Production,Windows 11,Chrome 120,Passed,false,true,true,2026-04-15T20:53:52Z,2026-04-16T19:46:50Z
 1,[TC]:Footer Navigation - User enters website - Cookies are great,https://github.com/TheodorIvascu/Peviitor_TC/issues/1,closed,TheodorIvascu,F1,US1,Navigation,Header,Production,,,Passed,true,true,true,2026-04-15T19:45:08Z,2026-04-15T20:03:43Z

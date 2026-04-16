@@ -3,7 +3,7 @@
     "number": 4,
     "title": "[TC]: ghjkgjkhg",
     "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/4",
-    "state": "open",
+    "state": "closed",
     "author": "TheodorIvascu",
     "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
     "assignees": [],
@@ -16,18 +16,18 @@
     "environment": "Local",
     "os": "Windows 11",
     "browser": "Chrome 120",
-    "status": "Not run",
+    "status": "Blocked",
     "bugFound": false,
     "crossOs": false,
-    "crossBrowser": false,
+    "crossBrowser": true,
     "createdAt": "2026-04-16T15:45:21Z",
-    "updatedAt": "2026-04-16T15:45:37Z"
+    "updatedAt": "2026-04-16T19:46:51Z"
   },
   {
     "number": 3,
     "title": "[TC]: KHJJKHKJHJKHKJ",
     "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/3",
-    "state": "open",
+    "state": "closed",
     "author": "TheodorIvascu",
     "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
     "assignees": [],
@@ -41,17 +41,17 @@
     "os": "Windows 11",
     "browser": "Chrome 120",
     "status": "Failed",
-    "bugFound": false,
+    "bugFound": true,
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-04-16T15:41:02Z",
-    "updatedAt": "2026-04-16T15:42:32Z"
+    "updatedAt": "2026-04-16T19:46:50Z"
   },
   {
     "number": 2,
     "title": "[TC]: Cookies - I like them - They look yummy",
     "url": "https://github.com/TheodorIvascu/Peviitor_TC/issues/2",
-    "state": "open",
+    "state": "closed",
     "author": "TheodorIvascu",
     "authorAvatar": "https://avatars.githubusercontent.com/u/168380942?v=4",
     "assignees": [
@@ -74,7 +74,7 @@
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-04-15T20:53:52Z",
-    "updatedAt": "2026-04-15T21:11:53Z"
+    "updatedAt": "2026-04-16T19:46:50Z"
   },
   {
     "number": 1,

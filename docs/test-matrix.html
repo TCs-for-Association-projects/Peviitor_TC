@@ -360,7 +360,7 @@
     <div>
       <h1><span>Peviitor_TC</span> — Test Dashboard</h1>
       <div class="header-meta">
-        TheodorIvascu/Peviitor_TC · Generated 16 Apr 2026, 15:45 UTC
+        TheodorIvascu/Peviitor_TC · Generated 16 Apr 2026, 19:47 UTC
       </div>
     </div>
     <div class="header-actions">
@@ -383,15 +383,15 @@
       <div class="kpi-label">Failed</div>
     </div>
     <div class="kpi-card" style="border-left-color: #f59e0b">
-      <div class="kpi-value">0</div>
+      <div class="kpi-value">1</div>
       <div class="kpi-label">Blocked</div>
     </div>
     <div class="kpi-card" style="border-left-color: #6b7280">
-      <div class="kpi-value">1</div>
+      <div class="kpi-value">0</div>
       <div class="kpi-label">Not Run</div>
     </div>
     <div class="kpi-card" style="border-left-color: #ef4444">
-      <div class="kpi-value">1</div>
+      <div class="kpi-value">2</div>
       <div class="kpi-label">Bugs Found</div>
     </div>
   </div>
@@ -433,7 +433,7 @@
     <input type="text" id="search" placeholder="🔍 Search title or #number...">
     <select id="f-epic"><option value="">All Epics</option><option value="F1">F1</option></select>
     <select id="f-story"><option value="">All Stories</option><option value="US1">US1</option></select>
-    <select id="f-status"><option value="">All Statuses</option><option value="Failed">Failed</option><option value="Not run">Not run</option><option value="Passed">Passed</option></select>
+    <select id="f-status"><option value="">All Statuses</option><option value="Blocked">Blocked</option><option value="Failed">Failed</option><option value="Passed">Passed</option></select>
     <select id="f-section"><option value="">All Sections</option><option value="Header">Header</option></select>
     <select id="f-env"><option value="">All Environments</option><option value="Local">Local</option><option value="Production">Production</option></select>
     <select id="f-type"><option value="">All Types</option><option value="Navigation">Navigation</option></select>
@@ -463,7 +463,7 @@
         </thead>
         <tbody>
       <tr data-epic="F1" data-story="US1"
-          data-status="Not run" data-section="Header"
+          data-status="Blocked" data-section="Header"
           data-env="Local" data-type="Navigation"
           data-author="TheodorIvascu">
         <td><a href="https://github.com/TheodorIvascu/Peviitor_TC/issues/4" target="_blank" rel="noopener">#4</a></td>
@@ -473,7 +473,7 @@
         <td>Navigation</td>
         <td>Header</td>
         <td>Local</td>
-        <td><span class="status-pill" style="background:#6b7280">Not run</span></td>
+        <td><span class="status-pill" style="background:#f59e0b">Blocked</span></td>
         <td></td>
         <td><img src="https://avatars.githubusercontent.com/u/168380942?v=4&s=20" alt="TheodorIvascu" title="TheodorIvascu" class="avatar"> <span class="author-name">TheodorIvascu</span></td>
         <td><span class="muted">—</span></td>
@@ -491,7 +491,7 @@
         <td>Header</td>
         <td>Local</td>
         <td><span class="status-pill" style="background:#ef4444">Failed</span></td>
-        <td></td>
+        <td>🐛</td>
         <td><img src="https://avatars.githubusercontent.com/u/168380942?v=4&s=20" alt="TheodorIvascu" title="TheodorIvascu" class="avatar"> <span class="author-name">TheodorIvascu</span></td>
         <td><span class="muted">—</span></td>
         <td class="cell-date">16/04/2026</td>
@@ -566,7 +566,7 @@ function toggleTheme() {
 })();
 
 // ── Charts ───────────────────────────────────────────────────────────────────
-const chartData = {"statusLabels":["Not run","Passed","Failed","Blocked","Partially passed"],"statusCounts":[1,2,1,0,0],"statusColors":["#6b7280","#10b981","#ef4444","#f59e0b","#f97316"],"epicLabels":["F1"],"epicDatasets":[{"label":"Not run","data":[1],"backgroundColor":"#6b7280"},{"label":"Passed","data":[2],"backgroundColor":"#10b981"},{"label":"Failed","data":[1],"backgroundColor":"#ef4444"},{"label":"Blocked","data":[0],"backgroundColor":"#f59e0b"},{"label":"Partially passed","data":[0],"backgroundColor":"#f97316"}]};
+const chartData = {"statusLabels":["Not run","Passed","Failed","Blocked","Partially passed"],"statusCounts":[0,2,1,1,0],"statusColors":["#6b7280","#10b981","#ef4444","#f59e0b","#f97316"],"epicLabels":["F1"],"epicDatasets":[{"label":"Not run","data":[0],"backgroundColor":"#6b7280"},{"label":"Passed","data":[2],"backgroundColor":"#10b981"},{"label":"Failed","data":[1],"backgroundColor":"#ef4444"},{"label":"Blocked","data":[1],"backgroundColor":"#f59e0b"},{"label":"Partially passed","data":[0],"backgroundColor":"#f97316"}]};
 const getTextColor = () => getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
 const getMutedColor = () => getComputedStyle(document.documentElement).getPropertyValue('--text-muted').trim();
 const getGridColor = () => getComputedStyle(document.documentElement).getPropertyValue('--border').trim();
