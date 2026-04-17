@@ -2,7 +2,7 @@
 
 **QA test management for [peviitor.ro](https://peviitor.ro/)** — a job search platform. This repository contains no application source code; every test case is a **GitHub Issue**, and every workflow here exists to turn those issues into a living, filterable dashboard.
 
-> 🔗 **Live dashboard:** <https://theodorivascu.github.io/Peviitor_TC/>
+> 🔗 **Live dashboard:**  https://tcs-for-association-projects.github.io/Peviitor_TC/            <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HERE FOR DASHBOARD
 >
 > 📘 **New here?** Read [`INSTRUCTIONS.md`](./INSTRUCTIONS.md) (English) or [`INSTRUCTIUNI.md`](./INSTRUCTIUNI.md) (Română) for a step-by-step setup walkthrough.
 
