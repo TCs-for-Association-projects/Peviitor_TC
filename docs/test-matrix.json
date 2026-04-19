@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "number": 52,
+    "title": "[TC]: Link-uri footer - Hover effect is present",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/52",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E1",
+    "epicLabel": "Epic E1: EPIC 1",
+    "userStory": "US4",
+    "userStoryLabel": "As a user, I want to see important navigation links in the footer, so that I can easily access key pages.",
+    "testingType": "Navigation",
+    "section": "Footer",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "verifies that all footer navigation links can be hovered.",
+    "descriptionExcerpt": "verifies that all footer navigation links can be hovered.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-04-19T13:55:10Z",
+    "updatedAt": "2026-04-19T13:55:20Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  }
+]
