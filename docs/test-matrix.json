@@ -12,8 +12,8 @@
         "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
       }
     ],
-    "epic": "E1",
-    "epicLabel": "Epic E1: EPIC 1",
+    "epic": "",
+    "epicLabel": "",
     "userStory": "US4",
     "userStoryLabel": "As a user, I want to see important navigation links in the footer, so that I can easily access key pages.",
     "testingType": "Navigation",
@@ -28,7 +28,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-19T13:55:10Z",
-    "updatedAt": "2026-04-19T13:55:20Z",
+    "updatedAt": "2026-04-20T07:39:18Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   }
