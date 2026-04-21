@@ -79,6 +79,7 @@ body:
       - "Epic9 (#32)"
       - "Epic10 (#39)"
       - "Epic11 (#45)"
+      - "Epic12 (#53)"
     validations:
       required: true
 
