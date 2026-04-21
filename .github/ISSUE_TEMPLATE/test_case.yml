@@ -68,17 +68,17 @@ body:
       label: Epic
       description: "Select the Epic this test case belongs to."
       options:
-      - "Epic E1: EPIC 1 (#11)"
-      - "Epic E2: Location Input (#13)"
-      - "Epic E3: Location Flexibility: Cities and Counties (#14)"
-      - "Epic E4: Location selection (#15)"
-      - "Epic E5: Footer Navigation & Structure (#16)"
+      - "Epic E1 (#11)"
+      - "Epic E2 (#13)"
+      - "Epic E3 (#14)"
+      - "Epic E4 (#15)"
+      - "Epic E5 (#16)"
       - "Epic E6: Displaying job results (#20)"
-      - "Epic E7: Filters (#22)"
-      - "Epic E8: Job Search (#29)"
-      - "Epic E9: Footer - Legal & Compliance (#32)"
-      - "Epic E10: compatibility (#39)"
-      - "Epic E11: Footer User Interface (#45)"
+      - "Epic E7 (#22)"
+      - "Epic E8 (#29)"
+      - "Epic E9 (#32)"
+      - "Epic E10 (#39)"
+      - "Epic E11 (#45)"
     validations:
       required: true
 
