@@ -2,27 +2,27 @@
   "epics": [
     {
       "id": "E1",
-      "label": "Epic E1: EPIC 1",
+      "label": "Epic E1",
       "issue": 11
     },
     {
       "id": "E2",
-      "label": "Epic E2: Location Input",
+      "label": "Epic E2",
       "issue": 13
     },
     {
       "id": "E3",
-      "label": "Epic E3: Location Flexibility: Cities and Counties",
+      "label": "Epic E3",
       "issue": 14
     },
     {
       "id": "E4",
-      "label": "Epic E4: Location selection",
+      "label": "Epic E4",
       "issue": 15
     },
     {
       "id": "E5",
-      "label": "Epic E5: Footer Navigation & Structure",
+      "label": "Epic E5",
       "issue": 16
     },
     {
@@ -32,27 +32,27 @@
     },
     {
       "id": "E7",
-      "label": "Epic E7: Filters",
+      "label": "Epic E7",
       "issue": 22
     },
     {
       "id": "E8",
-      "label": "Epic E8: Job Search",
+      "label": "Epic E8",
       "issue": 29
     },
     {
       "id": "E9",
-      "label": "Epic E9: Footer - Legal & Compliance",
+      "label": "Epic E9",
       "issue": 32
     },
     {
       "id": "E10",
-      "label": "Epic E10: compatibility",
+      "label": "Epic E10",
       "issue": 39
     },
     {
       "id": "E11",
-      "label": "Epic E11: Footer User Interface",
+      "label": "Epic E11",
       "issue": 45
     }
   ],
