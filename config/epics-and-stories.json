@@ -207,6 +207,48 @@
       "label": "US25 : As a user, I want all footer icons and links to have consistent styling so that the interface looks clean and professional",
       "issue": 48,
       "epicId": "E11"
+    },
+     {
+      "id": "US26",
+      "label": "US56 :As a user, I want to search for a city by typing in the location field, so that I can quickly find and select my desired city without scrolling through a long list",
+      "issue": 56,
+      "epicId": "E2"
+    },
+     {
+      "id": "US27",
+      "label": "US27 : As a user, I want to be able to clear the selected city from the location field, so that I can remove the location filter and see all cities",
+      "issue": 57,
+      "epicId": "E2"
+    },
+     {
+      "id": "US28",
+      "label": "US28 :As a user, I want to select a location from a predefined list, so that I can easily filter results without typing",
+      "issue": 58,
+      "epicId": "E4"
+    },
+       {
+      "id": "US29",
+      "label": "US29 :I want the selected location to be visually highlighted, so that I can clearly see what filter is applied",
+      "issue": 59,
+      "epicId": "E4"
+    },
+     {
+      "id": "US30",
+      "label": "US30 :I want to see only cities relevant to Romania , so that I don’t select invalid locations",
+      "issue": 60,
+      "epicId": "E3"
+    },
+        {
+      "id": "US31",
+      "label": "US31 :As a user, I want to select a city, so that I can see in the dropdown all the counties from that city",
+      "issue": 61,
+      "epicId": "E3"
+    },
+      {
+      "id": "US32",
+      "label": "US32 :As a user, I want to see the village name followed by its city in the dropdown list, so that I can clearly distinguish between locations with similar names",
+      "issue": 62,
+      "epicId": "E3"
     }
   ],
   "testingTypes": [
