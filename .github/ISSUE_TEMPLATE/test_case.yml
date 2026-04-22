@@ -69,7 +69,7 @@ body:
       description: "Select the Epic this test case belongs to."
       options:
       - "Epic1 (#11)"
-      - "Epic2 (#13)"
+      - "Epic2:Location Input for HOMEPAGE (#13)"
       - "Epic3 (#14)"
       - "Epic4 (#15)"
       - "Epic5 (#16)"
