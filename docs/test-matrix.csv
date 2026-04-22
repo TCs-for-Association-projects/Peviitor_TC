@@ -1,2 +1,2 @@
 ﻿Issue #,Title,URL,State,Status,Status Icon,Epic ID,Epic Label,Story ID,Story Label,Testing Type,Section,Environment,OS,Browser,Author,Assignees,Assignee Count,Cross-OS,Cross-Browser,Bug Found,Description (excerpt),Created At,Updated At,Days Open,Days Since Update
-54,[TC]: TC de proba,https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/54,open,Not run,⚪,E11,Epic11,US23,US23,Navigation,Header,Production,Windows 11,Chrome 120,DeedeeDL,,0,no,no,no,test,2026-04-22T12:16:23Z,2026-04-22T12:16:23Z,0,0
+55,[TC]: test,https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/55,open,Not run,⚪,E2,Epic2:Location Input for HOMEPAGE,US2,US2,Navigation,Header,Local,Windows 11,Chrome 120,DeedeeDL,,0,no,no,no,jgf,2026-04-22T12:24:51Z,2026-04-22T12:24:51Z,0,0
