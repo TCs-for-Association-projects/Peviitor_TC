@@ -1,35 +1,30 @@
 [
   {
-    "number": 52,
-    "title": "[TC]: Link-uri footer - Hover effect is present",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/52",
+    "number": 54,
+    "title": "[TC]: TC de proba",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/54",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
-    "assignees": [
-      {
-        "login": "DeedeeDL",
-        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
-      }
-    ],
-    "epic": "",
-    "epicLabel": "",
-    "userStory": "US1",
-    "userStoryLabel": "US1",
+    "assignees": [],
+    "epic": "E11",
+    "epicLabel": "Epic11",
+    "userStory": "US23",
+    "userStoryLabel": "US23",
     "testingType": "Navigation",
-    "section": "Footer",
+    "section": "Header",
     "environment": "Production",
     "os": "Windows 11",
     "browser": "Chrome 120",
-    "description": "verifies that all footer navigation links can be hovered.",
-    "descriptionExcerpt": "verifies that all footer navigation links can be hovered.",
+    "description": "test",
+    "descriptionExcerpt": "test",
     "status": "Not run",
     "bugFound": false,
     "crossOs": false,
     "crossBrowser": false,
-    "createdAt": "2026-04-19T13:55:10Z",
-    "updatedAt": "2026-04-20T07:47:45Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 1
+    "createdAt": "2026-04-22T12:16:23Z",
+    "updatedAt": "2026-04-22T12:16:23Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
   }
 ]
