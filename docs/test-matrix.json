@@ -1,29 +1,34 @@
 [
   {
-    "number": 65,
-    "title": "[TC]: serarch bar testing",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/65",
+    "number": 66,
+    "title": "[TC]: Check that the search input accepts small and capital letters",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/66",
     "state": "open",
-    "author": "DeedeeDL",
-    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
-    "assignees": [],
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
     "epic": "E8",
     "epicLabel": "Epic8 : Job Search",
     "userStory": "US11",
     "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
-    "testingType": "Content testing",
+    "testingType": "Navigation",
     "section": "Search bar",
     "environment": "Production",
     "os": "Windows 11",
     "browser": "Chrome 120",
-    "description": "descrierea test caseului",
-    "descriptionExcerpt": "descrierea test caseului",
+    "description": "The case to be tested is that the search input accepts small and capital letters.",
+    "descriptionExcerpt": "The case to be tested is that the search input accepts small and capital letters.",
     "status": "Not run",
     "bugFound": false,
     "crossOs": false,
     "crossBrowser": false,
-    "createdAt": "2026-04-23T18:08:49Z",
-    "updatedAt": "2026-04-23T18:09:00Z",
+    "createdAt": "2026-04-23T19:08:26Z",
+    "updatedAt": "2026-04-23T19:08:26Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   }
