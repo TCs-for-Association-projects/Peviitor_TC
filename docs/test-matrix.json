@@ -1,5 +1,38 @@
 [
   {
+    "number": 67,
+    "title": "[TC]: Check the result/message when searching using numbers (>2)",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/67",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check the result/message when searching using numbers (>2)",
+    "descriptionExcerpt": "Check the result/message when searching using numbers (>2)",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-04-23T19:23:09Z",
+    "updatedAt": "2026-04-23T19:23:17Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 66,
     "title": "[TC]: Check that the search input accepts small and capital letters",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/66",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
-    "updatedAt": "2026-04-23T19:08:26Z",
+    "updatedAt": "2026-04-23T19:08:39Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   }
