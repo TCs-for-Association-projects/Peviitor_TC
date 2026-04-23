@@ -1,2 +1,2 @@
 ﻿Issue #,Title,URL,State,Status,Status Icon,Epic ID,Epic Label,Story ID,Story Label,Testing Type,Section,Environment,OS,Browser,Author,Assignees,Assignee Count,Cross-OS,Cross-Browser,Bug Found,Description (excerpt),Created At,Updated At,Days Open,Days Since Update
-
+63,[TC]: test test,https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/63,open,Not run,⚪,E8,Epic8 : Job Search,US11,"US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",Content testing,Search bar,Production,Windows 11,Chrome 120,DeedeeDL,,0,no,no,no,test test,2026-04-23T14:49:59Z,2026-04-23T14:51:14Z,0,0

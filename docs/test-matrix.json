@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "number": 63,
+    "title": "[TC]: test test",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/63",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "test test",
+    "descriptionExcerpt": "test test",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-04-23T14:49:59Z",
+    "updatedAt": "2026-04-23T14:51:14Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  }
+]
