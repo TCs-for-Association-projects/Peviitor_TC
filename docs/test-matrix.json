@@ -18,12 +18,12 @@
     "browser": "Chrome 120",
     "description": "test test",
     "descriptionExcerpt": "test test",
-    "status": "Not run",
+    "status": "Passed",
     "bugFound": false,
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-23T14:49:59Z",
-    "updatedAt": "2026-04-23T14:51:14Z",
+    "updatedAt": "2026-04-23T14:53:54Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   }
