@@ -1,5 +1,38 @@
 [
   {
+    "number": 74,
+    "title": "[TC]: Check if the job remains the same as typed in the first search field from the homepage",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/74",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Header",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "This test case verifies that the job keyword entered in the first search field on the homepage is preserved correctly after initiating the search. The system should display the same job term in the search field on the results page without altering or losing the input.",
+    "descriptionExcerpt": "This test case verifies that the job keyword entered in the first search field on the homepage is preserved correctly after initiating the search. The system s…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-04-29T15:29:20Z",
+    "updatedAt": "2026-04-29T15:29:36Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 73,
     "title": "[TC]: Check the behavior when deleting the search query after results are displayed",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/73",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
-    "updatedAt": "2026-04-29T14:46:39Z",
+    "updatedAt": "2026-04-29T14:46:46Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
