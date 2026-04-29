@@ -1,12 +1,50 @@
 [
   {
+    "number": 73,
+    "title": "[TC]: Check the behavior when deleting the search query after results are displayed",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/73",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Header",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "This test case verifies that the application handles correctly the scenario where a user performs a search and then deletes the query from the search input field. The system should update the UI accordingly without errors and display the appropriate state (e.g., empty state or default suggestions).",
+    "descriptionExcerpt": "This test case verifies that the application handles correctly the scenario where a user performs a search and then deletes the query from the search input fie…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-04-29T14:46:26Z",
+    "updatedAt": "2026-04-29T14:46:39Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 72,
     "title": "[TC]: Check if the search history is cleared after refreshing the page",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/72",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
     "epic": "E8",
     "epicLabel": "Epic8 : Job Search",
     "userStory": "US11",
@@ -23,8 +61,8 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
-    "updatedAt": "2026-04-28T07:35:28Z",
-    "daysSinceCreated": 0,
+    "updatedAt": "2026-04-29T11:30:00Z",
+    "daysSinceCreated": 1,
     "daysSinceUpdated": 0
   },
   {
@@ -57,8 +95,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 70,
@@ -90,8 +128,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 69,
@@ -123,8 +161,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 68,
