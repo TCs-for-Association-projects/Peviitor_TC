@@ -1,5 +1,33 @@
 [
   {
+    "number": 75,
+    "title": "[TC]: Verify if the text is written correctly and grammatically",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/75",
+    "state": "open",
+    "author": "talmacelanamaria",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
+    "assignees": [],
+    "epic": "E5",
+    "epicLabel": "Epic5: Footer Navigation & Structure ",
+    "userStory": "US2",
+    "userStoryLabel": "US2 : As a user, I want the footer to be clearly structured so that I can easily find the information I need",
+    "testingType": "Content testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify if the text is written correctly and grammatically",
+    "descriptionExcerpt": "Verify if the text is written correctly and grammatically",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-01T10:03:09Z",
+    "updatedAt": "2026-05-01T10:03:18Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 74,
     "title": "[TC]: Check if the job remains the same as typed in the first search field from the homepage",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/74",
@@ -95,7 +123,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 2,
+    "daysSinceCreated": 3,
     "daysSinceUpdated": 1
   },
   {
