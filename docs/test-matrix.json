@@ -1,5 +1,38 @@
 [
   {
+    "number": 78,
+    "title": "[TC]: Verify if the cities are written with diactritics(ex. București , not Bucuresti)",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/78",
+    "state": "open",
+    "author": "talmacelanamaria",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
+    "assignees": [
+      {
+        "login": "talmacelanamaria",
+        "avatar": "https://avatars.githubusercontent.com/u/161446018?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify if the cities are written with diactritics (e.g. București , not Bucuresti)",
+    "descriptionExcerpt": "Verify if the cities are written with diactritics (e.g. București , not Bucuresti)",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-01T10:57:05Z",
+    "updatedAt": "2026-05-01T10:57:13Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 77,
     "title": "[TC]: Verify if all job listings follow the same format(title, company, location,work mode)",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/77",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
-    "updatedAt": "2026-05-01T10:41:22Z",
+    "updatedAt": "2026-05-01T10:41:39Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
