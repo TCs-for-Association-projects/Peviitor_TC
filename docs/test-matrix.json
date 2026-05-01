@@ -1,12 +1,50 @@
 [
   {
+    "number": 76,
+    "title": "[TC]: Verify if the jobs are not duplicate",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/76",
+    "state": "open",
+    "author": "talmacelanamaria",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
+    "assignees": [
+      {
+        "login": "talmacelanamaria",
+        "avatar": "https://avatars.githubusercontent.com/u/161446018?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify if the jobs are not duplicate",
+    "descriptionExcerpt": "Verify if the jobs are not duplicate",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-01T10:23:48Z",
+    "updatedAt": "2026-05-01T10:23:48Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 75,
     "title": "[TC]: Verify if the text is written correctly and grammatically",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/75",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "talmacelanamaria",
+        "avatar": "https://avatars.githubusercontent.com/u/161446018?v=4"
+      }
+    ],
     "epic": "E5",
     "epicLabel": "Epic5: Footer Navigation & Structure ",
     "userStory": "US2",
@@ -23,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
-    "updatedAt": "2026-05-01T10:03:18Z",
+    "updatedAt": "2026-05-01T10:03:28Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
