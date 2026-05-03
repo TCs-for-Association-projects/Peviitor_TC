@@ -1,5 +1,38 @@
 [
   {
+    "number": 80,
+    "title": "[TC]: Check that the search input accepts copy-paste values correctly",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/80",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "This test case verifies that the search input field on PeViitor correctly supports copy-paste functionality. It ensures that text pasted from the clipboard is accurately inserted into the search field without modification, truncation, or formatting issues, and that the system processes the pasted input correctly to return relevant search results.",
+    "descriptionExcerpt": "This test case verifies that the search input field on PeViitor correctly supports copy-paste functionality. It ensures that text pasted from the clipboard is …",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-03T10:26:46Z",
+    "updatedAt": "2026-05-03T10:26:55Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 79,
     "title": "[TC]: Verify if the displayed job is a suggestion",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/79",
@@ -128,8 +161,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 75,
@@ -161,8 +194,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 74,
@@ -260,7 +293,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 4,
+    "daysSinceCreated": 5,
     "daysSinceUpdated": 3
   },
   {
