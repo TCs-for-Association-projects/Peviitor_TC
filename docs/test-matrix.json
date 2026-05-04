@@ -1,5 +1,33 @@
 [
   {
+    "number": 81,
+    "title": "[TC]:  Search from main page by an existing company name returns job listings",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/81",
+    "state": "open",
+    "author": "CarmenSteliana",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
+    "assignees": [],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "",
+    "description": "This test case verifies that when a user enters a valid company name that exists in the database into the search input on peviitor.ro, the system returns a list of relevant job listings associated with that company.",
+    "descriptionExcerpt": "This test case verifies that when a user enters a valid company name that exists in the database into the search input on peviitor.ro, the system returns a lis…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-04T09:22:03Z",
+    "updatedAt": "2026-05-04T09:22:14Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 80,
     "title": "[TC]: Check that the search input accepts copy-paste values correctly",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/80",
@@ -293,7 +321,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 5,
+    "daysSinceCreated": 6,
     "daysSinceUpdated": 4
   },
   {
