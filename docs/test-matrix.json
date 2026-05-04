@@ -1,5 +1,38 @@
 [
   {
+    "number": 83,
+    "title": "[TC]: Check if you press ENTER instead the Cauta button",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/83",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Accessibility testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Microsoft Edge",
+    "description": "Verifies that pressing the ENTER key inside the search input field triggers the same search action as clicking the Search button on peviitor.ro.",
+    "descriptionExcerpt": "Verifies that pressing the ENTER key inside the search input field triggers the same search action as clicking the Search button on peviitor.ro.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-05-04T15:52:22Z",
+    "updatedAt": "2026-05-04T15:53:07Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 82,
     "title": "[TC]:  Search by company or city from the main page returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/82",
@@ -95,8 +128,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 79,
@@ -128,8 +161,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 78,
@@ -161,8 +194,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 77,
@@ -194,8 +227,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 76,
@@ -227,8 +260,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 75,
@@ -293,8 +326,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 73,
@@ -326,8 +359,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 72,
@@ -360,7 +393,7 @@
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
     "daysSinceCreated": 6,
-    "daysSinceUpdated": 4
+    "daysSinceUpdated": 5
   },
   {
     "number": 71,
@@ -392,8 +425,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 70,
@@ -425,8 +458,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 69,
@@ -458,8 +491,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 68,
