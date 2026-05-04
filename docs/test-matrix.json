@@ -1,7 +1,7 @@
 [
   {
     "number": 82,
-    "title": "[TC]:  Search by company name and city from main page returns job listings",
+    "title": "[TC]:  Search by company or city from the main page returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/82",
     "state": "open",
     "author": "CarmenSteliana",
@@ -28,7 +28,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
-    "updatedAt": "2026-05-04T10:06:23Z",
+    "updatedAt": "2026-05-04T10:10:02Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
