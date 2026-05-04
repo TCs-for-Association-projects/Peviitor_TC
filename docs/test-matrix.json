@@ -564,7 +564,7 @@
     "number": 66,
     "title": "[TC]: Check that the search input accepts small and capital letters",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/66",
-    "state": "open",
+    "state": "closed",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
     "assignees": [
@@ -593,7 +593,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
-    "updatedAt": "2026-05-04T21:00:07Z",
+    "updatedAt": "2026-05-04T21:01:31Z",
     "daysSinceCreated": 11,
     "daysSinceUpdated": 0
   }
