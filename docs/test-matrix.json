@@ -1,12 +1,50 @@
 [
   {
+    "number": 82,
+    "title": "[TC]:  Search by company name and city from main page returns job listings",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/82",
+    "state": "open",
+    "author": "CarmenSteliana",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
+    "assignees": [
+      {
+        "login": "CarmenSteliana",
+        "avatar": "https://avatars.githubusercontent.com/u/107409121?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Content testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "",
+    "description": "This test case verifies that when a user enters a valid company name and city into the search input on peviitor.ro, the system returns a list of relevant job listings associated with both the company and the city.",
+    "descriptionExcerpt": "This test case verifies that when a user enters a valid company name and city into the search input on peviitor.ro, the system returns a list of relevant job l…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-04T10:06:06Z",
+    "updatedAt": "2026-05-04T10:06:23Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 81,
     "title": "[TC]:  Search from main page by an existing company name returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/81",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "CarmenSteliana",
+        "avatar": "https://avatars.githubusercontent.com/u/107409121?v=4"
+      }
+    ],
     "epic": "E8",
     "epicLabel": "Epic8 : Job Search",
     "userStory": "US11",
@@ -23,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
-    "updatedAt": "2026-05-04T09:22:14Z",
+    "updatedAt": "2026-05-04T09:22:18Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -222,8 +260,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 74,
