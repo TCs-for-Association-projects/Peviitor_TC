@@ -1,5 +1,38 @@
 [
   {
+    "number": 84,
+    "title": "[TC]: After clicking on the search bar the cursor for text input is activated",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/84",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome",
+    "description": "Verify when clicking on the search bar, the cursor is being activated.",
+    "descriptionExcerpt": "Verify when clicking on the search bar, the cursor is being activated.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-05T16:57:31Z",
+    "updatedAt": "2026-05-05T16:57:46Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 83,
     "title": "[TC]: Check if you press ENTER instead the Cauta button",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/83",
@@ -29,8 +62,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-04T15:52:22Z",
     "updatedAt": "2026-05-04T15:53:07Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 82,
@@ -62,8 +95,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 81,
@@ -95,8 +128,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 80,
@@ -128,8 +161,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 79,
@@ -161,8 +194,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 78,
@@ -194,8 +227,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 77,
@@ -227,8 +260,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 76,
@@ -260,8 +293,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 75,
@@ -293,8 +326,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 74,
@@ -326,8 +359,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 73,
@@ -359,8 +392,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 72,
@@ -392,8 +425,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 6
   },
   {
     "number": 71,
@@ -425,8 +458,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 70,
@@ -458,8 +491,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 69,
@@ -491,8 +524,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 68,
