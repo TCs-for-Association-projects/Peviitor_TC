@@ -1,5 +1,38 @@
 [
   {
+    "number": 85,
+    "title": "[TC]: All filters can be removed at once",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/85",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E7",
+    "epicLabel": "Epic7: Filters ",
+    "userStory": "US5",
+    "userStoryLabel": "US5 : As a user, I want to be able to filter listings by city, so that I can see only the jobs available in the location that interests me",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome",
+    "description": "Verificy after clicking ,,Sterge Filtre\" the job results are no longer available.",
+    "descriptionExcerpt": "Verificy after clicking ,,Sterge Filtre\" the job results are no longer available.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-05T17:18:33Z",
+    "updatedAt": "2026-05-05T17:18:48Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 84,
     "title": "[TC]: After clicking on the search bar the cursor for text input is activated",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/84",
