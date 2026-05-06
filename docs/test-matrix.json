@@ -1,5 +1,38 @@
 [
   {
+    "number": 90,
+    "title": "[TC]:  X Button Clears the Search Input",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/90",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "GUI and usability",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verifies that clicking the X icon inside the search input clears the text completely.",
+    "descriptionExcerpt": "Verifies that clicking the X icon inside the search input clears the text completely.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-05-06T13:01:44Z",
+    "updatedAt": "2026-05-06T13:01:53Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 89,
     "title": "[TC]: Search Button Triggers the Search",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/89",
