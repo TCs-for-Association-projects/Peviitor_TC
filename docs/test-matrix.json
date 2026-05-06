@@ -1,5 +1,38 @@
 [
   {
+    "number": 92,
+    "title": "[TC]: Company Name Redirects to Company Page",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/92",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verifies that clicking the company name in a job listing redirects the user to the company profile page.",
+    "descriptionExcerpt": "Verifies that clicking the company name in a job listing redirects the user to the company profile page.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-06T13:16:21Z",
+    "updatedAt": "2026-05-06T13:16:21Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 91,
     "title": "[TC]: Job Tags Are Displayed Correctly",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/91",
@@ -25,10 +58,10 @@
     "descriptionExcerpt": "Verifies that each job result displays job tags (e.g., Remote, Full-time, Hybrid, Senior), as required by the system",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
-    "updatedAt": "2026-05-06T13:09:39Z",
+    "updatedAt": "2026-05-06T13:09:59Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
