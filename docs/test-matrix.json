@@ -1,5 +1,38 @@
 [
   {
+    "number": 86,
+    "title": "[TC]: Check if search persistence is working correctly",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/86",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Microsoft Edge",
+    "description": "Verifies that the search bar and filters on peviitor.ro retain the previously entered search term and selected filters when the user navigates away from the results page and then returns.\nThis ensures correct state management, improved UX, and consistent behavior across navigation flows.",
+    "descriptionExcerpt": "Verifies that the search bar and filters on peviitor.ro retain the previously entered search term and selected filters when the user navigates away from the re…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-06T11:42:37Z",
+    "updatedAt": "2026-05-06T11:42:37Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 85,
     "title": "[TC]: All filters can be removed at once",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/85",
@@ -128,8 +161,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 81,
@@ -161,8 +194,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 80,
@@ -194,8 +227,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 79,
@@ -227,8 +260,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 78,
@@ -260,8 +293,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 77,
@@ -293,8 +326,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 76,
@@ -326,8 +359,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 75,
@@ -359,8 +392,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 74,
@@ -458,8 +491,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 7
   },
   {
     "number": 71,
