@@ -1,5 +1,38 @@
 [
   {
+    "number": 88,
+    "title": "[TC]: Search by Skill (ex: Excel) – Relevant results are displayed",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/88",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Compatibility testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verifies that entering a skill (e.g., “Excel”) in the search bar returns relevant job results that require or mention that skill. Ensures that the search engine supports skill‑based queries as defined in the requirements.",
+    "descriptionExcerpt": "Verifies that entering a skill (e.g., “Excel”) in the search bar returns relevant job results that require or mention that skill. Ensures that the search engin…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-06T12:49:42Z",
+    "updatedAt": "2026-05-06T12:49:42Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 87,
     "title": "[TC]: Check if search under 2 sec.",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/87",
@@ -25,10 +58,10 @@
     "descriptionExcerpt": "Verifies that the search functionality on peviitor.ro returns results in under 2 seconds from the moment the user triggers the search. This ensures good perfor…",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
-    "updatedAt": "2026-05-06T12:11:34Z",
+    "updatedAt": "2026-05-06T12:11:57Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -557,8 +590,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 70,
@@ -590,8 +623,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 69,
@@ -623,8 +656,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 68,
