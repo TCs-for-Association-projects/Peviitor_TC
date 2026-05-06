@@ -1,5 +1,38 @@
 [
   {
+    "number": 89,
+    "title": "[TC]: Search Button Triggers the Search",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/89",
+    "state": "open",
+    "author": "Adelapac",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
+    "assignees": [
+      {
+        "login": "Adelapac",
+        "avatar": "https://avatars.githubusercontent.com/u/191124482?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Compatibility testing",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verifies that clicking the Search button triggers the search request and displays results, as required by the system specification.",
+    "descriptionExcerpt": "Verifies that clicking the Search button triggers the search request and displays results, as required by the system specification.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-05-06T12:55:00Z",
+    "updatedAt": "2026-05-06T12:55:16Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 88,
     "title": "[TC]: Search by Skill (ex: Excel) – Relevant results are displayed",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/88",
@@ -25,10 +58,10 @@
     "descriptionExcerpt": "Verifies that entering a skill (e.g., “Excel”) in the search bar returns relevant job results that require or mention that skill. Ensures that the search engin…",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
-    "updatedAt": "2026-05-06T12:49:42Z",
+    "updatedAt": "2026-05-06T12:49:59Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
