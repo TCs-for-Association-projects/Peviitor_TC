@@ -62,8 +62,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 91,
@@ -95,8 +95,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 90,
@@ -128,8 +128,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 89,
@@ -161,8 +161,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 88,
@@ -194,8 +194,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 87,
@@ -227,8 +227,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 86,
@@ -260,8 +260,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 85,
@@ -392,8 +392,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 81,
@@ -425,8 +425,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 80,
@@ -458,8 +458,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 79,
@@ -491,8 +491,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 78,
@@ -524,8 +524,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 77,
@@ -557,8 +557,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 76,
@@ -590,8 +590,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 75,
@@ -623,8 +623,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 74,
@@ -722,8 +722,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 8
   },
   {
     "number": 71,
@@ -755,8 +755,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 70,
@@ -788,8 +788,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 69,
@@ -821,8 +821,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 68,
