@@ -1,5 +1,33 @@
 [
   {
+    "number": 96,
+    "title": "[TC]: Check if the search results update correctly after modifying the query",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/96",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [],
+    "epic": "E6",
+    "epicLabel": "Epic6: Displaying job results",
+    "userStory": "US4",
+    "userStoryLabel": "US4 : As a user, I want to see a list of relevant jobs after performing a search, so that I can quickly identify suitable opportunities ",
+    "testingType": "Content testing",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Verify that the search results are updated correctly when the user modifies the search query. The system should display only the results related to the latest query and remove any results associated with the previous search.",
+    "descriptionExcerpt": "Verify that the search results are updated correctly when the user modifies the search query. The system should display only the results related to the latest …",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-13T12:00:35Z",
+    "updatedAt": "2026-05-13T12:00:49Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 95,
     "title": "[TC]: Check if user navigates using Tab, each interactive element display a focus indicator",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/95",
@@ -29,8 +57,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 4,
-    "daysSinceUpdated": 4
+    "daysSinceCreated": 5,
+    "daysSinceUpdated": 5
   },
   {
     "number": 94,
@@ -326,8 +354,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 85,
@@ -458,8 +486,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 81,
@@ -491,8 +519,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 80,
@@ -524,8 +552,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 79,
@@ -557,8 +585,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 78,
@@ -590,8 +618,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 77,
@@ -623,8 +651,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 76,
@@ -656,8 +684,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 75,
@@ -689,8 +717,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 74,
@@ -788,8 +816,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 14,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 15,
+    "daysSinceUpdated": 14
   },
   {
     "number": 71,
