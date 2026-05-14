@@ -6,7 +6,12 @@
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
     "epic": "E6",
     "epicLabel": "Epic6: Displaying job results",
     "userStory": "US4",
@@ -23,7 +28,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-13T12:00:35Z",
-    "updatedAt": "2026-05-13T12:00:49Z",
+    "updatedAt": "2026-05-13T12:00:56Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -90,8 +95,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-07T15:45:42Z",
     "updatedAt": "2026-05-07T15:46:09Z",
-    "daysSinceCreated": 5,
-    "daysSinceUpdated": 5
+    "daysSinceCreated": 6,
+    "daysSinceUpdated": 6
   },
   {
     "number": 93,
@@ -123,8 +128,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-06T21:34:13Z",
     "updatedAt": "2026-05-06T21:34:30Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 92,
@@ -156,8 +161,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 91,
@@ -189,8 +194,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 90,
@@ -222,8 +227,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 89,
@@ -255,8 +260,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 88,
@@ -288,8 +293,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 87,
@@ -321,8 +326,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 86,
@@ -387,8 +392,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T17:18:33Z",
     "updatedAt": "2026-05-05T17:18:50Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 84,
@@ -420,8 +425,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 83,
@@ -453,8 +458,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-04T15:52:22Z",
     "updatedAt": "2026-05-04T15:53:07Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 82,
@@ -750,8 +755,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 73,
@@ -783,8 +788,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 72,
@@ -849,8 +854,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 16,
-    "daysSinceUpdated": 16
+    "daysSinceCreated": 17,
+    "daysSinceUpdated": 17
   },
   {
     "number": 70,
@@ -882,8 +887,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 16,
-    "daysSinceUpdated": 16
+    "daysSinceCreated": 17,
+    "daysSinceUpdated": 17
   },
   {
     "number": 69,
@@ -915,8 +920,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 16,
-    "daysSinceUpdated": 16
+    "daysSinceCreated": 17,
+    "daysSinceUpdated": 17
   },
   {
     "number": 68,
@@ -948,8 +953,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:30:23Z",
     "updatedAt": "2026-04-23T19:30:35Z",
-    "daysSinceCreated": 19,
-    "daysSinceUpdated": 19
+    "daysSinceCreated": 20,
+    "daysSinceUpdated": 20
   },
   {
     "number": 67,
@@ -981,8 +986,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:23:09Z",
     "updatedAt": "2026-04-23T19:23:26Z",
-    "daysSinceCreated": 19,
-    "daysSinceUpdated": 19
+    "daysSinceCreated": 20,
+    "daysSinceUpdated": 20
   },
   {
     "number": 66,
@@ -1018,7 +1023,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
     "updatedAt": "2026-05-04T21:01:31Z",
-    "daysSinceCreated": 19,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 20,
+    "daysSinceUpdated": 9
   }
 ]
