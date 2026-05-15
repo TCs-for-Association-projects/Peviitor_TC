@@ -1,5 +1,33 @@
 [
   {
+    "number": 97,
+    "title": "[TC]: Check the message alert for no job found",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/97",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check the message alert for no job found when searching by a certain criteria",
+    "descriptionExcerpt": "Check the message alert for no job found when searching by a certain criteria",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-15T17:39:40Z",
+    "updatedAt": "2026-05-15T17:39:50Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 96,
     "title": "[TC]: Check if the search results update correctly after modifying the query",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/96",
@@ -29,8 +57,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-13T12:00:35Z",
     "updatedAt": "2026-05-13T12:00:56Z",
-    "daysSinceCreated": 1,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 2,
+    "daysSinceUpdated": 2
   },
   {
     "number": 95,
@@ -62,8 +90,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 6,
-    "daysSinceUpdated": 6
+    "daysSinceCreated": 7,
+    "daysSinceUpdated": 7
   },
   {
     "number": 94,
@@ -95,8 +123,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-07T15:45:42Z",
     "updatedAt": "2026-05-07T15:46:09Z",
-    "daysSinceCreated": 7,
-    "daysSinceUpdated": 7
+    "daysSinceCreated": 8,
+    "daysSinceUpdated": 8
   },
   {
     "number": 93,
@@ -161,8 +189,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 91,
@@ -194,8 +222,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 90,
@@ -227,8 +255,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 89,
@@ -260,8 +288,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 88,
@@ -293,8 +321,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 87,
@@ -326,8 +354,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 86,
@@ -359,8 +387,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 85,
@@ -392,8 +420,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T17:18:33Z",
     "updatedAt": "2026-05-05T17:18:50Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 84,
@@ -425,8 +453,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 83,
@@ -458,8 +486,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-04T15:52:22Z",
     "updatedAt": "2026-05-04T15:53:07Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 82,
@@ -491,8 +519,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 81,
@@ -524,8 +552,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 80,
@@ -557,8 +585,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 79,
@@ -590,8 +618,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 78,
@@ -623,8 +651,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 77,
@@ -656,8 +684,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 76,
@@ -689,8 +717,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 75,
@@ -722,8 +750,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 74,
@@ -755,8 +783,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 73,
@@ -788,8 +816,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 72,
@@ -821,8 +849,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 16,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 17,
+    "daysSinceUpdated": 16
   },
   {
     "number": 71,
@@ -854,8 +882,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 18,
-    "daysSinceUpdated": 18
+    "daysSinceCreated": 19,
+    "daysSinceUpdated": 19
   },
   {
     "number": 70,
@@ -887,8 +915,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 18,
-    "daysSinceUpdated": 18
+    "daysSinceCreated": 19,
+    "daysSinceUpdated": 19
   },
   {
     "number": 69,
@@ -920,8 +948,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 18,
-    "daysSinceUpdated": 18
+    "daysSinceCreated": 19,
+    "daysSinceUpdated": 19
   },
   {
     "number": 68,
