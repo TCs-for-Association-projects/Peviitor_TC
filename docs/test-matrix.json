@@ -6,7 +6,12 @@
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
-    "assignees": [],
+    "assignees": [
+      {
+        "login": "CarmenSteliana",
+        "avatar": "https://avatars.githubusercontent.com/u/107409121?v=4"
+      }
+    ],
     "epic": "E8",
     "epicLabel": "Epic8 : Job Search",
     "userStory": "US11",
@@ -23,7 +28,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:19:03Z",
-    "updatedAt": "2026-05-17T13:19:11Z",
+    "updatedAt": "2026-05-17T13:19:13Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
