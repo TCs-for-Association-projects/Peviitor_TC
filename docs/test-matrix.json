@@ -1,7 +1,7 @@
 [
   {
     "number": 102,
-    "title": "[TC]:  Searching by an valid company name and invalid city returns job listings",
+    "title": "[TC]:  Searching by an invalid company name and valid city returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/102",
     "state": "open",
     "author": "CarmenSteliana",
@@ -28,7 +28,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:31:01Z",
-    "updatedAt": "2026-05-17T14:10:59Z",
+    "updatedAt": "2026-05-17T14:23:43Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
