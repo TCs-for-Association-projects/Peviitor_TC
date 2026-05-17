@@ -1,7 +1,7 @@
 [
   {
     "number": 102,
-    "title": "[TC]:  Searching by an invalid company name and valid city returns job listings",
+    "title": "[TC]:  Searching by an valid company name and invalid city returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/102",
     "state": "open",
     "author": "CarmenSteliana",
@@ -21,14 +21,14 @@
     "environment": "Production",
     "os": "Windows 11",
     "browser": "",
-    "description": "This test case verifies that when a user enters an invalid company name and a valid city into the search input on peviitor.ro, the system returns job listings related to the entered city, even if no jobs are associated with the entered company name.",
-    "descriptionExcerpt": "This test case verifies that when a user enters an invalid company name and a valid city into the search input on peviitor.ro, the system returns job listings …",
+    "description": "This test case verifies that when a user enters an valid company name and an invalid city into the search input on peviitor.ro, the system returns job listings related to the entered company, even if no jobs are associated with the entered city name.",
+    "descriptionExcerpt": "This test case verifies that when a user enters an valid company name and an invalid city into the search input on peviitor.ro, the system returns job listings…",
     "status": "Not run",
     "bugFound": false,
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:31:01Z",
-    "updatedAt": "2026-05-17T14:23:43Z",
+    "updatedAt": "2026-05-17T14:29:42Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
