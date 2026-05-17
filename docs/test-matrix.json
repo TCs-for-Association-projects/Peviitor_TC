@@ -57,8 +57,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-13T12:00:35Z",
     "updatedAt": "2026-05-13T12:00:56Z",
-    "daysSinceCreated": 3,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 4,
+    "daysSinceUpdated": 4
   },
   {
     "number": 95,
@@ -90,8 +90,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 8,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 9,
+    "daysSinceUpdated": 9
   },
   {
     "number": 94,
@@ -354,8 +354,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 86,
@@ -387,8 +387,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 85,
@@ -519,8 +519,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-04T10:10:02Z",
-    "daysSinceCreated": 12,
-    "daysSinceUpdated": 12
+    "daysSinceCreated": 13,
+    "daysSinceUpdated": 13
   },
   {
     "number": 81,
@@ -551,9 +551,9 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
-    "updatedAt": "2026-05-04T09:22:18Z",
-    "daysSinceCreated": 12,
-    "daysSinceUpdated": 12
+    "updatedAt": "2026-05-17T12:30:00Z",
+    "daysSinceCreated": 13,
+    "daysSinceUpdated": 0
   },
   {
     "number": 80,
@@ -585,8 +585,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 13,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 14,
+    "daysSinceUpdated": 14
   },
   {
     "number": 79,
@@ -618,8 +618,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 78,
@@ -651,8 +651,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 77,
@@ -684,8 +684,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 76,
@@ -717,8 +717,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 75,
@@ -750,8 +750,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 74,
@@ -849,8 +849,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 18,
-    "daysSinceUpdated": 17
+    "daysSinceCreated": 19,
+    "daysSinceUpdated": 18
   },
   {
     "number": 71,
@@ -948,8 +948,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 20,
-    "daysSinceUpdated": 20
+    "daysSinceCreated": 21,
+    "daysSinceUpdated": 21
   },
   {
     "number": 68,
