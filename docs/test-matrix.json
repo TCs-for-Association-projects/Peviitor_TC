@@ -1,5 +1,38 @@
 [
   {
+    "number": 98,
+    "title": "[TC]: [TC]: Checking the functionality of the links \"Despre noi\" and \"Misiune\"",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/98",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E5",
+    "epicLabel": "Epic5: Footer Navigation & Structure ",
+    "userStory": "US1",
+    "userStoryLabel": "US1 : As a user, I want to see important navigation links in the footer, so that I can easily access key pages",
+    "testingType": "Navigation",
+    "section": "Footer",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "This test case verifies that the “About Us” link is visible, accessible, and correctly redirects the user to the “About Us” page where the content is displayed without errors.",
+    "descriptionExcerpt": "This test case verifies that the “About Us” link is visible, accessible, and correctly redirects the user to the “About Us” page where the content is displayed…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-17T12:34:18Z",
+    "updatedAt": "2026-05-17T12:34:18Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 97,
     "title": "[TC]: Check the message alert for no job found",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/97",
@@ -915,8 +948,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 20,
-    "daysSinceUpdated": 20
+    "daysSinceCreated": 21,
+    "daysSinceUpdated": 21
   },
   {
     "number": 69,
