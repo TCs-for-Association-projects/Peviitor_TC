@@ -590,7 +590,7 @@
   },
   {
     "number": 81,
-    "title": "[TC]:  Search from main page by an existing company name returns job listings",
+    "title": "[TC]:  Search by existing company name returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/81",
     "state": "open",
     "author": "CarmenSteliana",
@@ -617,7 +617,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
-    "updatedAt": "2026-05-17T12:30:00Z",
+    "updatedAt": "2026-05-17T13:11:37Z",
     "daysSinceCreated": 13,
     "daysSinceUpdated": 0
   },
