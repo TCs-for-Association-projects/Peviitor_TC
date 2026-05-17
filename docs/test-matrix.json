@@ -288,8 +288,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 90,
@@ -321,8 +321,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 89,
@@ -354,8 +354,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 88,
@@ -387,8 +387,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 87,
@@ -557,7 +557,7 @@
   },
   {
     "number": 82,
-    "title": "[TC]:  Searching by a valid company and city from the main page returns job listings",
+    "title": "[TC]:  Searching by a valid company and city returns job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/82",
     "state": "open",
     "author": "CarmenSteliana",
@@ -584,7 +584,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
-    "updatedAt": "2026-05-17T12:46:14Z",
+    "updatedAt": "2026-05-17T13:10:39Z",
     "daysSinceCreated": 13,
     "daysSinceUpdated": 0
   },
