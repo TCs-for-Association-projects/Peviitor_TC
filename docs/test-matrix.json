@@ -1,5 +1,33 @@
 [
   {
+    "number": 100,
+    "title": "[TC]:  Searching by an invalid company name and valid city returns job listings",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/100",
+    "state": "open",
+    "author": "CarmenSteliana",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
+    "assignees": [],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Navigation",
+    "section": "Search bar",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "",
+    "description": "This test case verifies that when a user enters an invalid company name and a valid city into the search input on peviitor.ro, the system returns job listings related to the entered city, even if no jobs are associated with the entered company name.",
+    "descriptionExcerpt": "This test case verifies that when a user enters an invalid company name and a valid city into the search input on peviitor.ro, the system returns job listings …",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-17T13:19:03Z",
+    "updatedAt": "2026-05-17T13:19:11Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 99,
     "title": "[TC]:  Checking the functionality of the links \"Condiții de utilizare\" and \"Politica de confidențialitate\" from the footer",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/99",
@@ -255,8 +283,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceCreated": 11,
+    "daysSinceUpdated": 11
   },
   {
     "number": 91,
