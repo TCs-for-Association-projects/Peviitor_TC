@@ -1,5 +1,38 @@
 [
   {
+    "number": 99,
+    "title": "[TC]:  Checking the functionality of the links \"Condiții de utilizare\" and \"Politica de confidențialitate\" from the footer",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/99",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E5",
+    "epicLabel": "Epic5: Footer Navigation & Structure ",
+    "userStory": "US1",
+    "userStoryLabel": "US1 : As a user, I want to see important navigation links in the footer, so that I can easily access key pages",
+    "testingType": "Navigation",
+    "section": "Footer",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "This test case verifies that “Condiții de utilizare\" and \"Politica de confidențialitate\" links  are visible, accessible, and correctly redirects the user without any error.",
+    "descriptionExcerpt": "This test case verifies that “Condiții de utilizare\" and \"Politica de confidențialitate\" links are visible, accessible, and correctly redirects the user withou…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-17T12:45:52Z",
+    "updatedAt": "2026-05-17T12:45:52Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 98,
     "title": "[TC]: Checking the functionality of the links \"Despre noi\" and \"Misiune\"",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/98",
