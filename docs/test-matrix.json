@@ -1,5 +1,38 @@
 [
   {
+    "number": 115,
+    "title": "[TC]: Core UI components rendering",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/115",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US33",
+    "userStoryLabel": "US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs",
+    "testingType": "Navigation",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Verifies that all essential homepage components are rendered correctly on initial load.",
+    "descriptionExcerpt": "Verifies that all essential homepage components are rendered correctly on initial load.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T12:46:46Z",
+    "updatedAt": "2026-05-18T12:46:46Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 114,
     "title": "[TC]: Homepage loads successfully",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/114",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:40:46Z",
-    "updatedAt": "2026-05-18T12:40:46Z",
+    "updatedAt": "2026-05-18T12:41:01Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -387,8 +420,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:45:52Z",
     "updatedAt": "2026-05-17T12:46:03Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 98,
