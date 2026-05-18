@@ -1,5 +1,38 @@
 [
   {
+    "number": 116,
+    "title": "[TC]: The number of total jobs is the same",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/116",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US33",
+    "userStoryLabel": "US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs",
+    "testingType": "Content testing",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Verify that the total number of jobs from the text \"Peste ...... de locuri de muncă din România actualizate zilnic\" in the homepage is the same with the one from the landing page after clicking the \"cauta\" button",
+    "descriptionExcerpt": "Verify that the total number of jobs from the text \"Peste ...... de locuri de muncă din România actualizate zilnic\" in the homepage is the same with the one fr…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T12:58:23Z",
+    "updatedAt": "2026-05-18T12:58:34Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 115,
     "title": "[TC]: Core UI components rendering",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/115",
@@ -745,8 +778,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 88,
@@ -778,8 +811,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 87,
