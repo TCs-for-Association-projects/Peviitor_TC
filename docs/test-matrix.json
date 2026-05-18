@@ -1,5 +1,38 @@
 [
   {
+    "number": 117,
+    "title": "[TC]: Navigate from homepage to job listings",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/117",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US34",
+    "userStoryLabel": "US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction",
+    "testingType": "Content testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Verifies that the user can reach the job listings page from the homepage using available navigation (\"Cauta\"button or search field).",
+    "descriptionExcerpt": "Verifies that the user can reach the job listings page from the homepage using available navigation (\"Cauta\"button or search field).",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T13:37:53Z",
+    "updatedAt": "2026-05-18T13:38:08Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 116,
     "title": "[TC]: The number of total jobs is the same",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/116",
@@ -387,7 +420,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:31:01Z",
     "updatedAt": "2026-05-17T14:29:42Z",
-    "daysSinceCreated": 0,
+    "daysSinceCreated": 1,
     "daysSinceUpdated": 0
   },
   {
@@ -420,8 +453,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:19:03Z",
     "updatedAt": "2026-05-17T13:19:13Z",
-    "daysSinceCreated": 0,
-    "daysSinceUpdated": 0
+    "daysSinceCreated": 1,
+    "daysSinceUpdated": 1
   },
   {
     "number": 99,
@@ -679,8 +712,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 11,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 12,
+    "daysSinceUpdated": 12
   },
   {
     "number": 91,
