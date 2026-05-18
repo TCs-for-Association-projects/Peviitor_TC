@@ -68,6 +68,7 @@ body:
       label: Epic
       description: "Select the Epic this test case belongs to."
       options:
+      - "Epic0 (#11)"
       - "Epic1 (#11)"
       - "Epic2: Location Input for HOMEPAGE (#13)"
       - "Epic3: Location Flexibility: Cities and Counties (#14)"
@@ -120,6 +121,8 @@ body:
       - "E3 · US30: US30 : I want to see only cities relevant to Romania, so that I don’t select invalid locations (#60)"
       - "E3 · US31: US31 : As a user, I want to select a city, so that I can see in the dropdown all the counties from that city (#61)"
       - "E3 · US32: US32 : As a user, I want to see the village name followed by its city in the dropdown list, so that I can clearly distinguish between locations with similar names (#62)"
+      - "E0 · US33: US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs (#112)"
+      - "E0 · US34: US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction (#113)"
     validations:
       required: true
 
