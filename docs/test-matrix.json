@@ -1,5 +1,38 @@
 [
   {
+    "number": 114,
+    "title": "[TC]: Homepage loads successfully",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/114",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US33",
+    "userStoryLabel": "US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs",
+    "testingType": "Navigation",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Verifies that the homepage is accessible and loads correctly without errors or broken UI.",
+    "descriptionExcerpt": "Verifies that the homepage is accessible and loads correctly without errors or broken UI.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T12:40:46Z",
+    "updatedAt": "2026-05-18T12:40:46Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 110,
     "title": "[TC]: Check if the interface is user-friendly, intuitive, and accessible for different user groups (including user with disabilities).",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/110",
@@ -387,7 +420,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:34:18Z",
     "updatedAt": "2026-05-17T12:47:00Z",
-    "daysSinceCreated": 0,
+    "daysSinceCreated": 1,
     "daysSinceUpdated": 0
   },
   {
@@ -1273,8 +1306,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 21,
-    "daysSinceUpdated": 21
+    "daysSinceCreated": 22,
+    "daysSinceUpdated": 22
   },
   {
     "number": 70,
@@ -1306,8 +1339,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 21,
-    "daysSinceUpdated": 21
+    "daysSinceCreated": 22,
+    "daysSinceUpdated": 22
   },
   {
     "number": 69,
@@ -1339,8 +1372,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 21,
-    "daysSinceUpdated": 21
+    "daysSinceCreated": 22,
+    "daysSinceUpdated": 22
   },
   {
     "number": 68,
