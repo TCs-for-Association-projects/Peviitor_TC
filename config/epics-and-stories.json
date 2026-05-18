@@ -1,5 +1,10 @@
 {
   "epics": [
+      {
+      "id": "E0",
+      "label": "Epic0",
+      "issue": 11
+    },
     {
       "id": "E1",
       "label": "Epic1",
@@ -248,6 +253,18 @@
       "label": "US32 : As a user, I want to see the village name followed by its city in the dropdown list, so that I can clearly distinguish between locations with similar names",
       "issue": 62,
       "epicId": "E3"
+    },
+     {
+    "id": "US33",
+      "label": "US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs",
+        "issue": 112,
+      "epicId": "E0"
+    },
+         {
+    "id": "US34",
+      "label": "US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction",
+      "issue": 113,
+      "epicId": "E0"
     }
   ],
   "testingTypes": [
