@@ -1,5 +1,33 @@
 [
   {
+    "number": 110,
+    "title": "[TC]: Check if the interface is user-friendly, intuitive, and accessible for different user groups (including user with disabilities).",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/110",
+    "state": "open",
+    "author": "Florina87",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/174430658?v=4",
+    "assignees": [],
+    "epic": "E5",
+    "epicLabel": "Epic5: Footer Navigation & Structure ",
+    "userStory": "US3",
+    "userStoryLabel": "US3 : As a user with accessibility needs, I want to navigate the footer using assistive technologies so that I can access all links without barriers",
+    "testingType": "Navigation",
+    "section": "Footer",
+    "environment": "Production",
+    "os": "Windows 10 Pro",
+    "browser": "Chrome 147.0",
+    "description": "Verify that the application interface is easy to understand, simple to navigate, and usable for all users, including people with disabilities. Ensure users can perform tasks intuitively with clear navigation, readable content, consistent design, and responsive layouts across devices. Confirm accessibility features such as keyboard navigation, screen reader support, proper color contrast, alt text, visible focus indicators.",
+    "descriptionExcerpt": "Verify that the application interface is easy to understand, simple to navigate, and usable for all users, including people with disabilities. Ensure users can…",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T09:50:29Z",
+    "updatedAt": "2026-05-18T09:50:29Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 109,
     "title": "[TC]:  Searching using a city name with diacritics returns relevant job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/109",
@@ -453,8 +481,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 9,
-    "daysSinceUpdated": 9
+    "daysSinceCreated": 10,
+    "daysSinceUpdated": 10
   },
   {
     "number": 94,
@@ -915,7 +943,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-17T13:11:37Z",
-    "daysSinceCreated": 13,
+    "daysSinceCreated": 14,
     "daysSinceUpdated": 0
   },
   {
@@ -1212,7 +1240,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 19,
+    "daysSinceCreated": 20,
     "daysSinceUpdated": 18
   },
   {
