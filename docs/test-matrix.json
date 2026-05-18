@@ -1,5 +1,38 @@
 [
   {
+    "number": 118,
+    "title": "[TC]: Navigation routing to Job Listings module",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/118",
+    "state": "open",
+    "author": "DeedeeDL",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
+    "assignees": [
+      {
+        "login": "DeedeeDL",
+        "avatar": "https://avatars.githubusercontent.com/u/129604131?v=4"
+      }
+    ],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US34",
+    "userStoryLabel": "US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction",
+    "testingType": "Navigation",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "",
+    "browser": "",
+    "description": "Check the integration between the homepage and the job listings module via routing (frontend → job page).",
+    "descriptionExcerpt": "Check the integration between the homepage and the job listings module via routing (frontend → job page).",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-18T13:45:39Z",
+    "updatedAt": "2026-05-18T13:45:39Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 117,
     "title": "[TC]: Navigate from homepage to job listings",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/117",
