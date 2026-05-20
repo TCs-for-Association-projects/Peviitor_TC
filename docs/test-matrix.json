@@ -1,5 +1,38 @@
 [
   {
+    "number": 129,
+    "title": "[TC]: Check search responsive behavior on Microsoft Edge browser, on Windows 11 OS",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/129",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E8",
+    "epicLabel": "Epic8 : Job Search",
+    "userStory": "US11",
+    "userStoryLabel": "US11 : As a user, I want to search for jobs using different criteria (e.g., company, location, work mode, industry) so that I can see job listings matching my criteria",
+    "testingType": "Compatibility testing",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Microsoft Edge",
+    "description": "Check search responsive behavior on Microsoft Edge browser, on Windows 11 OS",
+    "descriptionExcerpt": "Check search responsive behavior on Microsoft Edge browser, on Windows 11 OS",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-20T21:17:42Z",
+    "updatedAt": "2026-05-20T21:17:42Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 128,
     "title": "[TC]: Check the results after deleting one search filter",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/128",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:56:47Z",
-    "updatedAt": "2026-05-20T20:56:47Z",
+    "updatedAt": "2026-05-20T20:57:00Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -227,7 +260,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T21:17:20Z",
     "updatedAt": "2026-05-19T21:37:09Z",
-    "daysSinceCreated": 0,
+    "daysSinceCreated": 1,
     "daysSinceUpdated": 0
   },
   {
@@ -1938,6 +1971,6 @@
     "createdAt": "2026-04-23T19:08:26Z",
     "updatedAt": "2026-05-04T21:01:31Z",
     "daysSinceCreated": 27,
-    "daysSinceUpdated": 15
+    "daysSinceUpdated": 16
   }
 ]
