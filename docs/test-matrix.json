@@ -1,5 +1,38 @@
 [
   {
+    "number": 126,
+    "title": "[TC]: Verify if the message ,,Aplicati pe site-ul companiei\" is displayed while hovering over with the mouse cursor on the right coloured side job's section",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/126",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E6",
+    "epicLabel": "Epic6: Displaying job results",
+    "userStory": "US4",
+    "userStoryLabel": "US4 : As a user, I want to see a list of relevant jobs after performing a search, so that I can quickly identify suitable opportunities ",
+    "testingType": "Navigation",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome",
+    "description": "Verify if the message ,,Aplicati pe site-ul companiei\" is displayed while hovering over with the mouse cursor on the right coloured side job's section",
+    "descriptionExcerpt": "Verify if the message ,,Aplicati pe site-ul companiei\" is displayed while hovering over with the mouse cursor on the right coloured side job's section",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-20T20:03:12Z",
+    "updatedAt": "2026-05-20T20:03:12Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 125,
     "title": "Check if the job section's colour is changing(the outline and right side) after hovering over with the mouse cursor",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/125",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-20T19:21:18Z",
-    "updatedAt": "2026-05-20T19:21:30Z",
+    "updatedAt": "2026-05-20T19:21:31Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -453,8 +486,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:21:33Z",
     "updatedAt": "2026-05-17T19:21:43Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 108,
@@ -1768,8 +1801,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:30:23Z",
     "updatedAt": "2026-04-23T19:30:35Z",
-    "daysSinceCreated": 26,
-    "daysSinceUpdated": 26
+    "daysSinceCreated": 27,
+    "daysSinceUpdated": 27
   },
   {
     "number": 67,
@@ -1801,8 +1834,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:23:09Z",
     "updatedAt": "2026-04-23T19:23:26Z",
-    "daysSinceCreated": 26,
-    "daysSinceUpdated": 26
+    "daysSinceCreated": 27,
+    "daysSinceUpdated": 27
   },
   {
     "number": 66,
