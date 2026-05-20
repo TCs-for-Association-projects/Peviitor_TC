@@ -1,5 +1,38 @@
 [
   {
+    "number": 127,
+    "title": "[TC]: Verify if the message ,,Vezi profilul companiei <company's name>\" is displayed while hovering over the company's logo/name",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/127",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E6",
+    "epicLabel": "Epic6: Displaying job results",
+    "userStory": "US4",
+    "userStoryLabel": "US4 : As a user, I want to see a list of relevant jobs after performing a search, so that I can quickly identify suitable opportunities ",
+    "testingType": "Navigation",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome",
+    "description": "Verify if the message ,,Vezi profilul companiei <company's name>\" is displayed while hovering over the company's logo/name",
+    "descriptionExcerpt": "Verify if the message ,,Vezi profilul companiei <company's name>\" is displayed while hovering over the company's logo/name",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-20T20:19:37Z",
+    "updatedAt": "2026-05-20T20:19:46Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 126,
     "title": "[TC]: Verify if the message ,,Aplicati pe site-ul companiei\" is displayed while hovering over with the mouse cursor on the right coloured side job's section",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/126",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:03:12Z",
-    "updatedAt": "2026-05-20T20:03:12Z",
+    "updatedAt": "2026-05-20T20:03:24Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -227,7 +260,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T20:08:35Z",
     "updatedAt": "2026-05-19T20:51:47Z",
-    "daysSinceCreated": 0,
+    "daysSinceCreated": 1,
     "daysSinceUpdated": 0
   },
   {
