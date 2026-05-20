@@ -1,5 +1,38 @@
 [
   {
+    "number": 125,
+    "title": "Check if the job section's colour is changing(the outline and right side) after hovering over with the mouse cursor",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/125",
+    "state": "open",
+    "author": "AlexandruFBN",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
+    "assignees": [
+      {
+        "login": "AlexandruFBN",
+        "avatar": "https://avatars.githubusercontent.com/u/158216091?v=4"
+      }
+    ],
+    "epic": "E6",
+    "epicLabel": "Epic6: Displaying job results",
+    "userStory": "US4",
+    "userStoryLabel": "US4 : As a user, I want to see a list of relevant jobs after performing a search, so that I can quickly identify suitable opportunities ",
+    "testingType": "Navigation",
+    "section": "Job listings",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome",
+    "description": "Check if the job section's colour is changing(the outline and right side) after hovering over with the mouse cursor",
+    "descriptionExcerpt": "Check if the job section's colour is changing(the outline and right side) after hovering over with the mouse cursor",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-05-20T19:21:18Z",
+    "updatedAt": "2026-05-20T19:21:30Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 124,
     "title": "Check if after applying minimum 1 filter, the filter colour has changed",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/124",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-05-20T18:55:46Z",
-    "updatedAt": "2026-05-20T18:55:57Z",
+    "updatedAt": "2026-05-20T18:55:58Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -453,8 +486,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:14:50Z",
     "updatedAt": "2026-05-17T19:15:02Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 107,
@@ -486,8 +519,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:06:23Z",
     "updatedAt": "2026-05-17T19:06:31Z",
-    "daysSinceCreated": 2,
-    "daysSinceUpdated": 2
+    "daysSinceCreated": 3,
+    "daysSinceUpdated": 3
   },
   {
     "number": 106,
@@ -1805,7 +1838,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
     "updatedAt": "2026-05-04T21:01:31Z",
-    "daysSinceCreated": 26,
+    "daysSinceCreated": 27,
     "daysSinceUpdated": 15
   }
 ]
