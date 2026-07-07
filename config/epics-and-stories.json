@@ -59,7 +59,52 @@
       "id": "E11",
       "label": "Epic11: Footer User Interface",
       "issue": 45
+    },
+
+    {
+      "id": "E12",
+      "label": "Epic12: Streamline Job Search Experience",
+      "issue": 131
+    },
+
+      {
+      "id": "E13",
+      "label": "Epic13: Enhance Navigation & Site Orientation",
+      "issue": 132
+    },
+    
+       {
+      "id": "E14",
+      "label": "Epic14: Search button",
+      "issue": 137
+    },
+    
+     {
+      "id": "E15",
+      "label": "Epic15: City Filter",
+      "issue": 139
+    },
+
+    {
+      "id": "E16",
+      "label": "Epic16: Job Search and City Filter",
+      "issue": 141
+    },
+
+    {
+      "id": "E17",
+      "label": "Epic17: Compatibility and Responsiveness for Search and City Filter",
+      "issue": 145
+    },
+
+    {
+      "id": "E18",
+      "label": "Epic18: UI/UX City Filter",
+      "issue": 153
     }
+
+
+    
   ],
   "userStories": [
     {
