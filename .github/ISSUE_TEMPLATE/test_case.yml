@@ -80,6 +80,13 @@ body:
       - "Epic9: Footer - Legal & Compliance (#32)"
       - "Epic10: compatibility (#39)"
       - "Epic11: Footer User Interface (#45)"
+      - "Epic12: Streamline Job Search Experience (#131)"
+      - "Epic13: Enhance Navigation & Site Orientation (#132)"
+      - "Epic14: Search button (#137)"
+      - "Epic15: City Filter (#139)"
+      - "Epic16: Job Search and City Filter (#141)"
+      - "Epic17: Compatibility and Responsiveness for Search and City Filter (#145)"
+      - "Epic18: UI/UX City Filter (#153)"
     validations:
       required: true
 
