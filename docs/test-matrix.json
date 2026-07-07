@@ -1,7 +1,7 @@
 [
   {
     "number": 152,
-    "title": "[TC]: Testare Cu DEEDEE",
+    "title": "[TC]: Verify the Visual Consistency of City Filters",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/152",
     "state": "open",
     "author": "Lore78",
@@ -20,10 +20,10 @@
     "descriptionExcerpt": "Check that the layout, alignment, colors, fonts, and spacing are consistent and comply with the application's design specifications. Ensure there are no visual…",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-06-30T17:36:27Z",
-    "updatedAt": "2026-07-07T04:12:02Z",
+    "updatedAt": "2026-07-07T04:12:27Z",
     "daysSinceCreated": 6,
     "daysSinceUpdated": 0
   },
