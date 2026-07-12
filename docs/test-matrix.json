@@ -1,5 +1,38 @@
 [
   {
+    "number": 158,
+    "title": "[TC]: Check the result when entering a valid city",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/158",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E3",
+    "epicLabel": "Epic3: Location Flexibility: Cities and Counties",
+    "userStory": "US30",
+    "userStoryLabel": "US30 : I want to see only cities relevant to Romania, so that I don’t select invalid locations",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check the result when entering a valid city",
+    "descriptionExcerpt": "Check the result when entering a valid city",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-07-12T17:39:24Z",
+    "updatedAt": "2026-07-12T17:39:35Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 157,
     "title": "[TC] Check if the cities/locations in the filter are in the correct alphabetical order",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/157",
@@ -80,7 +113,7 @@
     "crossBrowser": true,
     "createdAt": "2026-06-30T17:36:27Z",
     "updatedAt": "2026-07-09T03:41:01Z",
-    "daysSinceCreated": 11,
+    "daysSinceCreated": 12,
     "daysSinceUpdated": 3
   },
   {
@@ -1423,8 +1456,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T17:18:33Z",
     "updatedAt": "2026-05-05T17:18:50Z",
-    "daysSinceCreated": 67,
-    "daysSinceUpdated": 67
+    "daysSinceCreated": 68,
+    "daysSinceUpdated": 68
   },
   {
     "number": 84,
@@ -1456,8 +1489,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 67,
-    "daysSinceUpdated": 67
+    "daysSinceCreated": 68,
+    "daysSinceUpdated": 68
   },
   {
     "number": 83,
