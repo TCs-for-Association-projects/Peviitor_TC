@@ -1,5 +1,38 @@
 [
   {
+    "number": 159,
+    "title": "[TC]: Check if a selected city can be removed",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/159",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E3",
+    "epicLabel": "Epic3: Location Flexibility: Cities and Counties",
+    "userStory": "US27",
+    "userStoryLabel": "US27 : As a user, I want to be able to clear the selected city from the location field, so that I can remove the location filter and see all cities",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check if a selected city can be removed",
+    "descriptionExcerpt": "Check if a selected city can be removed",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-07-12T18:10:40Z",
+    "updatedAt": "2026-07-12T18:10:50Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 158,
     "title": "[TC]: Check the result when entering a valid city",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/158",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-07-12T17:39:24Z",
-    "updatedAt": "2026-07-12T17:39:35Z",
+    "updatedAt": "2026-07-12T17:39:36Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -867,8 +900,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:04:45Z",
     "updatedAt": "2026-05-17T18:09:16Z",
-    "daysSinceCreated": 55,
-    "daysSinceUpdated": 55
+    "daysSinceCreated": 56,
+    "daysSinceUpdated": 56
   },
   {
     "number": 103,
@@ -901,7 +934,7 @@
     "createdAt": "2026-05-17T15:59:43Z",
     "updatedAt": "2026-05-17T18:09:58Z",
     "daysSinceCreated": 56,
-    "daysSinceUpdated": 55
+    "daysSinceUpdated": 56
   },
   {
     "number": 102,
@@ -1060,8 +1093,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-15T17:39:40Z",
     "updatedAt": "2026-05-15T17:39:50Z",
-    "daysSinceCreated": 57,
-    "daysSinceUpdated": 57
+    "daysSinceCreated": 58,
+    "daysSinceUpdated": 58
   },
   {
     "number": 96,
