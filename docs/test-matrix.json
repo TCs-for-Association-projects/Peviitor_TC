@@ -9,8 +9,8 @@
     "assignees": [],
     "epic": "E15",
     "epicLabel": "Epic15: City Filter",
-    "userStory": "US1",
-    "userStoryLabel": "US1 : As a user, I want to see important navigation links in the footer, so that I can easily access key pages",
+    "userStory": "",
+    "userStoryLabel": "",
     "testingType": "Navigation",
     "section": "Filters",
     "environment": "Local",
@@ -23,7 +23,7 @@
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-07-12T15:58:31Z",
-    "updatedAt": "2026-07-12T15:59:00Z",
+    "updatedAt": "2026-07-12T15:59:49Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -867,7 +867,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T15:59:43Z",
     "updatedAt": "2026-05-17T18:09:58Z",
-    "daysSinceCreated": 55,
+    "daysSinceCreated": 56,
     "daysSinceUpdated": 55
   },
   {
