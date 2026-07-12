@@ -1,5 +1,38 @@
 [
   {
+    "number": 161,
+    "title": "[TC]: Check the system behavior when entering an invalid city",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/161",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E3",
+    "epicLabel": "Epic3: Location Flexibility: Cities and Counties",
+    "userStory": "US26",
+    "userStoryLabel": "US26 : As a user, I want to search for a city by typing in the location field, so that I can quickly find and select my desired city without scrolling through a long list",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check the system behavior when entering an invalid city.",
+    "descriptionExcerpt": "Check the system behavior when entering an invalid city.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-07-12T18:32:06Z",
+    "updatedAt": "2026-07-12T18:32:18Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 160,
     "title": "[TC]: Check if the City filter is case sensitive",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/160",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:22:39Z",
-    "updatedAt": "2026-07-12T18:22:45Z",
+    "updatedAt": "2026-07-12T18:22:52Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -867,8 +900,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:29:21Z",
     "updatedAt": "2026-05-17T18:29:29Z",
-    "daysSinceCreated": 55,
-    "daysSinceUpdated": 55
+    "daysSinceCreated": 56,
+    "daysSinceUpdated": 56
   },
   {
     "number": 105,
