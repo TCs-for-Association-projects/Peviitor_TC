@@ -1,5 +1,38 @@
 [
   {
+    "number": 160,
+    "title": "[TC]: Check if the City filter is case sensitive",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/160",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E3",
+    "epicLabel": "Epic3: Location Flexibility: Cities and Counties",
+    "userStory": "US5",
+    "userStoryLabel": "US5 : As a user, I want to be able to filter listings by city, so that I can see only the jobs available in the location that interests me",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check if the City filter is case sensitive",
+    "descriptionExcerpt": "Check if the City filter is case sensitive",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-07-12T18:22:39Z",
+    "updatedAt": "2026-07-12T18:22:45Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 159,
     "title": "[TC]: Check if a selected city can be removed",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/159",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:10:40Z",
-    "updatedAt": "2026-07-12T18:10:50Z",
+    "updatedAt": "2026-07-12T18:10:55Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -867,8 +900,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:17:32Z",
     "updatedAt": "2026-05-17T18:17:41Z",
-    "daysSinceCreated": 55,
-    "daysSinceUpdated": 55
+    "daysSinceCreated": 56,
+    "daysSinceUpdated": 56
   },
   {
     "number": 104,
