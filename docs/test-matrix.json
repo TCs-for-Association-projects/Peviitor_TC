@@ -1,7 +1,7 @@
 [
   {
     "number": 157,
-    "title": "[TC] Check if the cities in the filter are in the correct alphabetical order",
+    "title": "[TC] Check if the cities/locations in the filter are in the correct alphabetical order",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/157",
     "state": "open",
     "author": "Lore78",
@@ -20,10 +20,10 @@
     "descriptionExcerpt": "Check if the cities in the filter are in the correct alphabetical order",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-07-12T15:58:31Z",
-    "updatedAt": "2026-07-12T15:58:31Z",
+    "updatedAt": "2026-07-12T15:59:00Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
