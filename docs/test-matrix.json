@@ -1,5 +1,38 @@
 [
   {
+    "number": 162,
+    "title": "[TC]: Check search using Romanian diacritics",
+    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/162",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E3",
+    "epicLabel": "Epic3: Location Flexibility: Cities and Counties",
+    "userStory": "US30",
+    "userStoryLabel": "US30 : I want to see only cities relevant to Romania, so that I don’t select invalid locations",
+    "testingType": "Navigation",
+    "section": "Filters",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Check search using Romanian diacritics",
+    "descriptionExcerpt": "Check search using Romanian diacritics",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-07-12T18:41:11Z",
+    "updatedAt": "2026-07-12T18:41:23Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 161,
     "title": "[TC]: Check the system behavior when entering an invalid city",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/161",
@@ -28,7 +61,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:32:06Z",
-    "updatedAt": "2026-07-12T18:32:18Z",
+    "updatedAt": "2026-07-12T18:32:19Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
