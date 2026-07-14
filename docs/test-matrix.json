@@ -18,7 +18,7 @@
     "userStoryLabel": "",
     "testingType": "Navigation",
     "section": "Search bar",
-    "environment": "Local",
+    "environment": "Production",
     "os": "Windows 11",
     "browser": "Chrome 120",
     "description": "Check if the search button from homepage is functional and clickable .",
@@ -28,7 +28,7 @@
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-07-14T05:28:03Z",
-    "updatedAt": "2026-07-14T05:34:33Z",
+    "updatedAt": "2026-07-14T05:39:21Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
