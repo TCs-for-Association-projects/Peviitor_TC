@@ -310,6 +310,13 @@
       "label": "US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction",
       "issue": 113,
       "epicId": "E0"
+    },
+
+     {
+    "id": "US35",
+      "label": "US35 : homepage visual hierarchy and call -to-action visibility",
+      "issue": 165,
+      "epicId": "E13"
     }
   ],
   "testingTypes": [
