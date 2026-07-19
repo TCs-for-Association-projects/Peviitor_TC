@@ -16,14 +16,14 @@
     "environment": "Local",
     "os": "Windows 11",
     "browser": "Chrome 120",
-    "description": "Users can immediately see and access the job search bar upon entering the homepage.\n\nThe CTA (e.g. \"Caută\") is immediately visible without scrolling.\n\nUsers can identify the primary purpose of the homepage within 5 seconds.",
-    "descriptionExcerpt": "Users can immediately see and access the job search bar upon entering the homepage. The CTA (e.g. \"Caută\") is immediately visible without scrolling. Users can …",
+    "description": "Users can immediately see and access the job search bar upon entering the homepage.",
+    "descriptionExcerpt": "Users can immediately see and access the job search bar upon entering the homepage.",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-07-19T16:49:13Z",
-    "updatedAt": "2026-07-19T16:49:13Z",
+    "updatedAt": "2026-07-19T17:06:15Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -1715,8 +1715,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 74,
-    "daysSinceUpdated": 74
+    "daysSinceCreated": 75,
+    "daysSinceUpdated": 75
   },
   {
     "number": 83,
