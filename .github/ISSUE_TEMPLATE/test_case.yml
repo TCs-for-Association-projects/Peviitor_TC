@@ -130,6 +130,7 @@ body:
       - "E3 · US32: US32 : As a user, I want to see the village name followed by its city in the dropdown list, so that I can clearly distinguish between locations with similar names (#62)"
       - "E0 · US33: US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs (#112)"
       - "E0 · US34: US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction (#113)"
+      - "E13 · US35: US35 : homepage visual hierarchy and call -to-action visibility (#165)"
     validations:
       required: true
 
