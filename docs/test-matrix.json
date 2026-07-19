@@ -1,7 +1,7 @@
 [
   {
     "number": 168,
-    "title": "[TC]: Check if the users can identify the primary purpose of the homepage within 5 seconds",
+    "title": "[TC]: Check that the users can identify the primary purpose of the homepage within 5 seconds",
     "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/168",
     "state": "open",
     "author": "Lore78",
@@ -23,7 +23,7 @@
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-07-19T17:16:02Z",
-    "updatedAt": "2026-07-19T17:16:15Z",
+    "updatedAt": "2026-07-19T17:20:59Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
