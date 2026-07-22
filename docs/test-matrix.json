@@ -146,7 +146,7 @@
     "crossBrowser": true,
     "createdAt": "2026-07-14T05:28:03Z",
     "updatedAt": "2026-07-22T04:13:39Z",
-    "daysSinceCreated": 7,
+    "daysSinceCreated": 8,
     "daysSinceUpdated": 0
   },
   {
@@ -160,6 +160,10 @@
       {
         "login": "CrisA24",
         "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      },
+      {
+        "login": "Andrei50521",
+        "avatar": "https://avatars.githubusercontent.com/u/223270901?v=4"
       }
     ],
     "epic": "E3",
@@ -193,6 +197,10 @@
       {
         "login": "CrisA24",
         "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      },
+      {
+        "login": "Andrei50521",
+        "avatar": "https://avatars.githubusercontent.com/u/223270901?v=4"
       }
     ],
     "epic": "E3",
@@ -259,6 +267,10 @@
       {
         "login": "CrisA24",
         "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      },
+      {
+        "login": "Andrei50521",
+        "avatar": "https://avatars.githubusercontent.com/u/223270901?v=4"
       }
     ],
     "epic": "E3",
@@ -367,7 +379,7 @@
     "crossBrowser": true,
     "createdAt": "2026-07-07T04:39:32Z",
     "updatedAt": "2026-07-09T03:42:57Z",
-    "daysSinceCreated": 14,
+    "daysSinceCreated": 15,
     "daysSinceUpdated": 13
   },
   {
