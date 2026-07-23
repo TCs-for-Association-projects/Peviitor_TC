@@ -286,12 +286,12 @@
     "descriptionExcerpt": "Check if a selected city can be removed",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
+    "crossOs": true,
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:10:40Z",
-    "updatedAt": "2026-07-12T18:10:55Z",
+    "updatedAt": "2026-07-23T07:30:54Z",
     "daysSinceCreated": 10,
-    "daysSinceUpdated": 10
+    "daysSinceUpdated": 0
   },
   {
     "number": 158,
