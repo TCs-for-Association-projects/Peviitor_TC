@@ -287,9 +287,9 @@
     "status": "Not run",
     "bugFound": false,
     "crossOs": true,
-    "crossBrowser": false,
+    "crossBrowser": true,
     "createdAt": "2026-07-12T18:10:40Z",
-    "updatedAt": "2026-07-26T07:35:43Z",
+    "updatedAt": "2026-07-26T07:35:58Z",
     "daysSinceCreated": 13,
     "daysSinceUpdated": 0
   },
