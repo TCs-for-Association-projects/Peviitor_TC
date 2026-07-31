@@ -114,7 +114,7 @@
     "createdAt": "2026-07-14T05:51:52Z",
     "updatedAt": "2026-07-23T07:16:56Z",
     "daysSinceCreated": 17,
-    "daysSinceUpdated": 7
+    "daysSinceUpdated": 8
   },
   {
     "number": 163,
@@ -216,12 +216,12 @@
     "descriptionExcerpt": "Check the system behavior when entering an invalid city.",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-07-12T18:32:06Z",
-    "updatedAt": "2026-07-12T18:32:19Z",
+    "updatedAt": "2026-07-31T10:26:02Z",
     "daysSinceCreated": 18,
-    "daysSinceUpdated": 18
+    "daysSinceUpdated": 0
   },
   {
     "number": 160,
@@ -291,7 +291,7 @@
     "createdAt": "2026-07-12T18:10:40Z",
     "updatedAt": "2026-07-26T07:39:00Z",
     "daysSinceCreated": 18,
-    "daysSinceUpdated": 4
+    "daysSinceUpdated": 5
   },
   {
     "number": 158,
@@ -963,8 +963,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T09:50:29Z",
     "updatedAt": "2026-05-18T09:50:41Z",
-    "daysSinceCreated": 73,
-    "daysSinceUpdated": 73
+    "daysSinceCreated": 74,
+    "daysSinceUpdated": 74
   },
   {
     "number": 109,
@@ -1420,8 +1420,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 83,
-    "daysSinceUpdated": 83
+    "daysSinceCreated": 84,
+    "daysSinceUpdated": 84
   },
   {
     "number": 94,
@@ -1849,7 +1849,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-17T13:10:39Z",
-    "daysSinceCreated": 87,
+    "daysSinceCreated": 88,
     "daysSinceUpdated": 74
   },
   {
@@ -1882,7 +1882,7 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-17T13:11:37Z",
-    "daysSinceCreated": 87,
+    "daysSinceCreated": 88,
     "daysSinceUpdated": 74
   },
   {
@@ -2047,8 +2047,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 90,
-    "daysSinceUpdated": 90
+    "daysSinceCreated": 91,
+    "daysSinceUpdated": 91
   },
   {
     "number": 75,
@@ -2080,8 +2080,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 90,
-    "daysSinceUpdated": 90
+    "daysSinceCreated": 91,
+    "daysSinceUpdated": 91
   },
   {
     "number": 74,
@@ -2179,7 +2179,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 93,
+    "daysSinceCreated": 94,
     "daysSinceUpdated": 92
   },
   {
