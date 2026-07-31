@@ -179,12 +179,12 @@
     "descriptionExcerpt": "Check search using Romanian diacritics",
     "status": "Not run",
     "bugFound": false,
-    "crossOs": false,
-    "crossBrowser": false,
+    "crossOs": true,
+    "crossBrowser": true,
     "createdAt": "2026-07-12T18:41:11Z",
-    "updatedAt": "2026-07-12T18:41:25Z",
+    "updatedAt": "2026-07-31T10:31:20Z",
     "daysSinceCreated": 18,
-    "daysSinceUpdated": 18
+    "daysSinceUpdated": 0
   },
   {
     "number": 161,
@@ -214,12 +214,12 @@
     "browser": "Chrome 120",
     "description": "Check the system behavior when entering an invalid city.",
     "descriptionExcerpt": "Check the system behavior when entering an invalid city.",
-    "status": "Not run",
+    "status": "Passed",
     "bugFound": false,
     "crossOs": true,
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:32:06Z",
-    "updatedAt": "2026-07-31T10:27:51Z",
+    "updatedAt": "2026-07-31T10:28:24Z",
     "daysSinceCreated": 18,
     "daysSinceUpdated": 0
   },
