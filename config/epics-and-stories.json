@@ -101,6 +101,12 @@
       "id": "E18",
       "label": "Epic18: UI/UX City Filter",
       "issue": 153
+    },
+
+       {
+      "id": "E19",
+      "label": "Epic19: Accessibility Compliance and Inclusive User Experience",
+      "issue": 169
     }
 
 
@@ -317,6 +323,13 @@
       "label": "US35 : homepage visual hierarchy and call -to-action visibility",
       "issue": 165,
       "epicId": "E13"
+    },
+
+     {
+    "id": "US36",
+      "label": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+      "issue": 170,
+      "epicId": "E19"
     }
   ],
   "testingTypes": [
