@@ -87,6 +87,7 @@ body:
       - "Epic16: Job Search and City Filter (#141)"
       - "Epic17: Compatibility and Responsiveness for Search and City Filter (#145)"
       - "Epic18: UI/UX City Filter (#153)"
+      - "Epic19: Accessibility Compliance and Inclusive User Experience (#169)"
     validations:
       required: true
 
@@ -131,6 +132,7 @@ body:
       - "E0 · US33: US33 : As a user, I want to access the homepage and see all core components, so that I can start searching for jobs (#112)"
       - "E0 · US34: US34 : As a user, I want to navigate from the homepage to job listings easily, so that I can explore available opportunities without friction (#113)"
       - "E13 · US35: US35 : homepage visual hierarchy and call -to-action visibility (#165)"
+      - "E19 · US36: US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers. (#170)"
     validations:
       required: true
 
