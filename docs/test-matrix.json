@@ -2,7 +2,7 @@
   {
     "number": 168,
     "title": "[TC]: Check that the users can identify the primary purpose of the homepage within 5 seconds",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/168",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/168",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -24,13 +24,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T17:16:02Z",
     "updatedAt": "2026-07-19T17:21:46Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 167,
     "title": "[TC]: The CTA (e.g. \"Caută\") is immediately visible without scrolling",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/167",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/167",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -52,13 +52,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T17:12:13Z",
     "updatedAt": "2026-07-19T17:19:51Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 166,
     "title": "[TC]: Check that users can immediately see and access the job search bar upon entering the homepage",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/166",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/166",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -80,13 +80,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T16:49:13Z",
     "updatedAt": "2026-07-19T17:19:05Z",
-    "daysSinceCreated": 15,
-    "daysSinceUpdated": 15
+    "daysSinceCreated": 16,
+    "daysSinceUpdated": 16
   },
   {
     "number": 164,
     "title": "[TC]: Check if the search button from homepage can hover it",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/164",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/164",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -113,13 +113,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-14T05:51:52Z",
     "updatedAt": "2026-07-23T07:16:56Z",
-    "daysSinceCreated": 20,
-    "daysSinceUpdated": 11
+    "daysSinceCreated": 21,
+    "daysSinceUpdated": 12
   },
   {
     "number": 163,
     "title": "[TC]: Check if the search button from homepage is functional",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/163",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/163",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -146,13 +146,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-14T05:28:03Z",
     "updatedAt": "2026-07-22T04:13:39Z",
-    "daysSinceCreated": 21,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 22,
+    "daysSinceUpdated": 14
   },
   {
     "number": 162,
     "title": "[TC]: Check search using Romanian diacritics",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/162",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/162",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -183,13 +183,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:41:11Z",
     "updatedAt": "2026-07-31T10:35:17Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 4
   },
   {
     "number": 161,
     "title": "[TC]: Check the system behavior when entering an invalid city",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/161",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/161",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -220,13 +220,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:32:06Z",
     "updatedAt": "2026-07-31T10:28:24Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 4
   },
   {
     "number": 160,
     "title": "[TC]: Check if the City filter is case sensitive",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/160",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/160",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -253,13 +253,13 @@
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:22:39Z",
     "updatedAt": "2026-07-12T18:22:52Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 22
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 23
   },
   {
     "number": 159,
     "title": "[TC]: Check if a selected city can be removed",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/159",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/159",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -290,13 +290,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:10:40Z",
     "updatedAt": "2026-07-26T07:39:00Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 8
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 9
   },
   {
     "number": 158,
     "title": "[TC]: Check the result when entering a valid city",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/158",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/158",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -323,13 +323,13 @@
     "crossBrowser": false,
     "createdAt": "2026-07-12T17:39:24Z",
     "updatedAt": "2026-07-12T17:39:36Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 22
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 23
   },
   {
     "number": 157,
     "title": "[TC] Check if the cities/locations in the filter are in the correct alphabetical order",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/157",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/157",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -351,13 +351,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T15:58:31Z",
     "updatedAt": "2026-07-12T16:00:16Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 22
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 23
   },
   {
     "number": 156,
     "title": "[TC]: Verify the UI States Display for City Filters",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/156",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/156",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -379,13 +379,13 @@
     "crossBrowser": true,
     "createdAt": "2026-07-07T04:39:32Z",
     "updatedAt": "2026-08-02T16:14:00Z",
-    "daysSinceCreated": 28,
-    "daysSinceUpdated": 1
+    "daysSinceCreated": 29,
+    "daysSinceUpdated": 2
   },
   {
     "number": 152,
     "title": "[TC]: Verify the Visual Consistency of City Filters",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/152",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/152",
     "state": "open",
     "author": "Lore78",
     "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
@@ -407,13 +407,13 @@
     "crossBrowser": true,
     "createdAt": "2026-06-30T17:36:27Z",
     "updatedAt": "2026-07-09T03:41:01Z",
-    "daysSinceCreated": 34,
-    "daysSinceUpdated": 26
+    "daysSinceCreated": 35,
+    "daysSinceUpdated": 27
   },
   {
     "number": 129,
     "title": "[TC]: Check search responsive behavior on Microsoft Edge browser, on Windows 11 OS",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/129",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/129",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -440,13 +440,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T21:17:42Z",
     "updatedAt": "2026-05-20T21:17:56Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 128,
     "title": "[TC]: Check the results after deleting one search filter",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/128",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/128",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -473,13 +473,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:56:47Z",
     "updatedAt": "2026-05-20T20:57:00Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 127,
     "title": "[TC]: Verify if the message ,,Vezi profilul companiei <company's name>\" is displayed while hovering over the company's logo/name",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/127",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/127",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -506,13 +506,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:19:37Z",
     "updatedAt": "2026-05-20T20:19:48Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 126,
     "title": "[TC]: Verify if the message ,,Aplicati pe site-ul companiei\" is displayed while hovering over with the mouse cursor on the right coloured side job's section",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/126",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/126",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -539,13 +539,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:03:12Z",
     "updatedAt": "2026-05-20T20:03:24Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 125,
     "title": "Check if the job section's colour is changing(the outline and right side) after hovering over with the mouse cursor",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/125",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/125",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -572,13 +572,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T19:21:18Z",
     "updatedAt": "2026-05-20T19:21:31Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 124,
     "title": "Check if after applying minimum 1 filter, the filter colour has changed",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/124",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/124",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -605,13 +605,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T18:55:46Z",
     "updatedAt": "2026-05-20T18:55:58Z",
-    "daysSinceCreated": 75,
-    "daysSinceUpdated": 75
+    "daysSinceCreated": 76,
+    "daysSinceUpdated": 76
   },
   {
     "number": 123,
     "title": "[TC]: Check if right click menu actions( back and forward) are running fast (under 2 seconds)",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/123",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/123",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -638,13 +638,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T21:51:12Z",
     "updatedAt": "2026-05-19T21:55:07Z",
-    "daysSinceCreated": 76,
-    "daysSinceUpdated": 76
+    "daysSinceCreated": 77,
+    "daysSinceUpdated": 77
   },
   {
     "number": 122,
     "title": "Check if the jobs results page is loading fast (under 2 sec) after refreshing the page.",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/122",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/122",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -671,13 +671,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T21:17:20Z",
     "updatedAt": "2026-05-19T21:37:09Z",
-    "daysSinceCreated": 76,
-    "daysSinceUpdated": 76
+    "daysSinceCreated": 77,
+    "daysSinceUpdated": 77
   },
   {
     "number": 121,
     "title": "[TC]: Check if the names of towns and localities are in alphabetical order when clicking on ,,Oras\" filter",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/121",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/121",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -704,13 +704,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T20:50:51Z",
     "updatedAt": "2026-05-19T20:51:05Z",
-    "daysSinceCreated": 76,
-    "daysSinceUpdated": 76
+    "daysSinceCreated": 77,
+    "daysSinceUpdated": 77
   },
   {
     "number": 120,
     "title": "[TC]: Numbers of the filters applied is showed and visible on the filter section.",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/120",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/120",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -737,13 +737,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T20:08:35Z",
     "updatedAt": "2026-05-19T20:51:47Z",
-    "daysSinceCreated": 76,
-    "daysSinceUpdated": 76
+    "daysSinceCreated": 77,
+    "daysSinceUpdated": 77
   },
   {
     "number": 119,
     "title": "[TC]: Job search entry point availability on homepage (Search field and \"cauta\" button",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/119",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/119",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -770,13 +770,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:50:18Z",
     "updatedAt": "2026-05-18T13:50:33Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 118,
     "title": "[TC]: Navigation routing to Job Listings module",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/118",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/118",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -803,13 +803,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:45:39Z",
     "updatedAt": "2026-05-18T13:45:56Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 117,
     "title": "[TC]: Navigate from homepage to job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/117",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/117",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -836,13 +836,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:37:53Z",
     "updatedAt": "2026-05-18T13:38:08Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 116,
     "title": "[TC]: The number of total jobs is the same",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/116",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/116",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -869,13 +869,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:58:23Z",
     "updatedAt": "2026-05-18T12:58:35Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 115,
     "title": "[TC]: Core UI components rendering",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/115",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/115",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -902,13 +902,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:46:46Z",
     "updatedAt": "2026-05-18T12:47:28Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 114,
     "title": "[TC]: Homepage loads successfully",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/114",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/114",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -935,13 +935,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:40:46Z",
     "updatedAt": "2026-05-18T12:41:01Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 110,
     "title": "[TC]: Check if the interface is user-friendly, intuitive, and accessible for different user groups (including user with disabilities).",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/110",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/110",
     "state": "open",
     "author": "Florina87",
     "authorAvatar": "https://avatars.githubusercontent.com/u/174430658?v=4",
@@ -963,13 +963,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T09:50:29Z",
     "updatedAt": "2026-05-18T09:50:41Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 109,
     "title": "[TC]:  Searching using a city name with diacritics returns relevant job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/109",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/109",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -996,13 +996,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:21:33Z",
     "updatedAt": "2026-05-17T19:21:43Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 108,
     "title": "[TC]:  Searching using a job name with multiple spaces returns relevant job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/108",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/108",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1029,13 +1029,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:14:50Z",
     "updatedAt": "2026-05-17T19:15:02Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 107,
     "title": "[TC]:  Searching using reversed keywords returns relevant job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/107",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/107",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1062,13 +1062,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:06:23Z",
     "updatedAt": "2026-05-17T19:06:31Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 106,
     "title": "[TC]:  Searching using a long phrase returns keyword-based job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/106",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/106",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1095,13 +1095,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:29:21Z",
     "updatedAt": "2026-05-17T18:29:29Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 105,
     "title": "[TC]:  Search by work mode returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/105",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/105",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1128,13 +1128,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:17:32Z",
     "updatedAt": "2026-05-17T18:17:41Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 104,
     "title": "[TC]:  Searching by multiple cities returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/104",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/104",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1161,13 +1161,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:04:45Z",
     "updatedAt": "2026-05-17T18:09:16Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 103,
     "title": "[TC]:  Searching by multiple company names returns relevant job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/103",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/103",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1194,13 +1194,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T15:59:43Z",
     "updatedAt": "2026-05-17T18:09:58Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 102,
     "title": "[TC]:  Searching by an valid company name and invalid city returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/102",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/102",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1227,13 +1227,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:31:01Z",
     "updatedAt": "2026-05-17T14:29:42Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 100,
     "title": "[TC]:  Searching by an invalid company name and valid city returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/100",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/100",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1260,13 +1260,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:19:03Z",
     "updatedAt": "2026-05-17T13:19:13Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 99,
     "title": "[TC]:  Checking the functionality of the links \"Condiții de utilizare\" and \"Politica de confidențialitate\" from the footer",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/99",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/99",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -1293,13 +1293,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:45:52Z",
     "updatedAt": "2026-05-17T12:46:03Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 98,
     "title": "[TC]: Checking the functionality of the links \"Despre noi\" and \"Misiune\"",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/98",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/98",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -1326,13 +1326,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:34:18Z",
     "updatedAt": "2026-05-17T12:47:00Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 97,
     "title": "[TC]: Check the message alert for no job found",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/97",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/97",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -1354,13 +1354,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-15T17:39:40Z",
     "updatedAt": "2026-05-15T17:39:50Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 96,
     "title": "[TC]: Check if the search results update correctly after modifying the query",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/96",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/96",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -1387,13 +1387,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-13T12:00:35Z",
     "updatedAt": "2026-05-13T12:00:56Z",
-    "daysSinceCreated": 82,
-    "daysSinceUpdated": 82
+    "daysSinceCreated": 83,
+    "daysSinceUpdated": 83
   },
   {
     "number": 95,
     "title": "[TC]: Check if user navigates using Tab, each interactive element display a focus indicator",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/95",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/95",
     "state": "open",
     "author": "Florina87",
     "authorAvatar": "https://avatars.githubusercontent.com/u/174430658?v=4",
@@ -1420,13 +1420,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 87,
-    "daysSinceUpdated": 87
+    "daysSinceCreated": 88,
+    "daysSinceUpdated": 88
   },
   {
     "number": 94,
     "title": "[TC]: Check keyboard navigation",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/94",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/94",
     "state": "open",
     "author": "Florina87",
     "authorAvatar": "https://avatars.githubusercontent.com/u/174430658?v=4",
@@ -1453,13 +1453,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-07T15:45:42Z",
     "updatedAt": "2026-05-07T15:46:09Z",
-    "daysSinceCreated": 88,
-    "daysSinceUpdated": 88
+    "daysSinceCreated": 89,
+    "daysSinceUpdated": 89
   },
   {
     "number": 93,
     "title": "[TC]: Check the displayed results, after 2 filters are applied",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/93",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/93",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -1486,13 +1486,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-06T21:34:13Z",
     "updatedAt": "2026-05-06T21:34:30Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 92,
     "title": "[TC]: Company Name Redirects to Company Page",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/92",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/92",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1519,13 +1519,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 91,
     "title": "[TC]: Job Tags Are Displayed Correctly",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/91",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/91",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1552,13 +1552,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 90,
     "title": "[TC]:  X Button Clears the Search Input",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/90",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/90",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1585,13 +1585,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 89,
     "title": "[TC]: Search Button Triggers the Search",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/89",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/89",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1618,13 +1618,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 88,
     "title": "[TC]: Search by Skill (ex: Excel) – Relevant results are displayed",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/88",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/88",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1651,13 +1651,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 87,
     "title": "[TC]: Check if search under 2 sec.",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/87",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/87",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1684,13 +1684,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 86,
     "title": "[TC]: Check if search persistence is working correctly",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/86",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/86",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1717,13 +1717,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 85,
     "title": "[TC]: All filters can be removed at once",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/85",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/85",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -1750,13 +1750,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T17:18:33Z",
     "updatedAt": "2026-05-05T17:18:50Z",
-    "daysSinceCreated": 90,
-    "daysSinceUpdated": 90
+    "daysSinceCreated": 91,
+    "daysSinceUpdated": 91
   },
   {
     "number": 84,
     "title": "[TC]: After clicking on the search bar the cursor for text input is activated",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/84",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/84",
     "state": "open",
     "author": "AlexandruFBN",
     "authorAvatar": "https://avatars.githubusercontent.com/u/158216091?v=4",
@@ -1783,13 +1783,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 90,
-    "daysSinceUpdated": 90
+    "daysSinceCreated": 91,
+    "daysSinceUpdated": 91
   },
   {
     "number": 83,
     "title": "[TC]: Check if you press ENTER instead the Cauta button",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/83",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/83",
     "state": "open",
     "author": "Adelapac",
     "authorAvatar": "https://avatars.githubusercontent.com/u/191124482?v=4",
@@ -1816,13 +1816,13 @@
     "crossBrowser": true,
     "createdAt": "2026-05-04T15:52:22Z",
     "updatedAt": "2026-05-04T15:53:07Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 82,
     "title": "[TC]:  Searching by a valid company and city returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/82",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/82",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1849,13 +1849,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-17T13:10:39Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 79
   },
   {
     "number": 81,
     "title": "[TC]:  Search by existing company name returns job listings",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/81",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/81",
     "state": "open",
     "author": "CarmenSteliana",
     "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
@@ -1882,13 +1882,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-17T13:11:37Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 79
   },
   {
     "number": 80,
     "title": "[TC]: Check that the search input accepts copy-paste values correctly",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/80",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/80",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -1915,13 +1915,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 92,
-    "daysSinceUpdated": 92
+    "daysSinceCreated": 93,
+    "daysSinceUpdated": 93
   },
   {
     "number": 79,
     "title": "[TC]: Verify if the displayed job is a suggestion",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/79",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/79",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -1948,13 +1948,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 78,
     "title": "[TC]: Verify if the cities are written with diactritics(ex. București , not Bucuresti)",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/78",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/78",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -1981,13 +1981,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 77,
     "title": "[TC]: Verify if all job listings follow the same format(title, company, location,work mode)",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/77",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/77",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -2014,13 +2014,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 76,
     "title": "[TC]: Verify if the jobs are not duplicate",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/76",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/76",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -2047,13 +2047,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 75,
     "title": "[TC]: Verify if the text is written correctly and grammatically",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/75",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/75",
     "state": "open",
     "author": "talmacelanamaria",
     "authorAvatar": "https://avatars.githubusercontent.com/u/161446018?v=4",
@@ -2080,13 +2080,13 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 74,
     "title": "[TC]: Check if the job remains the same as typed in the first search field from the homepage",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/74",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/74",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -2113,13 +2113,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 73,
     "title": "[TC]: Check the behavior when deleting the search query after results are displayed",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/73",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/73",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -2146,13 +2146,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 72,
     "title": "[TC]: Check if the search history is cleared after refreshing the page",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/72",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/72",
     "state": "open",
     "author": "DeedeeDL",
     "authorAvatar": "https://avatars.githubusercontent.com/u/129604131?v=4",
@@ -2179,13 +2179,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 97,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 98,
+    "daysSinceUpdated": 97
   },
   {
     "number": 71,
     "title": "[TC]: Check the result when searching by entering the location",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/71",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/71",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2212,13 +2212,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 99,
-    "daysSinceUpdated": 99
+    "daysSinceCreated": 100,
+    "daysSinceUpdated": 100
   },
   {
     "number": 70,
     "title": "[TC]: Check the result when searching using empty input",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/70",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/70",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2245,13 +2245,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 99,
-    "daysSinceUpdated": 99
+    "daysSinceCreated": 100,
+    "daysSinceUpdated": 100
   },
   {
     "number": 69,
     "title": "[TC]: Check the result when searching using more than 3 words",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/69",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/69",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2278,13 +2278,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 99,
-    "daysSinceUpdated": 99
+    "daysSinceCreated": 100,
+    "daysSinceUpdated": 100
   },
   {
     "number": 68,
     "title": "[TC]: Check the result/message when searching using special characters",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/68",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/68",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2311,13 +2311,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:30:23Z",
     "updatedAt": "2026-04-23T19:30:35Z",
-    "daysSinceCreated": 102,
-    "daysSinceUpdated": 102
+    "daysSinceCreated": 103,
+    "daysSinceUpdated": 103
   },
   {
     "number": 67,
     "title": "[TC]: Check the result/message when searching using numbers (>2)",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/67",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/67",
     "state": "open",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2344,13 +2344,13 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:23:09Z",
     "updatedAt": "2026-04-23T19:23:26Z",
-    "daysSinceCreated": 102,
-    "daysSinceUpdated": 102
+    "daysSinceCreated": 103,
+    "daysSinceUpdated": 103
   },
   {
     "number": 66,
     "title": "[TC]: Check that the search input accepts small and capital letters",
-    "url": "https://github.com/TCs-for-Association-projects/Peviitor_TC/issues/66",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/66",
     "state": "closed",
     "author": "CrisA24",
     "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
@@ -2381,7 +2381,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
     "updatedAt": "2026-05-04T21:01:31Z",
-    "daysSinceCreated": 102,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 103,
+    "daysSinceUpdated": 92
   }
 ]
