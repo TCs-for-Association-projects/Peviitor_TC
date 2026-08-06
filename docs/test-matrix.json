@@ -1,5 +1,38 @@
 [
   {
+    "number": 171,
+    "title": "[TC]: Verify the navigation only through the keyboard",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/171",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Navigation",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify the navigation only through the keyboard",
+    "descriptionExcerpt": "Verify the navigation only through the keyboard",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-08-06T14:33:03Z",
+    "updatedAt": "2026-08-06T14:33:23Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 168,
     "title": "[TC]: Check that the users can identify the primary purpose of the homepage within 5 seconds",
     "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/168",
@@ -113,8 +146,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-14T05:51:52Z",
     "updatedAt": "2026-07-23T07:16:56Z",
-    "daysSinceCreated": 22,
-    "daysSinceUpdated": 13
+    "daysSinceCreated": 23,
+    "daysSinceUpdated": 14
   },
   {
     "number": 163,
@@ -184,7 +217,7 @@
     "createdAt": "2026-07-12T18:41:11Z",
     "updatedAt": "2026-07-31T10:35:17Z",
     "daysSinceCreated": 24,
-    "daysSinceUpdated": 5
+    "daysSinceUpdated": 6
   },
   {
     "number": 161,
@@ -221,7 +254,7 @@
     "createdAt": "2026-07-12T18:32:06Z",
     "updatedAt": "2026-07-31T10:28:24Z",
     "daysSinceCreated": 24,
-    "daysSinceUpdated": 5
+    "daysSinceUpdated": 6
   },
   {
     "number": 160,
@@ -291,7 +324,7 @@
     "createdAt": "2026-07-12T18:10:40Z",
     "updatedAt": "2026-07-26T07:39:00Z",
     "daysSinceCreated": 24,
-    "daysSinceUpdated": 10
+    "daysSinceUpdated": 11
   },
   {
     "number": 158,
@@ -770,8 +803,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:50:18Z",
     "updatedAt": "2026-05-18T13:50:33Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 118,
@@ -803,8 +836,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:45:39Z",
     "updatedAt": "2026-05-18T13:45:56Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 117,
@@ -836,8 +869,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:37:53Z",
     "updatedAt": "2026-05-18T13:38:08Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 116,
@@ -869,8 +902,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:58:23Z",
     "updatedAt": "2026-05-18T12:58:35Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 115,
@@ -902,8 +935,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:46:46Z",
     "updatedAt": "2026-05-18T12:47:28Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 114,
@@ -935,8 +968,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T12:40:46Z",
     "updatedAt": "2026-05-18T12:41:01Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 110,
@@ -963,8 +996,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T09:50:29Z",
     "updatedAt": "2026-05-18T09:50:41Z",
-    "daysSinceCreated": 79,
-    "daysSinceUpdated": 79
+    "daysSinceCreated": 80,
+    "daysSinceUpdated": 80
   },
   {
     "number": 109,
@@ -1227,8 +1260,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:31:01Z",
     "updatedAt": "2026-05-17T14:29:42Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 100,
@@ -1260,8 +1293,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T13:19:03Z",
     "updatedAt": "2026-05-17T13:19:13Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 99,
@@ -1293,8 +1326,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:45:52Z",
     "updatedAt": "2026-05-17T12:46:03Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 98,
@@ -1326,8 +1359,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T12:34:18Z",
     "updatedAt": "2026-05-17T12:47:00Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 97,
@@ -1387,8 +1420,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-13T12:00:35Z",
     "updatedAt": "2026-05-13T12:00:56Z",
-    "daysSinceCreated": 84,
-    "daysSinceUpdated": 84
+    "daysSinceCreated": 85,
+    "daysSinceUpdated": 85
   },
   {
     "number": 95,
@@ -1420,8 +1453,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-08T08:53:14Z",
     "updatedAt": "2026-05-08T08:53:31Z",
-    "daysSinceCreated": 89,
-    "daysSinceUpdated": 89
+    "daysSinceCreated": 90,
+    "daysSinceUpdated": 90
   },
   {
     "number": 94,
@@ -1519,8 +1552,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:16:21Z",
     "updatedAt": "2026-05-06T13:16:44Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 91,
@@ -1552,8 +1585,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:09:39Z",
     "updatedAt": "2026-05-06T13:09:59Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 90,
@@ -1585,8 +1618,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T13:01:44Z",
     "updatedAt": "2026-05-06T13:01:56Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 89,
@@ -1618,8 +1651,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:55:00Z",
     "updatedAt": "2026-05-06T12:55:16Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 88,
@@ -1651,8 +1684,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:49:42Z",
     "updatedAt": "2026-05-06T12:49:59Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 87,
@@ -1684,8 +1717,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T12:11:34Z",
     "updatedAt": "2026-05-06T12:11:57Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 86,
@@ -1717,8 +1750,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-06T11:42:37Z",
     "updatedAt": "2026-05-06T11:42:59Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 85,
@@ -1849,8 +1882,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T10:06:06Z",
     "updatedAt": "2026-05-17T13:10:39Z",
-    "daysSinceCreated": 93,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 94,
+    "daysSinceUpdated": 81
   },
   {
     "number": 81,
@@ -1882,8 +1915,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-04T09:22:03Z",
     "updatedAt": "2026-05-17T13:11:37Z",
-    "daysSinceCreated": 93,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 94,
+    "daysSinceUpdated": 81
   },
   {
     "number": 80,
@@ -1915,8 +1948,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-03T10:26:46Z",
     "updatedAt": "2026-05-03T10:26:57Z",
-    "daysSinceCreated": 94,
-    "daysSinceUpdated": 94
+    "daysSinceCreated": 95,
+    "daysSinceUpdated": 95
   },
   {
     "number": 79,
@@ -1948,8 +1981,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T11:14:22Z",
     "updatedAt": "2026-05-01T11:14:31Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 78,
@@ -1981,8 +2014,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:57:05Z",
     "updatedAt": "2026-05-01T10:57:14Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 77,
@@ -2014,8 +2047,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:41:22Z",
     "updatedAt": "2026-05-01T10:41:39Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 76,
@@ -2047,8 +2080,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:23:48Z",
     "updatedAt": "2026-05-01T10:23:58Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 75,
@@ -2080,8 +2113,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-01T10:03:09Z",
     "updatedAt": "2026-05-01T10:03:28Z",
-    "daysSinceCreated": 96,
-    "daysSinceUpdated": 96
+    "daysSinceCreated": 97,
+    "daysSinceUpdated": 97
   },
   {
     "number": 74,
@@ -2179,8 +2212,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-28T07:35:17Z",
     "updatedAt": "2026-04-29T11:30:00Z",
-    "daysSinceCreated": 99,
-    "daysSinceUpdated": 98
+    "daysSinceCreated": 100,
+    "daysSinceUpdated": 99
   },
   {
     "number": 71,
@@ -2212,8 +2245,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:37:22Z",
     "updatedAt": "2026-04-26T12:37:34Z",
-    "daysSinceCreated": 101,
-    "daysSinceUpdated": 101
+    "daysSinceCreated": 102,
+    "daysSinceUpdated": 102
   },
   {
     "number": 70,
@@ -2245,8 +2278,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:33:43Z",
     "updatedAt": "2026-04-26T12:33:54Z",
-    "daysSinceCreated": 101,
-    "daysSinceUpdated": 101
+    "daysSinceCreated": 102,
+    "daysSinceUpdated": 102
   },
   {
     "number": 69,
@@ -2278,8 +2311,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-26T12:26:39Z",
     "updatedAt": "2026-04-26T12:28:40Z",
-    "daysSinceCreated": 101,
-    "daysSinceUpdated": 101
+    "daysSinceCreated": 102,
+    "daysSinceUpdated": 102
   },
   {
     "number": 68,
