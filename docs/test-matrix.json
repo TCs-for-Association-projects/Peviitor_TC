@@ -1,5 +1,38 @@
 [
   {
+    "number": 172,
+    "title": "[TC]: Verify the zoom functionality",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/172",
+    "state": "open",
+    "author": "CrisA24",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/179828147?v=4",
+    "assignees": [
+      {
+        "login": "CrisA24",
+        "avatar": "https://avatars.githubusercontent.com/u/179828147?v=4"
+      }
+    ],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Navigation",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify the zoom functionality.",
+    "descriptionExcerpt": "Verify the zoom functionality.",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-08-06T14:50:20Z",
+    "updatedAt": "2026-08-06T14:50:31Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 171,
     "title": "[TC]: Verify the navigation only through the keyboard",
     "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/171",
@@ -2179,8 +2212,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T14:46:26Z",
     "updatedAt": "2026-04-29T14:46:46Z",
-    "daysSinceCreated": 98,
-    "daysSinceUpdated": 98
+    "daysSinceCreated": 99,
+    "daysSinceUpdated": 99
   },
   {
     "number": 72,
