@@ -1,5 +1,145 @@
 [
   {
+    "number": 177,
+    "title": "[TC]: Verify that all required fields are properly identified",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/177",
+    "state": "open",
+    "author": "Lore78",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
+    "assignees": [],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Accessibility testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify that all required fields are properly identified",
+    "descriptionExcerpt": "Verify that all required fields are properly identified",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-08-06T16:36:29Z",
+    "updatedAt": "2026-08-06T16:47:29Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
+    "number": 176,
+    "title": "[TC]: Verify that error messages are clear and can be read by a screen reader",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/176",
+    "state": "open",
+    "author": "Lore78",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
+    "assignees": [],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Accessibility testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify that error messages are clear and can be read by a screen reader",
+    "descriptionExcerpt": "Verify that error messages are clear and can be read by a screen reader",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-08-06T16:33:32Z",
+    "updatedAt": "2026-08-06T16:33:32Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
+    "number": 175,
+    "title": "[TC]:  Verify that the job search field has an associated label",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/175",
+    "state": "open",
+    "author": "Lore78",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
+    "assignees": [],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Accessibility testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify that the job search field has an associated label",
+    "descriptionExcerpt": "Verify that the job search field has an associated label",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-08-06T16:30:09Z",
+    "updatedAt": "2026-08-06T16:30:09Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
+    "number": 174,
+    "title": "[TC]: Verify that the website displays correctly on mobile devices and in both portrait and landscape orientations",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/174",
+    "state": "open",
+    "author": "Lore78",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
+    "assignees": [],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Accessibility testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify that the website displays correctly on mobile devices and in both portrait and landscape orientations",
+    "descriptionExcerpt": "Verify that the website displays correctly on mobile devices and in both portrait and landscape orientations",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-08-06T16:21:17Z",
+    "updatedAt": "2026-08-06T16:29:38Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
+    "number": 173,
+    "title": "[TC]: Verify that the page remains usable when zoomed without loss of content or functionality",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/173",
+    "state": "open",
+    "author": "Lore78",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/171150958?v=4",
+    "assignees": [],
+    "epic": "E19",
+    "epicLabel": "Epic19: Accessibility Compliance and Inclusive User Experience",
+    "userStory": "US36",
+    "userStoryLabel": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
+    "testingType": "Accessibility testing",
+    "section": "Navigation",
+    "environment": "Production",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "Verify that the page remains usable when zoomed without loss of content or functionality",
+    "descriptionExcerpt": "Verify that the page remains usable when zoomed without loss of content or functionality",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": true,
+    "crossBrowser": true,
+    "createdAt": "2026-08-06T16:14:43Z",
+    "updatedAt": "2026-08-06T16:22:59Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 172,
     "title": "[TC]: Verify the zoom functionality",
     "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/172",
@@ -28,7 +168,7 @@
     "crossOs": false,
     "crossBrowser": false,
     "createdAt": "2026-08-06T14:50:20Z",
-    "updatedAt": "2026-08-06T14:50:31Z",
+    "updatedAt": "2026-08-06T14:50:44Z",
     "daysSinceCreated": 0,
     "daysSinceUpdated": 0
   },
@@ -90,8 +230,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T17:16:02Z",
     "updatedAt": "2026-07-19T17:21:46Z",
-    "daysSinceCreated": 17,
-    "daysSinceUpdated": 17
+    "daysSinceCreated": 18,
+    "daysSinceUpdated": 18
   },
   {
     "number": 167,
@@ -118,8 +258,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T17:12:13Z",
     "updatedAt": "2026-07-19T17:19:51Z",
-    "daysSinceCreated": 17,
-    "daysSinceUpdated": 17
+    "daysSinceCreated": 18,
+    "daysSinceUpdated": 18
   },
   {
     "number": 166,
@@ -146,8 +286,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-19T16:49:13Z",
     "updatedAt": "2026-07-19T17:19:05Z",
-    "daysSinceCreated": 17,
-    "daysSinceUpdated": 17
+    "daysSinceCreated": 18,
+    "daysSinceUpdated": 18
   },
   {
     "number": 164,
@@ -213,7 +353,7 @@
     "createdAt": "2026-07-14T05:28:03Z",
     "updatedAt": "2026-07-22T04:13:39Z",
     "daysSinceCreated": 23,
-    "daysSinceUpdated": 15
+    "daysSinceUpdated": 16
   },
   {
     "number": 162,
@@ -249,7 +389,7 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:41:11Z",
     "updatedAt": "2026-07-31T10:35:17Z",
-    "daysSinceCreated": 24,
+    "daysSinceCreated": 25,
     "daysSinceUpdated": 6
   },
   {
@@ -286,7 +426,7 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:32:06Z",
     "updatedAt": "2026-07-31T10:28:24Z",
-    "daysSinceCreated": 24,
+    "daysSinceCreated": 25,
     "daysSinceUpdated": 6
   },
   {
@@ -319,8 +459,8 @@
     "crossBrowser": false,
     "createdAt": "2026-07-12T18:22:39Z",
     "updatedAt": "2026-07-12T18:22:52Z",
-    "daysSinceCreated": 24,
-    "daysSinceUpdated": 24
+    "daysSinceCreated": 25,
+    "daysSinceUpdated": 25
   },
   {
     "number": 159,
@@ -356,7 +496,7 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T18:10:40Z",
     "updatedAt": "2026-07-26T07:39:00Z",
-    "daysSinceCreated": 24,
+    "daysSinceCreated": 25,
     "daysSinceUpdated": 11
   },
   {
@@ -389,8 +529,8 @@
     "crossBrowser": false,
     "createdAt": "2026-07-12T17:39:24Z",
     "updatedAt": "2026-07-12T17:39:36Z",
-    "daysSinceCreated": 24,
-    "daysSinceUpdated": 24
+    "daysSinceCreated": 25,
+    "daysSinceUpdated": 25
   },
   {
     "number": 157,
@@ -417,8 +557,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-12T15:58:31Z",
     "updatedAt": "2026-07-12T16:00:16Z",
-    "daysSinceCreated": 24,
-    "daysSinceUpdated": 24
+    "daysSinceCreated": 25,
+    "daysSinceUpdated": 25
   },
   {
     "number": 156,
@@ -445,8 +585,8 @@
     "crossBrowser": true,
     "createdAt": "2026-07-07T04:39:32Z",
     "updatedAt": "2026-08-02T16:14:00Z",
-    "daysSinceCreated": 30,
-    "daysSinceUpdated": 3
+    "daysSinceCreated": 31,
+    "daysSinceUpdated": 4
   },
   {
     "number": 152,
@@ -473,8 +613,8 @@
     "crossBrowser": true,
     "createdAt": "2026-06-30T17:36:27Z",
     "updatedAt": "2026-07-09T03:41:01Z",
-    "daysSinceCreated": 36,
-    "daysSinceUpdated": 28
+    "daysSinceCreated": 37,
+    "daysSinceUpdated": 29
   },
   {
     "number": 129,
@@ -506,8 +646,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T21:17:42Z",
     "updatedAt": "2026-05-20T21:17:56Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 128,
@@ -539,8 +679,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:56:47Z",
     "updatedAt": "2026-05-20T20:57:00Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 127,
@@ -572,8 +712,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:19:37Z",
     "updatedAt": "2026-05-20T20:19:48Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 126,
@@ -605,8 +745,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T20:03:12Z",
     "updatedAt": "2026-05-20T20:03:24Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 125,
@@ -638,8 +778,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T19:21:18Z",
     "updatedAt": "2026-05-20T19:21:31Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 124,
@@ -671,8 +811,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-20T18:55:46Z",
     "updatedAt": "2026-05-20T18:55:58Z",
-    "daysSinceCreated": 77,
-    "daysSinceUpdated": 77
+    "daysSinceCreated": 78,
+    "daysSinceUpdated": 78
   },
   {
     "number": 123,
@@ -704,8 +844,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T21:51:12Z",
     "updatedAt": "2026-05-19T21:55:07Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 122,
@@ -737,8 +877,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T21:17:20Z",
     "updatedAt": "2026-05-19T21:37:09Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 121,
@@ -770,8 +910,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T20:50:51Z",
     "updatedAt": "2026-05-19T20:51:05Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 120,
@@ -803,8 +943,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-19T20:08:35Z",
     "updatedAt": "2026-05-19T20:51:47Z",
-    "daysSinceCreated": 78,
-    "daysSinceUpdated": 78
+    "daysSinceCreated": 79,
+    "daysSinceUpdated": 79
   },
   {
     "number": 119,
@@ -1062,8 +1202,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:21:33Z",
     "updatedAt": "2026-05-17T19:21:43Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 108,
@@ -1095,8 +1235,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:14:50Z",
     "updatedAt": "2026-05-17T19:15:02Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 107,
@@ -1128,8 +1268,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T19:06:23Z",
     "updatedAt": "2026-05-17T19:06:31Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 106,
@@ -1161,8 +1301,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:29:21Z",
     "updatedAt": "2026-05-17T18:29:29Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 105,
@@ -1194,8 +1334,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:17:32Z",
     "updatedAt": "2026-05-17T18:17:41Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 104,
@@ -1227,8 +1367,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T18:04:45Z",
     "updatedAt": "2026-05-17T18:09:16Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 103,
@@ -1260,8 +1400,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-17T15:59:43Z",
     "updatedAt": "2026-05-17T18:09:58Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 102,
@@ -1420,8 +1560,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-15T17:39:40Z",
     "updatedAt": "2026-05-15T17:39:50Z",
-    "daysSinceCreated": 82,
-    "daysSinceUpdated": 82
+    "daysSinceCreated": 83,
+    "daysSinceUpdated": 83
   },
   {
     "number": 96,
@@ -1519,8 +1659,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-07T15:45:42Z",
     "updatedAt": "2026-05-07T15:46:09Z",
-    "daysSinceCreated": 90,
-    "daysSinceUpdated": 90
+    "daysSinceCreated": 91,
+    "daysSinceUpdated": 91
   },
   {
     "number": 93,
@@ -1552,8 +1692,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-06T21:34:13Z",
     "updatedAt": "2026-05-06T21:34:30Z",
-    "daysSinceCreated": 91,
-    "daysSinceUpdated": 91
+    "daysSinceCreated": 92,
+    "daysSinceUpdated": 92
   },
   {
     "number": 92,
@@ -1816,8 +1956,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T17:18:33Z",
     "updatedAt": "2026-05-05T17:18:50Z",
-    "daysSinceCreated": 92,
-    "daysSinceUpdated": 92
+    "daysSinceCreated": 93,
+    "daysSinceUpdated": 93
   },
   {
     "number": 84,
@@ -1849,8 +1989,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-05T16:57:31Z",
     "updatedAt": "2026-05-05T16:57:46Z",
-    "daysSinceCreated": 92,
-    "daysSinceUpdated": 92
+    "daysSinceCreated": 93,
+    "daysSinceUpdated": 93
   },
   {
     "number": 83,
@@ -1882,8 +2022,8 @@
     "crossBrowser": true,
     "createdAt": "2026-05-04T15:52:22Z",
     "updatedAt": "2026-05-04T15:53:07Z",
-    "daysSinceCreated": 93,
-    "daysSinceUpdated": 93
+    "daysSinceCreated": 94,
+    "daysSinceUpdated": 94
   },
   {
     "number": 82,
@@ -2179,8 +2319,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-29T15:29:20Z",
     "updatedAt": "2026-04-29T15:29:37Z",
-    "daysSinceCreated": 98,
-    "daysSinceUpdated": 98
+    "daysSinceCreated": 99,
+    "daysSinceUpdated": 99
   },
   {
     "number": 73,
@@ -2377,8 +2517,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:30:23Z",
     "updatedAt": "2026-04-23T19:30:35Z",
-    "daysSinceCreated": 104,
-    "daysSinceUpdated": 104
+    "daysSinceCreated": 105,
+    "daysSinceUpdated": 105
   },
   {
     "number": 67,
@@ -2410,8 +2550,8 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:23:09Z",
     "updatedAt": "2026-04-23T19:23:26Z",
-    "daysSinceCreated": 104,
-    "daysSinceUpdated": 104
+    "daysSinceCreated": 105,
+    "daysSinceUpdated": 105
   },
   {
     "number": 66,
@@ -2447,7 +2587,7 @@
     "crossBrowser": false,
     "createdAt": "2026-04-23T19:08:26Z",
     "updatedAt": "2026-05-04T21:01:31Z",
-    "daysSinceCreated": 104,
-    "daysSinceUpdated": 93
+    "daysSinceCreated": 105,
+    "daysSinceUpdated": 94
   }
 ]
