@@ -330,7 +330,14 @@
       "label": "US36 : As a user, including users with disabilities, I want to access and use all features of PeViitor.ro regardless of my abilities or the device/assistive technology I use, so that I can search and apply for jobs without accessibility barriers.",
       "issue": 170,
       "epicId": "E19"
-    }
+    },
+    
+    {
+  "id": "US37",
+  "label": "US37 : Search button on the website",
+  "issue": 138,
+  "epicId": "E14"
+   }
   ],
   "testingTypes": [
     "Navigation",
