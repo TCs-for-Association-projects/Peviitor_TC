@@ -1,5 +1,33 @@
 [
   {
+    "number": 180,
+    "title": "[TC]:  tc test",
+    "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/180",
+    "state": "open",
+    "author": "CarmenSteliana",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/107409121?v=4",
+    "assignees": [],
+    "epic": "E0",
+    "epicLabel": "Epic0",
+    "userStory": "US1",
+    "userStoryLabel": "US1 : As a user, I want to see important navigation links in the footer, so that I can easily access key pages",
+    "testingType": "Navigation",
+    "section": "Header",
+    "environment": "Local",
+    "os": "Windows 11",
+    "browser": "Chrome 120",
+    "description": "testt",
+    "descriptionExcerpt": "testt",
+    "status": "Not run",
+    "bugFound": false,
+    "crossOs": false,
+    "crossBrowser": false,
+    "createdAt": "2026-08-07T13:50:32Z",
+    "updatedAt": "2026-08-07T13:50:32Z",
+    "daysSinceCreated": 0,
+    "daysSinceUpdated": 0
+  },
+  {
     "number": 179,
     "title": "[TC]: Check if the search button from homepage can hover it",
     "url": "https://github.com/peviitor-testing/Peviitor_TC/issues/179",
@@ -1042,8 +1070,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:50:18Z",
     "updatedAt": "2026-05-18T13:50:33Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 118,
@@ -1075,8 +1103,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:45:39Z",
     "updatedAt": "2026-05-18T13:45:56Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 117,
@@ -1108,8 +1136,8 @@
     "crossBrowser": false,
     "createdAt": "2026-05-18T13:37:53Z",
     "updatedAt": "2026-05-18T13:38:08Z",
-    "daysSinceCreated": 80,
-    "daysSinceUpdated": 80
+    "daysSinceCreated": 81,
+    "daysSinceUpdated": 81
   },
   {
     "number": 116,
