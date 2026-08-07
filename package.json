@@ -5,7 +5,7 @@
   "type": "module",
   "description": "QA test management repository for peviitor.ro. Issues are test cases; workflows handle labeling and matrix generation.",
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "scripts": {
     "generate-template": "node scripts/generate-template.js",
